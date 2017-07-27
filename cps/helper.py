@@ -88,8 +88,8 @@ def make_mobi(book_id, calibrepath):
         return error_message, RET_FAIL
 
     file_path = os.path.join(calibrepath, book.path, data.name)
-    tmp_dir = gettempdir()
     if os.path.exists(file_path + u".epub"):
+        tmp_dir = gettempdir()
         tmp_path = os.path.join(tmp_dir, data.name) + u" - " + str(convert_counter)
         convert_counter += 1
         shutil.copy2(file_path + u".epub", tmp_path + u".epub");
