@@ -13,6 +13,7 @@ import os
 import traceback
 import re
 import unicodedata
+import shutil
 
 try:
     from StringIO import StringIO
@@ -51,6 +52,7 @@ except Exception as e:
 # Global variables
 global_task = None
 updater_thread = None
+convert_counter = 0
 
 RET_SUCCESS = 1
 RET_FAIL = 0
@@ -66,6 +68,7 @@ def update_download(book_id, user_id):
 
 
 def make_mobi(book_id, calibrepath):
+    global convert_counter
     error_message = None
     vendorpath = os.path.join(os.path.normpath(os.path.dirname(os.path.realpath(__file__)) +
                                                os.sep + "../vendor" + os.sep))
@@ -85,9 +88,13 @@ def make_mobi(book_id, calibrepath):
         return error_message, RET_FAIL
 
     file_path = os.path.join(calibrepath, book.path, data.name)
+    tmp_dir = gettempdir()
     if os.path.exists(file_path + u".epub"):
+        tmp_path = os.path.join(tmp_dir, data.name) + u" - " + str(convert_counter)
+        convert_counter += 1
+        shutil.copy2(file_path + u".epub", tmp_path + u".epub");
         try:
-            p = subprocess.Popen((kindlegen + " \"" + file_path + u".epub\"").encode(sys.getfilesystemencoding()),
+            p = subprocess.Popen((kindlegen + " \"" + tmp_path + u".epub\"").encode(sys.getfilesystemencoding()),
                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         except Exception:
             error_message = _(u"kindlegen failed, no excecution permissions")
@@ -112,14 +119,7 @@ def make_mobi(book_id, calibrepath):
 
         check = p.returncode
         if not check or check < 2:
-            book.data.append(db.Data(
-                    name=book.data[0].name,
-                    book_format="MOBI",
-                    book=book.id,
-                    uncompressed_size=os.path.getsize(file_path + ".mobi")
-                ))
-            db.session.commit()
-            return file_path + ".mobi", RET_SUCCESS
+            return tmp_path + ".mobi", RET_SUCCESS
         else:
             app.logger.info("make_mobi: kindlegen failed with error while converting book")
             if not error_message:
