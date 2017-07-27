@@ -1995,7 +1995,7 @@ def send_to_kindle(book_id):
             flash(_(u"There was an error sending this book: %(res)s", res=result), category="error")
     else:
         flash(_(u"Please configure your kindle email address first..."), category="error")
-    return redirect(request.environ["HTTP_REFERER"])
+    return redirect(request.environ.get("HTTP_REFERER"))
 
 
 @app.route("/shelf/add/<int:shelf_id>/<int:book_id>")
@@ -2140,7 +2140,7 @@ def delete_shelf(shelf_id):
     if current_user.role_admin():
         deleted = ub.session.query(ub.Shelf).filter(ub.Shelf.id == shelf_id).delete()
     else:
-        if not cur_shelf.is_public and not cur_shelf.user_id == int(current_user.id) \
+        if (not cur_shelf.is_public and cur_shelf.user_id == int(current_user.id)) \
                 or (cur_shelf.is_public and current_user.role_edit_shelfs()):
             deleted = ub.session.query(ub.Shelf).filter(ub.or_(ub.and_(ub.Shelf.user_id == int(current_user.id),
                                                                    ub.Shelf.id == shelf_id),
