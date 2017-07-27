@@ -1,0 +1,28 @@
+#!/bin/sh
+# PROVIDE: calibreweb
+# REQUIRE: networking
+
+. /etc/rc.subr
+
+name=calibreweb
+rcvar=${name}_enable
+
+load_rc_config ${name}
+
+: ${calibreweb_enable="NO"}
+: ${calibreweb_user="calibre"}
+: ${calibreweb_path="/srv/calibre-web"}
+
+pidfile=/var/run/${name}.pid
+
+command=/usr/local/bin/python2
+command_args="${calibreweb_path}/cps.py"
+
+start_cmd="${name}_start"
+
+calibreweb_start()
+{
+	/usr/sbin/daemon -f -p ${pidfile} -u ${calibreweb_user} ${command} ${command_args}
+}
+
+run_rc_command "$1"
