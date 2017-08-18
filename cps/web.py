@@ -2046,7 +2046,10 @@ def send_to_kindle(book_id):
             flash(_(u"There was an error sending this book: %(res)s", res=result), category="error")
     else:
         flash(_(u"Please configure your kindle email address first..."), category="error")
-    return redirect(request.environ.get("HTTP_REFERER"))
+    destination = request.environ.get("HTTP_REFERER")
+    if destination is None:
+        destination = url_for('index')
+    return redirect(destination)
 
 
 @app.route("/shelf/add/<int:shelf_id>/<int:book_id>")
