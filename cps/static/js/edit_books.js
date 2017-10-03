@@ -21,10 +21,10 @@ if ($("#description").length) {
             var results = /(\d{4})[-\/\\](\d{1,2})[-\/\\](\d{1,2})/.exec(this.value); // YYYY-MM-DD
             if (results) {
                 pubDate = new Date(results[1], parseInt(results[2], 10) - 1, results[3]) || new Date(this.value);
+                $("#fake_pubdate")
+                    .val(pubDate.toLocaleDateString(language))
+                    .removeClass("hidden");
             }
-            $("#fake_pubdate")
-                .val(pubDate.toLocaleDateString(language))
-                .removeClass("hidden");
         }).trigger("change");
     }
 }
@@ -204,4 +204,12 @@ $("#search").on("change input.typeahead:selected", function() {
             }
         });
     });
+});
+
+$("#btn-upload-format").on("change", function () {
+    var filename = $(this).val();
+    if (filename.substring(3, 11) === "fakepath") {
+        filename = filename.substring(12);
+    } // Remove c:\fake at beginning from localhost chrome
+    $("#upload-format").html(filename);
 });

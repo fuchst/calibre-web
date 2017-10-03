@@ -79,6 +79,7 @@ import hashlib
 from redirect import redirect_back, is_safe_url
 
 from tornado import version as tornadoVersion
+from socket import error as SocketError
 
 try:
     from urllib.parse import quote
@@ -157,7 +158,7 @@ class Gauth:
 @Singleton
 class Gdrive:
     def __init__(self):
-        self.drive = gdriveutils.getDrive(Gauth.Instance().auth)
+        self.drive = gdriveutils.getDrive(gauth=Gauth.Instance().auth)
 
 
 class ReverseProxied(object):
@@ -793,7 +794,7 @@ def feed_category(book_id):
     off = request.args.get("offset")
     if not off:
         off = 0
-    entries, random, pagination = fill_indexpage((int(off) / (int(config.config_books_per_page)) + 1),
+    entries, __, pagination = fill_indexpage((int(off) / (int(config.config_books_per_page)) + 1),
                     db.Books, db.Books.tags.any(db.Tags.id == book_id), db.Books.timestamp.desc())
     xml = render_title_template('feed.xml', entries=entries, pagination=pagination)
     response = make_response(xml)
@@ -1121,6 +1122,8 @@ def author_list():
     entries = db.session.query(db.Authors, func.count('books_authors_link.book').label('count'))\
         .join(db.books_authors_link).join(db.Books).filter(common_filters())\
         .group_by('books_authors_link.author').order_by(db.Authors.sort).all()
+    for entry in entries:
+        entry.Authors.name=entry.Authors.name.replace('|',',')
     return render_title_template('list.html', entries=entries, folder='author', title=_(u"Author list"))
 
 
@@ -1128,13 +1131,13 @@ def author_list():
 @app.route("/author/<int:book_id>/<int:page>'")
 @login_required_if_no_ano
 def author(book_id, page):
-    entries, random, pagination = fill_indexpage(page, db.Books, db.Books.authors.any(db.Authors.id == book_id),
+    entries, __, pagination = fill_indexpage(page, db.Books, db.Books.authors.any(db.Authors.id == book_id),
                                                  db.Books.timestamp.desc())
     if entries is None:
         flash(_(u"Error opening eBook. File does not exist or file is not accessible:"), category="error")
         return redirect(url_for("index"))
 
-    name = db.session.query(db.Authors).filter(db.Authors.id == book_id).first().name
+    name = (db.session.query(db.Authors).filter(db.Authors.id == book_id).first().name).replace('|',',')
 
     author_info = None
     other_books = []
@@ -1204,13 +1207,12 @@ def language_overview():
                 lang.name = _(isoLanguages.get(part3=lang.lang_code).name)
     else:
         try:
-            langfound = 1
             cur_l = LC.parse(current_user.filter_language())
         except Exception:
-            langfound = 0
+            cur_l = None
         languages = db.session.query(db.Languages).filter(
             db.Languages.lang_code == current_user.filter_language()).all()
-        if langfound:
+        if cur_l:
             languages[0].name = cur_l.get_language_name(get_locale())
         else:
             languages[0].name = _(isoLanguages.get(part3=languages[0].lang_code).name)
@@ -1314,6 +1316,26 @@ def show_book(book_id):
     else:
         flash(_(u"Error opening eBook. File does not exist or file is not accessible:"), category="error")
         return redirect(url_for("index"))
+
+
+@app.route("/ajax/bookmark/<int:book_id>/<book_format>", methods=['POST'])
+@login_required
+def bookmark(book_id, book_format):
+    bookmark_key = request.form["bookmark"]
+    ub.session.query(ub.Bookmark).filter(ub.and_(ub.Bookmark.user_id == int(current_user.id),
+                                                 ub.Bookmark.book_id == book_id,
+                                                 ub.Bookmark.format == book_format)).delete()
+    if not bookmark_key:
+        ub.session.commit()
+        return "", 204
+
+    bookmark = ub.Bookmark(user_id=current_user.id,
+                           book_id=book_id,
+                           format=book_format,
+                           bookmark_key=bookmark_key)
+    ub.session.merge(bookmark)
+    ub.session.commit()
+    return "", 201
 
 
 @app.route("/admin")
@@ -1750,48 +1772,52 @@ def unread_books(page):
 @login_required_if_no_ano
 def read_book(book_id, book_format):
     book = db.session.query(db.Books).filter(db.Books.id == book_id).first()
-    if book:
-        book_dir = os.path.join(config.get_main_dir, "cps", "static", str(book_id))
-        if not os.path.exists(book_dir):
-            os.mkdir(book_dir)
-        if book_format.lower() == "epub":
-            # check if mimetype file is exists
-            mime_file = str(book_id) + "/mimetype"
-            if not os.path.exists(mime_file):
-                epub_file = os.path.join(config.config_calibre_dir, book.path, book.data[0].name) + ".epub"
-                if not os.path.isfile(epub_file):
-                    raise ValueError('Error opening eBook. File does not exist: ', epub_file)
-                zfile = zipfile.ZipFile(epub_file)
-                for name in zfile.namelist():
-                    (dirName, fileName) = os.path.split(name)
-                    newDir = os.path.join(book_dir, dirName)
-                    if not os.path.exists(newDir):
-                        try:
-                            os.makedirs(newDir)
-                        except OSError as exception:
-                            if not exception.errno == errno.EEXIST:
-                                raise
-                    if fileName:
-                        fd = open(os.path.join(newDir, fileName), "wb")
-                        fd.write(zfile.read(name))
-                        fd.close()
-                zfile.close()
-            return render_title_template('read.html', bookid=book_id, title=_(u"Read a Book"))
-        elif book_format.lower() == "pdf":
-            return render_title_template('readpdf.html', pdffile=book_id, title=_(u"Read a Book"))
-        elif book_format.lower() == "txt":
-            return render_title_template('readtxt.html', txtfile=book_id, title=_(u"Read a Book"))
-        elif book_format.lower() == "cbr":
-            all_name = str(book_id) + "/" + book.data[0].name + ".cbr"
-            tmp_file = os.path.join(book_dir, book.data[0].name) + ".cbr"
-            if not os.path.exists(all_name):
-                cbr_file = os.path.join(config.config_calibre_dir, book.path, book.data[0].name) + ".cbr"
-                copyfile(cbr_file, tmp_file)
-            return render_title_template('readcbr.html', comicfile=all_name, title=_(u"Read a Book"))
-
-    else:
+    if not book:
         flash(_(u"Error opening eBook. File does not exist or file is not accessible:"), category="error")
         return redirect(url_for("index"))
+
+    book_dir = os.path.join(config.get_main_dir, "cps", "static", str(book_id))
+    if not os.path.exists(book_dir):
+        os.mkdir(book_dir)
+    bookmark = ub.session.query(ub.Bookmark).filter(ub.and_(ub.Bookmark.user_id == int(current_user.id),
+                                                            ub.Bookmark.book_id == book_id,
+                                                            ub.Bookmark.format == book_format.upper())).first()
+    if book_format.lower() == "epub":
+        # check if mimetype file is exists
+        mime_file = str(book_id) + "/mimetype"
+        if not os.path.exists(mime_file):
+            epub_file = os.path.join(config.config_calibre_dir, book.path, book.data[0].name) + ".epub"
+            if not os.path.isfile(epub_file):
+                raise ValueError('Error opening eBook. File does not exist: ', epub_file)
+            zfile = zipfile.ZipFile(epub_file)
+            for name in zfile.namelist():
+                (dirName, fileName) = os.path.split(name)
+                newDir = os.path.join(book_dir, dirName)
+                if not os.path.exists(newDir):
+                    try:
+                        os.makedirs(newDir)
+                    except OSError as exception:
+                        if not exception.errno == errno.EEXIST:
+                            raise
+                if fileName:
+                    fd = open(os.path.join(newDir, fileName), "wb")
+                    fd.write(zfile.read(name))
+                    fd.close()
+            zfile.close()
+        return render_title_template('read.html', bookid=book_id, title=_(u"Read a Book"), bookmark=bookmark)
+    elif book_format.lower() == "pdf":
+        return render_title_template('readpdf.html', pdffile=book_id, title=_(u"Read a Book"))
+    elif book_format.lower() == "txt":
+        return render_title_template('readtxt.html', txtfile=book_id, title=_(u"Read a Book"))
+    else:
+        for fileext in ["cbr","cbt","cbz"]:
+            if book_format.lower() == fileext:
+                all_name = str(book_id) + "/" + book.data[0].name + "." + fileext
+                tmp_file = os.path.join(book_dir, book.data[0].name) + "." + fileext
+                if not os.path.exists(all_name):
+                    cbr_file = os.path.join(config.config_calibre_dir, book.path, book.data[0].name) + "." + fileext
+                    copyfile(cbr_file, tmp_file)
+                return render_title_template('readcbr.html', comicfile=all_name, title=_(u"Read a Book"))
 
 
 @app.route("/download/<int:book_id>/<book_format>")
@@ -2149,6 +2175,7 @@ def edit_shelf(shelf_id):
 @login_required
 def delete_shelf(shelf_id):
     cur_shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.id == shelf_id).first()
+    deleted = false
     if current_user.role_admin():
         deleted = ub.session.query(ub.Shelf).filter(ub.Shelf.id == shelf_id).delete()
     else:
@@ -2718,7 +2745,7 @@ def edit_book(book_id):
         except Exception:
             book.languages[index].language_name = _(isoLanguages.get(part3=book.languages[index].lang_code).name)
     for author in book.authors:
-        author_names.append(author.name)
+        author_names.append(author.name.replace('|',','))
 
     # Show form
     if request.method != 'POST':
@@ -2727,12 +2754,41 @@ def edit_book(book_id):
 
     # Update book
     edited_books_id = set()
+
+    # Check and handle Uploaded file
+    if 'btn-upload-format' in request.files and '.' in request.files['btn-upload-format'].filename:
+        requested_file = request.files['btn-upload-format']
+        file_ext = requested_file.filename.rsplit('.', 1)[-1].lower()
+        if file_ext not in ALLOWED_EXTENSIONS:
+            flash(_('File extension "%s" is not allowed to be uploaded to this server' % file_ext), category="error")
+            return redirect(url_for('index'))
+
+        file_name = book.path.rsplit('/', 1)[-1]
+        filepath = config.config_calibre_dir + os.sep + book.path
+        filepath = os.path.normpath(filepath)
+        saved_filename = filepath + os.sep + file_name + '.' + file_ext
+
+        try:
+            requested_file.save(saved_filename)
+        except OSError:
+            flash(_(u"Failed to store file %s." % saved_filename), category="error")
+            return redirect(url_for('index'))
+
+        file_size = os.path.getsize(saved_filename)
+        is_format = db.session.query(db.Data).filter(db.Data.book == book_id).filter(db.Data.format == file_ext.upper()).first()
+        if is_format:
+            # Format entry already exists, no need to update the database
+            pass
+        else:
+            db_format = db.Data(book_id, file_ext.upper(), file_size, file_name)
+            db.session.add(db_format)
+
     to_save = request.form.to_dict()
     if book.title != to_save["book_title"]:
         book.title = to_save["book_title"]
         edited_books_id.add(book.id)
     input_authors = to_save["author_name"].split('&')
-    input_authors = map(lambda it: it.strip(), input_authors)
+    input_authors = map(lambda it: it.strip().replace(',','|'), input_authors)
     # we have all author names now
     if input_authors == ['']:
         input_authors = [_(u'unknown')]  # prevent empty Author
@@ -3049,5 +3105,11 @@ def upload():
 def start_gevent():
     from gevent.wsgi import WSGIServer
     global gevent_server
-    gevent_server = WSGIServer(('', ub.config.config_port), app)
-    gevent_server.serve_forever()
+    try:
+        gevent_server = WSGIServer(('', ub.config.config_port), app)
+        gevent_server.serve_forever()
+    except SocketError:
+        app.logger.info('Unable to listen on \'\', trying on IPv4 only...')
+        gevent_server = WSGIServer(('0.0.0.0', ub.config.config_port), app)
+        gevent_server.serve_forever()
+
