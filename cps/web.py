@@ -49,6 +49,7 @@ from flask_principal import Principal
 from flask_principal import __version__ as flask_principalVersion
 from flask_babel import Babel
 from flask_babel import gettext as _
+import flask_resize
 import requests
 import zipfile
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -1677,7 +1678,11 @@ def get_cover(cover_path):
     if config.config_use_google_drive:
         return redirect(get_cover_via_gdrive(cover_path))
     else:
-        return send_from_directory(os.path.join(config.config_calibre_dir, cover_path), "cover.jpg")
+	newpath = os.path.join(config.config_calibre_dir, cover_path, 'cover.jpg')
+        resized_url = resize(newpath, 'x500', format='jpg', quality=75)
+        resized_img = resized_url.split("/").pop()
+        resized_dir = os.path.join(app.config['RESIZE_ROOT'], 'resized-images')
+        return send_from_directory(resized_dir, resized_img)
 
 @app.route("/show/<book_id>/<book_format>")
 @login_required_if_no_ano
