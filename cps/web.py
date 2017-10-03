@@ -213,6 +213,9 @@ mimetypes.add_type('application/x-cbt', '.cbt')
 mimetypes.add_type('image/vnd.djvu', '.djvu')
 
 app = (Flask(__name__))
+app.config['RESIZE_URL'] = ''
+app.config['RESIZE_ROOT'] = '/srv/calibre-web'
+resize = flask_resize.Resize(app)
 app.wsgi_app = ReverseProxied(app.wsgi_app)
 cache_buster.init_cache_busting(app)
 
