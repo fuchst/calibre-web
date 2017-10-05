@@ -1682,7 +1682,7 @@ def get_cover(cover_path):
         return redirect(get_cover_via_gdrive(cover_path))
     else:
         imgpath = os.path.join(config.config_calibre_dir, cover_path, 'cover.jpg')
-        resized_url = resize(newpath, 'x500', format='jpg', quality=75)
+        resized_url = resize(imgpath, 'x500', format='jpg', quality=75)
         resized_img = resized_url.split("/").pop()
         resized_dir = os.path.join(app.config['RESIZE_ROOT'], 'resized-images')
         return send_from_directory(resized_dir, resized_img)
