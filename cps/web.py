@@ -388,9 +388,12 @@ app.jinja_env.globals['url_for_other_page'] = url_for_other_page
 
 
 def login_required_if_no_ano(func):
-    if config.config_anonbrowse == 1:
-        return func
-    return login_required(func)
+    @wraps(func)
+    def decorated_view(*args, **kwargs):
+        if config.config_anonbrowse == 1:
+            return func(*args, **kwargs)
+        return login_required(func)(*args, **kwargs)
+    return decorated_view
 
 
 def remote_login_required(f):
@@ -624,7 +627,7 @@ def before_request():
     g.user = current_user
     g.allow_registration = config.config_public_reg
     g.allow_upload = config.config_uploading
-    g.public_shelfes = ub.session.query(ub.Shelf).filter(ub.Shelf.is_public == 1).all()
+    g.public_shelfes = ub.session.query(ub.Shelf).filter(ub.Shelf.is_public == 1).order_by(ub.Shelf.name).all()
     if not config.db_configured and request.endpoint not in ('basic_configuration', 'login') and '/static/' not in request.path:
         return redirect(url_for('basic_configuration'))
 
@@ -1251,7 +1254,7 @@ def language(name, page):
 @login_required_if_no_ano
 def category_list():
     entries = db.session.query(db.Tags, func.count('books_tags_link.book').label('count'))\
-        .join(db.books_tags_link).join(db.Books).filter(common_filters())\
+        .join(db.books_tags_link).join(db.Books).order_by(db.Tags.name).filter(common_filters())\
         .group_by('books_tags_link.tag').all()
     return render_title_template('list.html', entries=entries, folder='category', title=_(u"Category list"))
 
@@ -1313,7 +1316,7 @@ def show_book(book_id):
         for entry in shelfs:
             book_in_shelfs.append(entry.shelf)
 
-        if not current_user.is_anonymous():
+        if not current_user.is_anonymous:
             matching_have_read_book = ub.session.query(ub.ReadBook).filter(ub.and_(ub.ReadBook.user_id == int(current_user.id),
                                                                    ub.ReadBook.book_id == book_id)).all()
             have_read = len(matching_have_read_book) > 0 and matching_have_read_book[0].is_read
@@ -1725,7 +1728,7 @@ def feed_get_cover(book_id):
 
 
 def render_read_books(page, are_read, as_xml=False):
-    if not current_user.is_anonymous():
+    if not current_user.is_anonymous:
         readBooks = ub.session.query(ub.ReadBook).filter(ub.ReadBook.user_id == int(current_user.id)).filter(ub.ReadBook.is_read == True).all()
         readBookIds = [x.book_id for x in readBooks]
         if are_read:
@@ -2217,7 +2220,7 @@ def delete_shelf(shelf_id):
 @app.route("/shelf/<int:shelf_id>")
 @login_required_if_no_ano
 def show_shelf(shelf_id):
-    if current_user.is_anonymous():
+    if current_user.is_anonymous:
         shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.is_public == 1, ub.Shelf.id == shelf_id).first()
     else:
         shelf = ub.session.query(ub.Shelf).filter(ub.or_(ub.and_(ub.Shelf.user_id == int(current_user.id),
@@ -2252,7 +2255,7 @@ def order_shelf(shelf_id):
             setattr(book, 'order', to_save[str(book.book_id)])
             counter += 1
         ub.session.commit()
-    if current_user.is_anonymous():
+    if current_user.is_anonymous:
         shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.is_public == 1, ub.Shelf.id == shelf_id).first()
     else:
         shelf = ub.session.query(ub.Shelf).filter(ub.or_(ub.and_(ub.Shelf.user_id == int(current_user.id),
