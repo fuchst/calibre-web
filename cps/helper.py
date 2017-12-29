@@ -381,7 +381,7 @@ class Updater(threading.Thread):
     def run(self):
         global global_task
         self.status = 1
-        r = requests.get('https://api.github.com/repos/janeczku/calibre-web/zipball/master', stream=True)
+        r = requests.get('https://api.github.com/repos/fuchst/calibre-web/zipball/master', stream=True)
         fname = re.findall("filename=(.+)", r.headers['content-disposition'])[0]
         self.status = 2
         z = zipfile.ZipFile(StringIO(r.content))
