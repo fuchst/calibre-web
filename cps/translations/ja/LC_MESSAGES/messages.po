@@ -1,26 +1,20 @@
-# Перевод на русский язык для Calibre-web.
-# Copyright (C) 2017 Pavel Korovin
-# This file is distributed under the same license as the Calibre-web project
-# Pavel Korovin <p@tristero.se>, 2017.
-#
-# Translators:
-# Anton Bershanskiy <bershan2@illinois.edu>, 2016
-# Александр, 2015
-# Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004
-# Vladislav <yobabay23@gmail.com>, 2015
-# Yuri Kozlov <yuray@id.ru>, 2004-2005
-# Сергей <boss-rom@yandex.ru>, 2015
+# Japanese translations for Calibre-web.
+# Copyright (C) 2017 Calibre-web
+# This file is distributed under the same license as the Calibre-web
+# project.
+# FIRST AUTHOR white<space_white@yahoo.com>, 2017.
+# # Translation template file..
+# Copyright (C) 2011 Kovid Goyal
 msgid ""
 msgstr ""
 "Project-Id-Version:  Calibre-web\n"
 "Report-Msgid-Bugs-To: https://github.com/janeczku/calibre-web\n"
 "POT-Creation-Date: 2018-02-13 16:39+0100\n"
-"PO-Revision-Date: 2017-04-30 00:47+0300\n"
-"Last-Translator: Pavel Korovin <p@tristero.se>\n"
-"Language: ru\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"PO-Revision-Date: 2018-02-07 02:20-0500\n"
+"Last-Translator: white <space_white@yahoo.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,263 +22,263 @@ msgstr ""
 
 #: cps/book_formats.py:123 cps/book_formats.py:127 cps/web.py:1451
 msgid "not installed"
-msgstr "Отсутствует"
+msgstr "インストールされません"
 
 #: cps/helper.py:78
 #, python-format
 msgid "kindlegen binary %(kindlepath)s not found"
-msgstr ""
+msgstr "kindlegenのバイナリー %(kindlepath)s は見つかりません"
 
 #: cps/helper.py:84
 #, python-format
 msgid "epub format not found for book id: %(book)d"
-msgstr ""
+msgstr "本ID %(book)d のepub拡張子は見つからない"
 
 #: cps/helper.py:94
 msgid "kindlegen failed, no execution permissions"
-msgstr ""
+msgstr "kindlegenは失敗しました、実行許可はありません"
 
 #: cps/helper.py:109
 #, python-format
 msgid "Kindlegen failed with Error %(error)s. Message: %(message)s"
-msgstr ""
+msgstr "Kindlegen 失敗しました、エーラ %(error)s. メッセージ: %(message)s"
 
 #: cps/helper.py:188
 #, python-format
 msgid "Failed to send mail: %s"
-msgstr "Ошибка отправки письма: %s"
+msgstr "送信は失敗しました: %s"
 
 #: cps/helper.py:195
 msgid "Calibre-web test email"
-msgstr "Тестовое письмо от Calibre-web"
+msgstr "Calibre-webのテストメール"
 
 #: cps/helper.py:196 cps/helper.py:208
 msgid "This email has been sent via calibre web."
-msgstr "Письмо было отправлено через calibre web"
+msgstr "このメールはcalibre webより送信されました"
 
 #: cps/helper.py:205 cps/templates/detail.html:44
 msgid "Send to Kindle"
-msgstr "Отправить на Kindle"
+msgstr "Kindleに送信する"
 
 #: cps/helper.py:225 cps/helper.py:239
 msgid "Could not find any formats suitable for sending by email"
-msgstr "Невозоможно найти формат, подходящий для отправки по email"
+msgstr "メールを送るための適切な拡張子は見つかりません"
 
 #: cps/helper.py:340
 #, python-format
 msgid "Rename title from: \"%s\" to \"%s\" failed with error: %s"
-msgstr ""
+msgstr "タイトルを\"%s\"から\"%s\"の改名は失敗しました。エーラ: %s"
 
 #: cps/helper.py:349
 #, python-format
 msgid "Rename author from: \"%s\" to \"%s\" failed with error: %s"
-msgstr ""
+msgstr "著者を\"%s\"から\"%s\"の改名は失敗しました。エーラ：%s"
 
 #: cps/ub.py:649
 msgid "Guest"
-msgstr "Гость"
+msgstr "ゲスト"
 
 #: cps/web.py:1017
 msgid "Requesting update package"
-msgstr "Проверка обновлений"
+msgstr "更新パッケージを要求します"
 
 #: cps/web.py:1018
 msgid "Downloading update package"
-msgstr "Загрузка обновлений"
+msgstr "更新パッケージをダウンロードします"
 
 #: cps/web.py:1019
 msgid "Unzipping update package"
-msgstr "Распаковка обновлений"
+msgstr "更新パッケージをZIP解凍します"
 
 #: cps/web.py:1020
 msgid "Files are replaced"
-msgstr "Файлы заменены"
+msgstr "ファイルを書き換えました"
 
 #: cps/web.py:1021
 msgid "Database connections are closed"
-msgstr "Соеднинения с базой данных закрыты"
+msgstr "データベースの接続が閉じられました"
 
 #: cps/web.py:1022
 msgid "Server is stopped"
-msgstr "Сервер остановлен"
+msgstr "サーバがシャットダウンされました"
 
 #: cps/web.py:1023
 msgid "Update finished, please press okay and reload page"
-msgstr "Обновления установлены, нажмите okay и перезагрузите страницу"
+msgstr "更新完了、Okayまたは再読み込みボタンを押してください"
 
 #: cps/web.py:1097
 msgid "Recently Added Books"
-msgstr ""
+msgstr "最近追加された本"
 
 #: cps/web.py:1107
 msgid "Newest Books"
-msgstr ""
+msgstr "最新の本"
 
 #: cps/web.py:1119
 msgid "Oldest Books"
-msgstr ""
+msgstr "最古の本"
 
 #: cps/web.py:1131
 msgid "Books (A-Z)"
-msgstr ""
+msgstr "本(A-Z)"
 
 #: cps/web.py:1142
 msgid "Books (Z-A)"
-msgstr ""
+msgstr "本 (Z-A)"
 
 #: cps/web.py:1170
 msgid "Hot Books (most downloaded)"
-msgstr "Популярные книги (часто загружаемые)"
+msgstr "有名な本(ダウンロード数)"
 
 #: cps/web.py:1183
 msgid "Best rated books"
-msgstr "Книги с наивысшим рейтингом"
+msgstr "最高評判の本"
 
 #: cps/templates/index.xml:32 cps/web.py:1194
 msgid "Random Books"
-msgstr "Случайный выбор"
+msgstr "任意の本"
 
 #: cps/web.py:1208
 msgid "Author list"
-msgstr "Авторы"
+msgstr "著者リスト"
 
 #: cps/web.py:1220 cps/web.py:1278 cps/web.py:1408 cps/web.py:1877
 msgid "Error opening eBook. File does not exist or file is not accessible:"
-msgstr "Невозможно открыть книгу. Файл не существует или недоступен."
+msgstr "電子本を開けません。ファイルは存在しないまたはアクセスできません"
 
 #: cps/templates/index.xml:64 cps/web.py:1262
 msgid "Series list"
-msgstr "Серии"
+msgstr "叢書リスト"
 
 #: cps/web.py:1276
 #, python-format
 msgid "Series: %(serie)s"
-msgstr "Серии: %(serie)s"
+msgstr "叢書: %(serie)s"
 
 #: cps/web.py:1309
 msgid "Available languages"
-msgstr "Языки"
+msgstr "利用可能な言語"
 
 #: cps/web.py:1326
 #, python-format
 msgid "Language: %(name)s"
-msgstr "Язык: %(name)s"
+msgstr "言語: %(name)s"
 
 #: cps/templates/index.xml:58 cps/web.py:1336
 msgid "Category list"
-msgstr "Категории"
+msgstr "カテゴリーリスト"
 
 #: cps/web.py:1350
 #, python-format
 msgid "Category: %(name)s"
-msgstr "Категория: %(name)s"
+msgstr "カテゴリー: %(name)s"
 
 #: cps/web.py:1462
 msgid "Excecution permissions missing"
-msgstr ""
+msgstr "実行許可はありません"
 
 #: cps/web.py:1476
 msgid "Statistics"
-msgstr "Статистика"
+msgstr "統計"
 
 #: cps/web.py:1641
 msgid "Server restarted, please reload page"
-msgstr "Сервер перезагружен, пожалуйста, перезагрузите страницу"
+msgstr "サーバを再起動しました、ページを再読み込みしてください"
 
 #: cps/web.py:1643
 msgid "Performing shutdown of server, please close window"
-msgstr "Производится остановка сервера, пожалуйста, закройте окно"
+msgstr "サーバをシャットダウンします、ページを閉じてください"
 
 #: cps/web.py:1659
 msgid "Update done"
-msgstr "Обновление закончено"
+msgstr "更新完了"
 
 #: cps/web.py:1741 cps/web.py:1754
 msgid "search"
-msgstr "поиск"
+msgstr "検索"
 
 #: cps/templates/index.xml:39 cps/templates/index.xml:42
 #: cps/templates/layout.html:133 cps/web.py:1832
 msgid "Read Books"
-msgstr "Прочитанные"
+msgstr "既読の本"
 
 #: cps/templates/index.xml:46 cps/templates/index.xml:49
 #: cps/templates/layout.html:135 cps/web.py:1835
 msgid "Unread Books"
-msgstr "Непрочитанные"
+msgstr "未読の本"
 
 #: cps/web.py:1910 cps/web.py:1912 cps/web.py:1914 cps/web.py:1923
 msgid "Read a Book"
-msgstr "Читать книгу"
+msgstr "本を読む"
 
 #: cps/web.py:1975 cps/web.py:2667
 msgid "Please fill out all fields!"
-msgstr "Пожалуйста, заполните все поля!"
+msgstr "全ての項目を入力してください"
 
 #: cps/web.py:1976 cps/web.py:1993 cps/web.py:1998 cps/web.py:2000
 msgid "register"
-msgstr "зарегистрироваться"
+msgstr "登録"
 
 #: cps/web.py:1992
 msgid "An unknown error occured. Please try again later."
-msgstr "Неизвестная ошибка. Пожалуйста, попробуйте позже."
+msgstr "未知のエーラが発生しました、再度試してください"
 
 #: cps/web.py:1997
 msgid "This username or email address is already in use."
-msgstr "Имя пользователя или адрес эл. почты уже используется"
+msgstr "ユーザ名またはメールアドレスは使われました"
 
 #: cps/web.py:2016 cps/web.py:2112
 #, python-format
 msgid "you are now logged in as: '%(nickname)s'"
-msgstr "Вы вошли как пользователь '%(nickname)s'"
+msgstr "%(nickname)s としてログインします"
 
 #: cps/web.py:2021
 msgid "Wrong Username or Password"
-msgstr "Ошибка в имени пользователя или пароле"
+msgstr "ユーザ名またはパスワードは間違いました"
 
 #: cps/web.py:2027 cps/web.py:2048
 msgid "login"
-msgstr "войти"
+msgstr "ログイン"
 
 #: cps/web.py:2060 cps/web.py:2091
 msgid "Token not found"
-msgstr ""
+msgstr "トークンは見つかりません"
 
 #: cps/web.py:2068 cps/web.py:2099
 msgid "Token has expired"
-msgstr ""
+msgstr "トークンは失効されました"
 
 #: cps/web.py:2076
 msgid "Success! Please return to your device"
-msgstr ""
+msgstr "成功しまた！端末に戻ってください"
 
 #: cps/web.py:2126
 msgid "Please configure the SMTP mail settings first..."
-msgstr "Пожалуйста, сначала сконфигурируйте параметры SMTP"
+msgstr "SMTPメールをまず設定してください"
 
 #: cps/web.py:2130
 #, python-format
 msgid "Book successfully send to %(kindlemail)s"
-msgstr "Книга успешно отправлена на %(kindlemail)s"
+msgstr "本を %(kindlemail)s に送信しました"
 
 #: cps/web.py:2134
 #, python-format
 msgid "There was an error sending this book: %(res)s"
-msgstr "Ошибка при отправке книги: %(res)s"
+msgstr "%(res)s を送信する際にエーラが発生しました"
 
 #: cps/web.py:2136 cps/web.py:2753
 msgid "Please configure your kindle email address first..."
-msgstr "Пожалуйста, сначала укажите ваш kindle email..."
+msgstr "Kindleのメールアドレスをまず設定してください"
 
 #: cps/web.py:2180
 #, python-format
 msgid "Book has been added to shelf: %(sname)s"
-msgstr "Книга добавлена на книжную полку: %(sname)s"
+msgstr "本 %(sname)s を書架に追加されました"
 
 #: cps/web.py:2218
 #, python-format
 msgid "Book has been removed from shelf: %(sname)s"
-msgstr "Книга удалена с книжной полки: %(sname)s"
+msgstr "本 %(sname)s を書架から除去されました"
 
 #: cps/web.py:2224
 #, python-format
@@ -294,61 +288,61 @@ msgstr ""
 #: cps/web.py:2244 cps/web.py:2268
 #, python-format
 msgid "A shelf with the name '%(title)s' already exists."
-msgstr "Книжкная полка с названием '%(title)s' уже существует."
+msgstr "名前を使った書架 '%(title)s'　は既に存在しました"
 
 #: cps/web.py:2249
 #, python-format
 msgid "Shelf %(title)s created"
-msgstr "Создана книжная полка %(title)s"
+msgstr "書架%(title)s は作成されました"
 
 #: cps/web.py:2251 cps/web.py:2279
 msgid "There was an error"
-msgstr "Произошла ошибка"
+msgstr "エーラが発生しました"
 
 #: cps/web.py:2252 cps/web.py:2254
 msgid "create a shelf"
-msgstr "создать книжную полку"
+msgstr "書架を作成する"
 
 #: cps/web.py:2277
 #, python-format
 msgid "Shelf %(title)s changed"
-msgstr "Книжная полка %(title)s изменена"
+msgstr "書架 %(title)s 変わりました"
 
 #: cps/web.py:2280 cps/web.py:2282
 msgid "Edit a shelf"
-msgstr "Изменить книжную полку"
+msgstr "書架を編集する"
 
 #: cps/web.py:2303
 #, python-format
 msgid "successfully deleted shelf %(name)s"
-msgstr "Книжная полка %(name)s удалена"
+msgstr "%(name)s の書架を削除されました"
 
 #: cps/web.py:2325
 #, python-format
 msgid "Shelf: '%(name)s'"
-msgstr "Книжная полка: '%(name)s'"
+msgstr "書架: '%(name)s'"
 
 #: cps/web.py:2328
 msgid "Error opening shelf. Shelf does not exist or is not accessible"
-msgstr ""
+msgstr "書架を開けません。書架は存在しないまたはアクセスできません"
 
 #: cps/web.py:2359
 #, python-format
 msgid "Change order of Shelf: '%(name)s'"
-msgstr "Изменить расположение книжной полки '%(name)s'"
+msgstr "'%(name)s' の書架の順番を入れ替える"
 
 #: cps/web.py:2428
 msgid "Found an existing account for this email address."
-msgstr "Найдена учётная запись для для данного адреса email."
+msgstr "このメールアドレスを使ったアカウント名は既に存在します"
 
 #: cps/web.py:2430 cps/web.py:2434
 #, python-format
 msgid "%(name)s's profile"
-msgstr "Профиль %(name)s"
+msgstr "%(name)sのプロファイル"
 
 #: cps/web.py:2431
 msgid "Profile updated"
-msgstr "Профиль обновлён"
+msgstr "プロファイルが更新されました"
 
 #: cps/web.py:2443
 msgid "Unknown"
@@ -356,130 +350,130 @@ msgstr ""
 
 #: cps/web.py:2456
 msgid "Admin page"
-msgstr "Администрирование"
+msgstr "管理者ページ"
 
 #: cps/web.py:2606
 msgid "Logfile location is not valid, please enter correct path"
-msgstr ""
+msgstr "ログファイルの場所は不適切です。正しい場所を入力してください"
 
 #: cps/web.py:2609 cps/web.py:2628 cps/web.py:2634 cps/web.py:2648
 msgid "Basic Configuration"
-msgstr "Настройки сервера"
+msgstr "基本設定"
 
 #: cps/web.py:2621
 msgid "Calibre-web configuration updated"
-msgstr "Конфигурация Calibre-web обновлена"
+msgstr "Calibre-web 設定を更新されました"
 
 #: cps/web.py:2632
 msgid "DB location is not valid, please enter correct path"
-msgstr "Неверный путь к фалу БД, пожалуйста, укажите правильное расположение БД"
+msgstr "データベースの場所は不適切です。正しい場所を入力してください"
 
 #: cps/templates/admin.html:34 cps/web.py:2669 cps/web.py:2723
 msgid "Add new user"
-msgstr "Добавить пользователя"
+msgstr "新規ユーザ追加"
 
 #: cps/web.py:2714
 #, python-format
 msgid "User '%(user)s' created"
-msgstr "Пользователь '%(user)s' добавлен"
+msgstr "ユーザ　'%(user)s' が作成されました"
 
 #: cps/web.py:2718
 msgid "Found an existing account for this email address or nickname."
-msgstr "Для указанного адреса или имени найдена существующая учётная запись."
+msgstr "同じメールアドレスまたは通所は既に存在しました"
 
 #: cps/web.py:2741
 msgid "Mail settings updated"
-msgstr "Настройки почты изменены"
+msgstr "メール設定が更新されました"
 
 #: cps/web.py:2748
 #, python-format
 msgid "Test E-Mail successfully send to %(kindlemail)s"
-msgstr "Тестовое сообщение успешно отправлено на адрес %(kindlemail)s"
+msgstr "テストメールから%(kindlemail)sまでの送信は完了しました"
 
 #: cps/web.py:2751
 #, python-format
 msgid "There was an error sending the Test E-Mail: %(res)s"
-msgstr "Ошибка отправки тестового сообщения: %(res)s"
+msgstr "テストメールに送信するエラーが発生しました: %(res)s"
 
 #: cps/web.py:2755
 msgid "E-Mail settings updated"
-msgstr "Обновлены настройки e-mail"
+msgstr "メール設定更新されました"
 
 #: cps/web.py:2756
 msgid "Edit mail settings"
-msgstr "Изменить почтовые настройки"
+msgstr "メール編集設定"
 
 #: cps/web.py:2785
 #, python-format
 msgid "User '%(nick)s' deleted"
-msgstr "Пользователь '%(nick)s' удалён"
+msgstr "ユーザ '%(nick)s' 削除されました"
 
 #: cps/web.py:2893
 #, python-format
 msgid "User '%(nick)s' updated"
-msgstr "Пользователь '%(nick)s' обновлён"
+msgstr "ユーザ '%(nick)s' 更新されました"
 
 #: cps/web.py:2896
 msgid "An unknown error occured."
-msgstr "Произошла неизвестная ошибка."
+msgstr "不明のエーラが発生しました"
 
 #: cps/web.py:2899
 #, python-format
 msgid "Edit User %(nick)s"
-msgstr "Изменить пользователя %(nick)s"
+msgstr "ユーザ編集 %(nick)s"
 
 #: cps/web.py:2915
 msgid "Error opening eBook. File does not exist or file is not accessible"
-msgstr ""
+msgstr "電子本を開けません。ファイルは存在しないまたはアクセスできません"
 
 #: cps/web.py:2930 cps/web.py:3138 cps/web.py:3143 cps/web.py:3286
 msgid "edit metadata"
-msgstr "изменить метаданные"
+msgstr "メタデータを編集します"
 
 #: cps/web.py:2940 cps/web.py:3180
 #, python-format
 msgid "File extension \"%s\" is not allowed to be uploaded to this server"
-msgstr "Запрещена загрузка файлов с расширением \"%s\""
+msgstr "ファイル拡張子 \"%s\" をこのサーバにアップロードする許可はありません"
 
 #: cps/web.py:2951
 #, python-format
 msgid "Failed to store file %s."
-msgstr ""
+msgstr "フアイル %s の保存を失敗しました"
 
 #: cps/web.py:2973 cps/web.py:2977
 msgid "unknown"
-msgstr "неизвестно"
+msgstr "不明"
 
 #: cps/web.py:3186
 msgid "File to be uploaded must have an extension"
-msgstr "Загружаемый файл должен иметь расширение"
+msgstr "ファイルをアップロードするために拡張子が必要です"
 
 #: cps/web.py:3205
 #, python-format
 msgid "Failed to create path %s (Permission denied)."
-msgstr "Ошибка при создании пути %s (доступ запрещён)"
+msgstr "場所 %s の作成を失敗しました (許可拒否)"
 
 #: cps/web.py:3210
 #, python-format
 msgid "Failed to store file %s (Permission denied)."
-msgstr "Ошибка записи файоа %s (доступ запрещён)"
+msgstr "ファイル %s の保存を失敗しました (許可拒否)"
 
 #: cps/web.py:3215
 #, python-format
 msgid "Failed to delete file %s (Permission denied)."
-msgstr "Ошибка удаления файла %s (доступ запрещён)"
+msgstr "ファイル %s の削除を失敗しました (許可拒否)"
 
 #: cps/templates/admin.html:4
 msgid "User list"
-msgstr "Список пользователей"
+msgstr "ユーザリスト"
 
 #: cps/templates/admin.html:8
 msgid "Nickname"
-msgstr "Имя пользователя"
+msgstr "通称"
 
 #: cps/templates/admin.html:9
 msgid "Email"
-msgstr ""
+msgstr "メール"
 
 #: cps/templates/admin.html:10
 msgid "Kindle"
@@ -491,36 +485,36 @@ msgstr "DLS"
 
 #: cps/templates/admin.html:12 cps/templates/layout.html:69
 msgid "Admin"
-msgstr "Управление"
+msgstr "管理者"
 
 #: cps/templates/admin.html:13 cps/templates/detail.html:22
 #: cps/templates/detail.html:31
 msgid "Download"
-msgstr "Скачать"
+msgstr "ダウンロード"
 
 #: cps/templates/admin.html:14 cps/templates/layout.html:62
 msgid "Upload"
-msgstr "Загрузить"
+msgstr "アップロード"
 
 #: cps/templates/admin.html:15
 msgid "Edit"
-msgstr "Редактировать"
+msgstr "編集"
 
 #: cps/templates/admin.html:16
 msgid "Passwd"
-msgstr "Менять пароль"
+msgstr "パスワード"
 
 #: cps/templates/admin.html:35
 msgid "SMTP mail settings"
-msgstr "Параметры SMTP"
+msgstr "SMTPメール設定"
 
 #: cps/templates/admin.html:38 cps/templates/email_edit.html:7
 msgid "SMTP hostname"
-msgstr "SMTP-сервер"
+msgstr "SMTPホスト名"
 
 #: cps/templates/admin.html:39
 msgid "SMTP port"
-msgstr "SMTP-порт"
+msgstr "SMTPポート"
 
 #: cps/templates/admin.html:40
 msgid "SSL"
@@ -528,96 +522,96 @@ msgstr "SSL"
 
 #: cps/templates/admin.html:41 cps/templates/email_edit.html:23
 msgid "SMTP login"
-msgstr ""
+msgstr "SMTP ログイン"
 
 #: cps/templates/admin.html:42 cps/templates/email_edit.html:27
 msgid "SMTP password"
-msgstr "Пароль SMTP"
+msgstr "SMTP パスワード"
 
 #: cps/templates/admin.html:43
 msgid "From mail"
-msgstr "Отправитель"
+msgstr "メールから"
 
 #: cps/templates/admin.html:55
 msgid "Change SMTP settings"
-msgstr "Изменить настройки SMTP"
+msgstr "SMTP設定を変更する"
 
 #: cps/templates/admin.html:57 cps/templates/admin.html:79
 msgid "Configuration"
-msgstr "Настройки сервера"
+msgstr "設定"
 
 #: cps/templates/admin.html:60
 msgid "Calibre DB dir"
-msgstr "Папка Calibre DB"
+msgstr "Calibre データベースの場所"
 
 #: cps/templates/admin.html:61 cps/templates/config_edit.html:83
 msgid "Log Level"
-msgstr "Уровень логирования"
+msgstr "ログレベル"
 
 #: cps/templates/admin.html:62
 msgid "Port"
-msgstr "Порт"
+msgstr "ポート"
 
 #: cps/templates/admin.html:63 cps/templates/config_edit.html:60
 msgid "Books per page"
-msgstr "Количество книг на странице"
+msgstr "本数毎ページ"
 
 #: cps/templates/admin.html:64
 msgid "Uploading"
-msgstr "Загрузка на сервер"
+msgstr "アップロード中"
 
 #: cps/templates/admin.html:65
 msgid "Public registration"
-msgstr "Публичная регистрация"
+msgstr "公的登録"
 
 #: cps/templates/admin.html:66
 msgid "Anonymous browsing"
-msgstr "Анонимный просмотр"
+msgstr "匿名ブラウジング"
 
 #: cps/templates/admin.html:67 cps/templates/remote_login.html:4
 msgid "Remote Login"
-msgstr ""
+msgstr "遠距離ログイン"
 
 #: cps/templates/admin.html:80
 msgid "Administration"
-msgstr "Управление"
+msgstr "管理"
 
 #: cps/templates/admin.html:82
 msgid "Current commit timestamp"
-msgstr ""
+msgstr "現在コミットのタイムスタンプ"
 
 #: cps/templates/admin.html:83
 msgid "Newest commit timestamp"
-msgstr ""
+msgstr "最新コミットのタイムスタンプ"
 
 #: cps/templates/admin.html:85
 msgid "Reconnect to Calibre DB"
-msgstr "Переподключиться к БД Calibre"
+msgstr "Calibreデータベースに再接続します"
 
 #: cps/templates/admin.html:86
 msgid "Restart Calibre-web"
-msgstr "Перезагрузить Calibre-web"
+msgstr "Calibre-webを再起動します"
 
 #: cps/templates/admin.html:87
 msgid "Stop Calibre-web"
-msgstr "Остановить Calibre-web"
+msgstr "Calibre-webを停止します"
 
 #: cps/templates/admin.html:88
 msgid "Check for update"
-msgstr "Проверка обновлений"
+msgstr "更新を確認します"
 
 #: cps/templates/admin.html:89
 msgid "Perform Update"
-msgstr "Установить обновления"
+msgstr "更新を実行します"
 
 #: cps/templates/admin.html:99
 msgid "Do you really want to restart Calibre-web?"
-msgstr "Вы действительно хотите перезагрузить Calibre-web?"
+msgstr "Calibre-webを再起動します。宜しいですか?"
 
 #: cps/templates/admin.html:104 cps/templates/admin.html:118
 #: cps/templates/admin.html:139 cps/templates/shelf.html:59
 msgid "Ok"
-msgstr "Ok"
+msgstr "はい"
 
 #: cps/templates/admin.html:105 cps/templates/admin.html:119
 #: cps/templates/book_edit.html:135 cps/templates/book_edit.html:157
@@ -625,375 +619,375 @@ msgstr "Ok"
 #: cps/templates/shelf.html:60 cps/templates/shelf_edit.html:19
 #: cps/templates/shelf_order.html:12 cps/templates/user_edit.html:139
 msgid "Back"
-msgstr "Назад"
+msgstr "戻る"
 
 #: cps/templates/admin.html:117
 msgid "Do you really want to stop Calibre-web?"
-msgstr "Вы действительно хотите остановить Calibre-web?"
+msgstr "Calibre-webを停止します。宜しいですか?"
 
 #: cps/templates/admin.html:130
 msgid "Updating, please do not reload page"
-msgstr "Установка обновлений, пожалуйста, не обновляйте страницу."
+msgstr "更新中、ページ再読み込みしないでください"
 
 #: cps/templates/author.html:15
 msgid "via"
-msgstr ""
+msgstr "経由"
 
 #: cps/templates/author.html:23
 msgid "In Library"
-msgstr ""
+msgstr "図書館の中"
 
 #: cps/templates/author.html:69
 msgid "More by"
-msgstr ""
+msgstr "もっと多い"
 
 #: cps/templates/book_edit.html:16
 msgid "Delete Book"
-msgstr "Удалить книгу"
+msgstr "本を削除"
 
 #: cps/templates/book_edit.html:22 cps/templates/search_form.html:6
 msgid "Book Title"
-msgstr "Название"
+msgstr "本のタイトル"
 
 #: cps/templates/book_edit.html:26 cps/templates/book_edit.html:216
 #: cps/templates/book_edit.html:234 cps/templates/search_form.html:10
 msgid "Author"
-msgstr "Автор"
+msgstr "著者"
 
 #: cps/templates/book_edit.html:30 cps/templates/book_edit.html:221
 #: cps/templates/book_edit.html:236
 msgid "Description"
-msgstr "Описание"
+msgstr "詳細"
 
 #: cps/templates/book_edit.html:34 cps/templates/search_form.html:17
 msgid "Tags"
-msgstr "Теги"
+msgstr "タグ"
 
 #: cps/templates/book_edit.html:39 cps/templates/layout.html:144
 #: cps/templates/search_form.html:37
 msgid "Series"
-msgstr "Серии"
+msgstr "叢書"
 
 #: cps/templates/book_edit.html:43
 msgid "Series id"
-msgstr "Серия"
+msgstr "叢書番号"
 
 #: cps/templates/book_edit.html:47
 msgid "Rating"
-msgstr "Рейтинг"
+msgstr "評価"
 
 #: cps/templates/book_edit.html:51
 msgid "Cover URL (jpg)"
-msgstr "URL обложки (jpg)"
+msgstr "カバーのURL (jpg)"
 
 #: cps/templates/book_edit.html:56 cps/templates/detail.html:131
 msgid "Publishing date"
-msgstr "Опубликовано"
+msgstr "発行日"
 
 #: cps/templates/book_edit.html:63 cps/templates/user_edit.html:27
 msgid "Language"
-msgstr "Язык"
+msgstr "言語"
 
 #: cps/templates/book_edit.html:74
 msgid "Yes"
-msgstr "Да"
+msgstr "はい"
 
 #: cps/templates/book_edit.html:75
 msgid "No"
-msgstr "Нет"
+msgstr "いいえ"
 
 #: cps/templates/book_edit.html:121
 msgid "Upload format"
-msgstr ""
+msgstr "アップロード拡張子"
 
 #: cps/templates/book_edit.html:130
 msgid "view book after edit"
-msgstr "смотреть книгу после редактирования"
+msgstr "編集してから本を表示します"
 
 #: cps/templates/book_edit.html:133 cps/templates/book_edit.html:169
 msgid "Get metadata"
-msgstr "Получить метаданные"
+msgstr "メタデータを取得します"
 
 #: cps/templates/book_edit.html:134 cps/templates/config_edit.html:209
 #: cps/templates/login.html:20 cps/templates/search_form.html:79
 #: cps/templates/shelf_edit.html:17 cps/templates/user_edit.html:137
 msgid "Submit"
-msgstr "Отправить"
+msgstr "提出"
 
 #: cps/templates/book_edit.html:148
 msgid "Are really you sure?"
-msgstr "Вы действительно уверены?"
+msgstr "宜しいですか?"
 
 #: cps/templates/book_edit.html:151
 msgid "Book will be deleted from Calibre database"
-msgstr "Книга будет удалена из БД Calibre"
+msgstr "この本はCalibreデータベースから削除されます"
 
 #: cps/templates/book_edit.html:152
 msgid "and from hard disk"
-msgstr "и с диска"
+msgstr "とハードディクスから"
 
 #: cps/templates/book_edit.html:156
 msgid "Delete"
-msgstr "Удалить"
+msgstr "削除"
 
 #: cps/templates/book_edit.html:172
 msgid "Keyword"
-msgstr "Ключевое слово"
+msgstr "キーワード"
 
 #: cps/templates/book_edit.html:173
 msgid " Search keyword "
-msgstr " Поиск по ключевому слову"
+msgstr "キーワードを検索します"
 
 #: cps/templates/book_edit.html:175 cps/templates/layout.html:44
 msgid "Go!"
-msgstr "Искать"
+msgstr "行く"
 
 #: cps/templates/book_edit.html:179
 msgid "Click the cover to load metadata to the form"
-msgstr "Нажмите на обложку, чтобы получить метаданные"
+msgstr "メタデータをフォームに読み込むためにカバーをクリックしてください"
 
 #: cps/templates/book_edit.html:191 cps/templates/book_edit.html:231
 msgid "Loading..."
-msgstr "Загрузка..."
+msgstr "読み込み中..."
 
 #: cps/templates/book_edit.html:196 cps/templates/layout.html:208
 msgid "Close"
-msgstr "Закрыть"
+msgstr "閉じる"
 
 #: cps/templates/book_edit.html:218 cps/templates/book_edit.html:235
 #: cps/templates/detail.html:126 cps/templates/search_form.html:14
 msgid "Publisher"
-msgstr "Издатель"
+msgstr "出版社"
 
 #: cps/templates/book_edit.html:223 cps/templates/book_edit.html:237
 msgid "Source"
-msgstr "Источник"
+msgstr "ソース"
 
 #: cps/templates/book_edit.html:232
 msgid "Search error!"
-msgstr "Ошибка поиска!"
+msgstr "検索エーラ!"
 
 #: cps/templates/book_edit.html:233
 msgid "No Result! Please try anonther keyword."
-msgstr "Нет результатов. Пожалуйста, попробуйте другое ключевое слово"
+msgstr "結果なし! 他のキーワードで検索してください。"
 
 #: cps/templates/config_edit.html:7
 msgid "Location of Calibre database"
-msgstr "Расположение БД Calibre"
+msgstr "Calibreデータベースの場所"
 
 #: cps/templates/config_edit.html:13
 msgid "Use google drive?"
-msgstr "Использовать Google Drive?"
+msgstr "Googleドライブを利用します?"
 
 #: cps/templates/config_edit.html:17
 msgid "Client id"
-msgstr ""
+msgstr "クライアント番号"
 
 #: cps/templates/config_edit.html:21
 msgid "Client secret"
-msgstr ""
+msgstr "クライアント秘密"
 
 #: cps/templates/config_edit.html:25
 msgid "Calibre Base URL"
-msgstr "URL БД Calibre"
+msgstr "CalibreベースURL"
 
 #: cps/templates/config_edit.html:29
 msgid "Google drive Calibre folder"
-msgstr "Папка Calibre на Google drive"
+msgstr "GoogleドライブCalibreフォルダ"
 
 #: cps/templates/config_edit.html:38
 msgid "Metadata Watch Channel ID"
-msgstr "Metadata Watch Channel ID"
+msgstr ""
 
 #: cps/templates/config_edit.html:52
 msgid "Server Port"
-msgstr "Порт сервера"
+msgstr "サーバポート"
 
 #: cps/templates/config_edit.html:56 cps/templates/layout.html:120
 #: cps/templates/layout.html:121 cps/templates/shelf_edit.html:7
 msgid "Title"
-msgstr "Заголовок"
+msgstr "タイトル"
 
 #: cps/templates/config_edit.html:64
 msgid "No. of random books to show"
-msgstr "Количество отображаемых случайных книг"
+msgstr "任意本を表示するの数"
 
 #: cps/templates/config_edit.html:68
 msgid "Regular expression for ignoring columns"
-msgstr "Regexp для игнорирования столбцов"
+msgstr "列を無視するの正規表現"
 
 #: cps/templates/config_edit.html:72
 msgid "Regular expression for title sorting"
-msgstr "Regexp для сортировки по названию"
+msgstr "タイトルを並び替えの正規表現"
 
 #: cps/templates/config_edit.html:76
 msgid "Tags for Mature Content"
-msgstr ""
+msgstr "成人向けのタグ"
 
 #: cps/templates/config_edit.html:92
 msgid "Location and name of logfile (calibre-web.log for no entry)"
-msgstr ""
+msgstr "ログファイルの場所と名前 (エントリーなしでcalibre-web.log)"
 
 #: cps/templates/config_edit.html:98
 msgid "Enable uploading"
-msgstr "Разрешить загрузку на сервер"
+msgstr "アップロードを 有効する"
 
 #: cps/templates/config_edit.html:102
 msgid "Enable anonymous browsing"
-msgstr "Разрешить анонимный просмотр"
+msgstr "匿名ブラウジングを有効する"
 
 #: cps/templates/config_edit.html:106
 msgid "Enable public registration"
-msgstr "Разрешить публичную регистрацию"
+msgstr "公的登録を有効する"
 
 #: cps/templates/config_edit.html:110
 msgid "Enable remote login (\"magic link\")"
-msgstr ""
+msgstr "遠距離ログインを有効する (\"マジックリンク\")"
 
 #: cps/templates/config_edit.html:115
 msgid "Use"
-msgstr ""
+msgstr "使う"
 
 #: cps/templates/config_edit.html:116
 msgid "Obtain an API Key"
-msgstr ""
+msgstr "APIキーを取得する"
 
 #: cps/templates/config_edit.html:120
 msgid "Goodreads API Key"
-msgstr ""
+msgstr "GoodreadsのAPIキー"
 
 #: cps/templates/config_edit.html:124
 msgid "Goodreads API Secret"
-msgstr ""
+msgstr "GoodreadsのAPI秘密"
 
 #: cps/templates/config_edit.html:129
 msgid "Default Settings for new users"
-msgstr "Настройки по умолчанию для новых пользователей"
+msgstr "新規ユーザにデフォルト設定を設定する"
 
 #: cps/templates/config_edit.html:132 cps/templates/user_edit.html:94
 msgid "Admin user"
-msgstr "Управление сервером"
+msgstr "管理ユーザ"
 
 #: cps/templates/config_edit.html:136 cps/templates/user_edit.html:103
 msgid "Allow Downloads"
-msgstr "Разрешить скачивание с сервера"
+msgstr "ダウンロードを有効する"
 
 #: cps/templates/config_edit.html:140 cps/templates/user_edit.html:107
 msgid "Allow Uploads"
-msgstr "Разрешить загрузку на сервер"
+msgstr "アップロードを有効する"
 
 #: cps/templates/config_edit.html:144 cps/templates/user_edit.html:111
 msgid "Allow Edit"
-msgstr "Разрешить редактирование книг"
+msgstr "編集を有効する"
 
 #: cps/templates/config_edit.html:148 cps/templates/user_edit.html:115
 msgid "Allow Delete books"
-msgstr "Разрешить удаление книг"
+msgstr "本削除を有効する"
 
 #: cps/templates/config_edit.html:152 cps/templates/user_edit.html:120
 msgid "Allow Changing Password"
-msgstr "Разрешить смену пароля"
+msgstr "パスワード変更を有効する"
 
 #: cps/templates/config_edit.html:156 cps/templates/user_edit.html:124
 msgid "Allow Editing Public Shelfs"
-msgstr "Разрешить редактирование публичных книжных полок"
+msgstr "公的叢書の編集を有効する"
 
 #: cps/templates/config_edit.html:160
 msgid "Default visiblities for new users"
-msgstr ""
+msgstr "新規ユーザにデフォルト可視性を設定する"
 
 #: cps/templates/config_edit.html:164 cps/templates/user_edit.html:46
 msgid "Show random books"
-msgstr "Показывать случайные книги"
+msgstr "任意本を表示する"
 
 #: cps/templates/config_edit.html:168 cps/templates/user_edit.html:50
 msgid "Show recent books"
-msgstr ""
+msgstr "最近の本を表示する"
 
 #: cps/templates/config_edit.html:172 cps/templates/user_edit.html:54
 msgid "Show sorted books"
-msgstr ""
+msgstr "整列された本を表示する"
 
 #: cps/templates/config_edit.html:176 cps/templates/user_edit.html:58
 msgid "Show hot books"
-msgstr "Показывать популярные книги"
+msgstr "有名な本を表示する"
 
 #: cps/templates/config_edit.html:180 cps/templates/user_edit.html:62
 msgid "Show best rated books"
-msgstr "Показывать книги с наивысшим рейтингом"
+msgstr "最高評価の本を表示する"
 
 #: cps/templates/config_edit.html:184 cps/templates/user_edit.html:66
 msgid "Show language selection"
-msgstr "Показывать выбор языка"
+msgstr "言語選択を表示する"
 
 #: cps/templates/config_edit.html:188 cps/templates/user_edit.html:70
 msgid "Show series selection"
-msgstr "Показывать выбор серии"
+msgstr "奏者選択を表示する"
 
 #: cps/templates/config_edit.html:192 cps/templates/user_edit.html:74
 msgid "Show category selection"
-msgstr "Показывать выбор категории"
+msgstr "カテゴリー選択を表示する"
 
 #: cps/templates/config_edit.html:196 cps/templates/user_edit.html:78
 msgid "Show author selection"
-msgstr "Показывать выбор автора"
+msgstr "著者選択を表示する"
 
 #: cps/templates/config_edit.html:200 cps/templates/user_edit.html:82
 msgid "Show read and unread"
-msgstr "Показывать прочитанные и непрочитанные"
+msgstr "既読と未読の本を表示する"
 
 #: cps/templates/config_edit.html:204 cps/templates/user_edit.html:86
 msgid "Show random books in detail view"
-msgstr "Показывать случайные книги при просмотре деталей"
+msgstr "任意の本を詳細閲覧で表示する"
 
 #: cps/templates/config_edit.html:214 cps/templates/layout.html:77
 #: cps/templates/login.html:4
 msgid "Login"
-msgstr "Имя пользователя"
+msgstr "ログイン"
 
 #: cps/templates/detail.html:49
 msgid "Read in browser"
-msgstr "Открыть в браузере"
+msgstr "ブラウザで読む"
 
 #: cps/templates/detail.html:88
 msgid "Book"
-msgstr "Книга"
+msgstr "本"
 
 #: cps/templates/detail.html:88
 msgid "of"
-msgstr "из"
+msgstr "から"
 
 #: cps/templates/detail.html:94
 msgid "language"
-msgstr "Язык"
+msgstr "言語"
 
 #: cps/templates/detail.html:168
 msgid "Read"
-msgstr "Прочитано"
+msgstr "読む"
 
 #: cps/templates/detail.html:177
 msgid "Description:"
-msgstr "Описание:"
+msgstr "詳細:"
 
 #: cps/templates/detail.html:189
 msgid "Add to shelf"
-msgstr "Добавить на книжную полку"
+msgstr "書架に追加"
 
 #: cps/templates/detail.html:251
 msgid "Edit metadata"
-msgstr "Редактировать метаданные"
+msgstr "メタデータを編集する"
 
 #: cps/templates/email_edit.html:11
 msgid "SMTP port (usually 25 for plain SMTP and 465 for SSL and 587 for STARTTLS)"
-msgstr "SMTP-порт (обычно 25 для SMTP, 465 для SSL и 587 для STARTTLS"
+msgstr "SMTPポート(基本的にplain SMTPは25、SSLは465、STARTTLSは587)"
 
 #: cps/templates/email_edit.html:15
 msgid "Encryption"
-msgstr "Шифрование"
+msgstr "暗号化"
 
 #: cps/templates/email_edit.html:17
 msgid "None"
-msgstr "Нет"
+msgstr "なし"
 
 #: cps/templates/email_edit.html:18
 msgid "STARTTLS"
@@ -1005,895 +999,895 @@ msgstr "SSL/TLS"
 
 #: cps/templates/email_edit.html:31
 msgid "From e-mail"
-msgstr "Адрес отправителя"
+msgstr "メールより"
 
 #: cps/templates/email_edit.html:34
 msgid "Save settings"
-msgstr "Сохранить настройки"
+msgstr "設定を保存する"
 
 #: cps/templates/email_edit.html:35
 msgid "Save settings and send Test E-Mail"
-msgstr "Сохранить настройки и отправить тестовое письмо"
+msgstr "設定を保存するとテストメールを送信する"
 
 #: cps/templates/feed.xml:20 cps/templates/layout.html:192
 msgid "Next"
-msgstr "Дальше"
+msgstr "次"
 
 #: cps/templates/feed.xml:29 cps/templates/index.xml:7
 #: cps/templates/layout.html:41 cps/templates/layout.html:42
 msgid "Search"
-msgstr "Поиск"
+msgstr "検索"
 
 #: cps/templates/index.html:5
 msgid "Discover (Random Books)"
-msgstr "Обзор (случайные книги)"
+msgstr "発見 (任意の本)"
 
 #: cps/templates/index.xml:5
 msgid "Start"
-msgstr "Старт"
+msgstr "開始"
 
 #: cps/templates/index.xml:14 cps/templates/layout.html:126
 msgid "Hot Books"
-msgstr "Популярные книги"
+msgstr "最新の本"
 
 #: cps/templates/index.xml:17
 msgid "Popular publications from this catalog based on Downloads."
-msgstr "Популярные книги в этом каталоге, на основе количества скачиваний"
+msgstr "ダウンロードによりカタログの有名な出版"
 
 #: cps/templates/index.xml:20 cps/templates/layout.html:129
 msgid "Best rated Books"
-msgstr "Книги с наилучшим рейтингом"
+msgstr "最高評価の本"
 
 #: cps/templates/index.xml:23
 msgid "Popular publications from this catalog based on Rating."
-msgstr "Популярные книги из этого каталога на основании рейтинга"
+msgstr "評価によりカタログの有名な出版"
 
 #: cps/templates/index.xml:26
 msgid "New Books"
-msgstr "Новые"
+msgstr "新しい本"
 
 #: cps/templates/index.xml:29
 msgid "The latest Books"
-msgstr "Последние поступления"
+msgstr "最近の本"
 
 #: cps/templates/index.xml:35
 msgid "Show Random Books"
-msgstr "Показывать случайные книги"
+msgstr "任意の本を表示する"
 
 #: cps/templates/index.xml:52 cps/templates/layout.html:147
 msgid "Authors"
-msgstr "Авторы"
+msgstr "著者"
 
 #: cps/templates/index.xml:55
 msgid "Books ordered by Author"
-msgstr "Книги, отсортированные по автору"
+msgstr "著者の名前で並び替える"
 
 #: cps/templates/index.xml:61
 msgid "Books ordered by category"
-msgstr "Книги, отсортированные по категории"
+msgstr "カテゴリーで並び替える"
 
 #: cps/templates/index.xml:67
 msgid "Books ordered by series"
-msgstr "Книги, отсортированные по серии"
+msgstr "叢書で並び替える"
 
 #: cps/templates/index.xml:70 cps/templates/layout.html:153
 msgid "Public Shelves"
-msgstr "Общие книжные полки"
+msgstr "公的の叢書"
 
 #: cps/templates/index.xml:73
 msgid "Books organized in public shelfs, visible to everyone"
-msgstr ""
+msgstr "公的の叢書に選び分ける、みんなに見える"
 
 #: cps/templates/index.xml:77 cps/templates/layout.html:157
 msgid "Your Shelves"
-msgstr "Ваши книжные полки"
+msgstr "あなたの叢書"
 
 #: cps/templates/index.xml:80
 msgid "User's own shelfs, only visible to the current user himself"
-msgstr ""
+msgstr "ユーザ自身の叢書、自分しか見えない"
 
 #: cps/templates/layout.html:31
 msgid "Toggle navigation"
-msgstr "Включить навигацию"
+msgstr "ナビゲーション"
 
 #: cps/templates/layout.html:52
 msgid "Advanced Search"
-msgstr "Расширенный поиск"
+msgstr "詳細検索"
 
 #: cps/templates/layout.html:73
 msgid "Logout"
-msgstr "Выход"
+msgstr "ロクアウト"
 
 #: cps/templates/layout.html:78 cps/templates/register.html:18
 msgid "Register"
-msgstr "Зарегистрироваться"
+msgstr "登録"
 
 #: cps/templates/layout.html:107
 msgid "Browse"
-msgstr "Просмотр"
+msgstr "ブラウズ"
 
 #: cps/templates/layout.html:109
 msgid "Recently Added"
-msgstr ""
+msgstr "最近追加"
 
 #: cps/templates/layout.html:114
 msgid "Sorted Books"
-msgstr ""
+msgstr "整列した本"
 
 #: cps/templates/layout.html:118 cps/templates/layout.html:119
 #: cps/templates/layout.html:120 cps/templates/layout.html:121
 msgid "Sort By"
-msgstr ""
+msgstr "整列"
 
 #: cps/templates/layout.html:118
 msgid "Newest"
-msgstr ""
+msgstr "最新"
 
 #: cps/templates/layout.html:119
 msgid "Oldest"
-msgstr ""
+msgstr "最古"
 
 #: cps/templates/layout.html:120
 msgid "Ascending"
-msgstr ""
+msgstr "昇順"
 
 #: cps/templates/layout.html:121
 msgid "Descending"
-msgstr ""
+msgstr "降順"
 
 #: cps/templates/layout.html:138
 msgid "Discover"
-msgstr "Обзор"
+msgstr "発見"
 
 #: cps/templates/layout.html:141
 msgid "Categories"
-msgstr "Категории"
+msgstr "カテゴリー"
 
 #: cps/templates/layout.html:150 cps/templates/search_form.html:58
 msgid "Languages"
-msgstr "Языки"
+msgstr "言語"
 
 #: cps/templates/layout.html:162
 msgid "Create a Shelf"
-msgstr "Создать книжную полку"
+msgstr "叢書を作成する"
 
 #: cps/templates/layout.html:163 cps/templates/stats.html:3
 msgid "About"
-msgstr "О программе"
+msgstr "このサイトについて"
 
 #: cps/templates/layout.html:177
 msgid "Previous"
-msgstr ""
+msgstr "前"
 
 #: cps/templates/layout.html:204
 msgid "Book Details"
-msgstr ""
+msgstr "本の詳細"
 
 #: cps/templates/login.html:8 cps/templates/login.html:9
 #: cps/templates/register.html:7 cps/templates/user_edit.html:8
 msgid "Username"
-msgstr "Имя пользователя"
+msgstr "ユーザ名"
 
 #: cps/templates/login.html:12 cps/templates/login.html:13
 #: cps/templates/register.html:11 cps/templates/user_edit.html:18
 msgid "Password"
-msgstr "Пароль"
+msgstr "パスワード"
 
 #: cps/templates/login.html:17
 msgid "Remember me"
-msgstr "Запомнить меня"
+msgstr ""
 
 #: cps/templates/login.html:22
 msgid "Log in with magic link"
-msgstr ""
+msgstr "マジックリンクでログインする"
 
 #: cps/templates/osd.xml:5
 msgid "Calibre Web ebook catalog"
-msgstr "Каталог электронных книг Calibre Web"
+msgstr "Calibreウェブ電子本のカタログ"
 
 #: cps/templates/read.html:69
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: cps/templates/read.html:72
 msgid "Reflow text when sidebars are open."
-msgstr "Обновить размещение текста при открытии боковой панели"
+msgstr ""
 
 #: cps/templates/readpdf.html:29
 msgid "PDF.js viewer"
-msgstr "Просмотровщик PDF.js"
+msgstr ""
 
 #: cps/templates/readtxt.html:6
 msgid "Basic txt Reader"
-msgstr "Средство для чтения txt-файлов"
+msgstr ""
 
 #: cps/templates/register.html:4
 msgid "Register a new account"
-msgstr "Зарегистрировать новую учётную запись"
+msgstr "新規アカウントを登録する"
 
 #: cps/templates/register.html:8
 msgid "Choose a username"
-msgstr "Выберите имя пользователя"
+msgstr "ユーザ名"
 
 #: cps/templates/register.html:12
 msgid "Choose a password"
-msgstr "Выберите пароль"
+msgstr "パスワード"
 
 #: cps/templates/register.html:15 cps/templates/user_edit.html:13
 msgid "Email address"
-msgstr "Электронная почта"
+msgstr "メールアドレス"
 
 #: cps/templates/register.html:16
 msgid "Your email address"
-msgstr "Ваш email-адрес"
+msgstr "あなたのメールアドレス"
 
 #: cps/templates/remote_login.html:6
 msgid "Using your another device, visit"
-msgstr ""
+msgstr "他の端末を使っています"
 
 #: cps/templates/remote_login.html:6
 msgid "and log in"
-msgstr ""
+msgstr "とログイン"
 
 #: cps/templates/remote_login.html:9
 msgid "Once you do so, you will automatically get logged in on this device."
-msgstr ""
+msgstr "やってたら、自動的にこの端末にログインします"
 
 #: cps/templates/search.html:6
 msgid "No Results for:"
-msgstr "Ничего не найдено по запросу:"
+msgstr "結果なし:"
 
 #: cps/templates/search.html:7
 msgid "Please try a different search"
-msgstr "Попробуйте изменить критерии поиск"
+msgstr "他の検索を試してくだい"
 
 #: cps/templates/search.html:9
 msgid "Results for:"
-msgstr "Результаты для:"
+msgstr "結果:"
 
 #: cps/templates/search_form.html:27
 msgid "Exclude Tags"
-msgstr "Исключить теги"
+msgstr "タグを除外"
 
 #: cps/templates/search_form.html:47
 msgid "Exclude Series"
-msgstr "Исключить серии"
+msgstr "叢書を除外"
 
 #: cps/templates/search_form.html:68
 msgid "Exclude Languages"
-msgstr "Исключить языки"
+msgstr "言語を除外"
 
 #: cps/templates/shelf.html:7
 msgid "Delete this Shelf"
-msgstr "Удалить эту книжную полку"
+msgstr "この叢書を削除"
 
 #: cps/templates/shelf.html:8
 msgid "Edit Shelf name"
-msgstr "Изменить имя книжной полки"
+msgstr "叢書の名前を編集する"
 
 #: cps/templates/shelf.html:9 cps/templates/shelf_order.html:11
 msgid "Change order"
-msgstr "Изменить порядок"
+msgstr "順番を変更する"
 
 #: cps/templates/shelf.html:54
 msgid "Do you really want to delete the shelf?"
-msgstr "Вы действительно хотите удалить эту книжную полку?"
+msgstr "書架を削除します。宜しいですか?"
 
 #: cps/templates/shelf.html:57
 msgid "Shelf will be lost for everybody and forever!"
-msgstr "Книжная полка будет безвозвратно удалена для всех"
+msgstr "書架は誰にも見えなくなり永遠なくなります"
 
 #: cps/templates/shelf_edit.html:13
 msgid "should the shelf be public?"
-msgstr "сделать книжную полку доступной для всех?"
+msgstr "叢書を公的に表示しますか?"
 
 #: cps/templates/shelf_order.html:5
 msgid "Drag 'n drop to rearrange order"
-msgstr "Перетащите для изменения порядка"
+msgstr "ドラッグドロップで並び替えます"
 
 #: cps/templates/stats.html:7
 msgid "Calibre library statistics"
-msgstr "Статистика библиотеки Calibre"
+msgstr "Calibre図書館の統計"
 
 #: cps/templates/stats.html:12
 msgid "Books in this Library"
-msgstr "книг"
+msgstr "この図書館の本"
 
 #: cps/templates/stats.html:16
 msgid "Authors in this Library"
-msgstr "авторов"
+msgstr "図書館内の著者"
 
 #: cps/templates/stats.html:20
 msgid "Categories in this Library"
-msgstr "категорий"
+msgstr "図書館内のカテゴリー"
 
 #: cps/templates/stats.html:24
 msgid "Series in this Library"
-msgstr "серий"
+msgstr "図書館内の叢書"
 
 #: cps/templates/stats.html:28
 msgid "Linked libraries"
-msgstr "Установленное ПО"
+msgstr "リンク付き図書館"
 
 #: cps/templates/stats.html:32
 msgid "Program library"
-msgstr "Название"
+msgstr "プログラム図書館"
 
 #: cps/templates/stats.html:33
 msgid "Installed Version"
-msgstr "Версия"
+msgstr "インストールされたバージョン"
 
 #: cps/templates/user_edit.html:23
 msgid "Kindle E-Mail"
-msgstr "Адрес почты Kindle"
+msgstr "Kindleメール"
 
 #: cps/templates/user_edit.html:35
 msgid "Show books with language"
-msgstr "Показать книги на языках"
+msgstr "言語で本を表示する"
 
 #: cps/templates/user_edit.html:37
 msgid "Show all"
-msgstr "Всех"
+msgstr "全て表示"
 
 #: cps/templates/user_edit.html:99
 msgid "Show mature content"
-msgstr ""
+msgstr "成人向けコンテンツを表示"
 
 #: cps/templates/user_edit.html:131
 msgid "Delete this user"
-msgstr "Удалить этого пользователя"
+msgstr "このユーザを削除する"
 
 #: cps/templates/user_edit.html:146
 msgid "Recent Downloads"
-msgstr "Недавние скачивания"
+msgstr "最近ダウンロード"
 
 #. name for aaa
 msgid "Ghotuo"
-msgstr "Гхотуо"
+msgstr ""
 
 #. name for aab
 msgid "Alumu-Tesu"
-msgstr "Алуму-тесу"
+msgstr ""
 
 #. name for aac
 msgid "Ari"
-msgstr "Ари"
+msgstr ""
 
 #. name for aad
 msgid "Amal"
-msgstr "Амал"
+msgstr ""
 
 #. name for aae
 msgid "Albanian; Arbëreshë"
-msgstr "Албанский; диалект Арбереши"
+msgstr ""
 
 #. name for aaf
 msgid "Aranadan"
-msgstr "Аранадан"
+msgstr ""
 
 #. name for aag
 msgid "Ambrak"
-msgstr "Амбрак"
+msgstr ""
 
 #. name for aah
 msgid "Arapesh; Abu'"
-msgstr "Арапешей; Абу'"
+msgstr ""
 
 #. name for aai
 msgid "Arifama-Miniafia"
-msgstr "Арифама-Миниафиа"
+msgstr ""
 
 #. name for aak
 msgid "Ankave"
-msgstr "Анкаве"
+msgstr ""
 
 #. name for aal
 msgid "Afade"
-msgstr "Афаде"
+msgstr ""
 
 #. name for aam
 msgid "Aramanik"
-msgstr "Араманик"
+msgstr ""
 
 #. name for aan
 msgid "Anambé"
-msgstr "Анамбе"
+msgstr ""
 
 #. name for aao
 msgid "Arabic; Algerian Saharan"
-msgstr "Арабский; Алжирская Сахара"
+msgstr ""
 
 #. name for aap
 msgid "Arára; Pará"
-msgstr "Арара; Пара"
+msgstr ""
 
 #. name for aaq
 msgid "Abnaki; Eastern"
-msgstr "Абенаки; Восточный"
+msgstr ""
 
 #. name for aar
 msgid "Afar"
-msgstr "Афар"
+msgstr "アファル語"
 
 #. name for aas
 msgid "Aasáx"
-msgstr "Асакс"
+msgstr ""
 
 #. name for aat
 msgid "Albanian; Arvanitika"
-msgstr "Албанский; Арнаутский диалект"
+msgstr ""
 
 #. name for aau
 msgid "Abau"
-msgstr "Абау"
+msgstr ""
 
 #. name for aaw
 msgid "Solong"
-msgstr "Солонг"
+msgstr ""
 
 #. name for aax
 msgid "Mandobo Atas"
-msgstr "Мандобо Атас"
+msgstr ""
 
 #. name for aaz
 msgid "Amarasi"
-msgstr "Амараси"
+msgstr "アイマラ語"
 
 #. name for aba
 msgid "Abé"
-msgstr "Абе"
+msgstr ""
 
 #. name for abb
 msgid "Bankon"
-msgstr "Банкон"
+msgstr ""
 
 #. name for abc
 msgid "Ayta; Ambala"
-msgstr "Айта; Амбала"
+msgstr ""
 
 #. name for abd
 msgid "Manide"
-msgstr "Мэнайд"
+msgstr ""
 
 #. name for abe
 msgid "Abnaki; Western"
-msgstr "Абенаки; Западный"
+msgstr ""
 
 #. name for abf
 msgid "Abai Sungai"
-msgstr "Абаи Сунгаи"
+msgstr ""
 
 #. name for abg
 msgid "Abaga"
-msgstr "Абага"
+msgstr ""
 
 #. name for abh
 msgid "Arabic; Tajiki"
-msgstr "Арабский; Таджи"
+msgstr ""
 
 #. name for abi
 msgid "Abidji"
-msgstr "Абиджи"
+msgstr ""
 
 #. name for abj
 msgid "Aka-Bea"
-msgstr "Ака-Беа"
+msgstr ""
 
 #. name for abk
 msgid "Abkhazian"
-msgstr "Абхазский"
+msgstr "アブハジア語"
 
 #. name for abl
 msgid "Lampung Nyo"
-msgstr "Лампунгский Ньо"
+msgstr ""
 
 #. name for abm
 msgid "Abanyom"
-msgstr "Абанйом"
+msgstr ""
 
 #. name for abn
 msgid "Abua"
-msgstr "Абуа"
+msgstr ""
 
 #. name for abo
 msgid "Abon"
-msgstr "Абон"
+msgstr ""
 
 #. name for abp
 msgid "Ayta; Abellen"
-msgstr "Айта; Абенлен"
+msgstr ""
 
 #. name for abq
 msgid "Abaza"
-msgstr "Абазинский"
+msgstr ""
 
 #. name for abr
 msgid "Abron"
-msgstr "Аброн"
+msgstr ""
 
 #. name for abs
 msgid "Malay; Ambonese"
-msgstr "Малайский"
+msgstr ""
 
 #. name for abt
 msgid "Ambulas"
-msgstr "Амбулас"
+msgstr ""
 
 #. name for abu
 msgid "Abure"
-msgstr "Абуре"
+msgstr ""
 
 #. name for abv
 msgid "Arabic; Baharna"
-msgstr "Арабский; Бахарна"
+msgstr ""
 
 #. name for abw
 msgid "Pal"
-msgstr "Палский"
+msgstr "パーリ語"
 
 #. name for abx
 msgid "Inabaknon"
-msgstr "Абакнонский"
+msgstr "イバン語"
 
 #. name for aby
 msgid "Aneme Wake"
-msgstr "Анеме Ваке"
+msgstr ""
 
 #. name for abz
 msgid "Abui"
-msgstr "Абуи"
+msgstr ""
 
 #. name for aca
 msgid "Achagua"
-msgstr "Ачагуа"
+msgstr ""
 
 #. name for acb
 msgid "Áncá"
-msgstr "Анка"
+msgstr ""
 
 #. name for acd
 msgid "Gikyode"
-msgstr "Гикиод"
+msgstr ""
 
 #. name for ace
 msgid "Achinese"
-msgstr "Ачехский"
+msgstr "アチェー語"
 
 #. name for acf
 msgid "Creole French; Saint Lucian"
-msgstr "Креольский французский; Сент-люсийский"
+msgstr ""
 
 #. name for ach
 msgid "Acoli"
-msgstr "Ачоли"
+msgstr "アチョリ語"
 
 #. name for aci
 msgid "Aka-Cari"
-msgstr "Чариар"
+msgstr ""
 
 #. name for ack
 msgid "Aka-Kora"
-msgstr "Кора"
+msgstr ""
 
 #. name for acl
 msgid "Akar-Bale"
-msgstr "Балава"
+msgstr ""
 
 #. name for acm
 msgid "Arabic; Mesopotamian"
-msgstr "Арабский; Месопатамский"
+msgstr ""
 
 #. name for acn
 msgid "Achang"
-msgstr "Ачанг"
+msgstr ""
 
 #. name for acp
 msgid "Acipa; Eastern"
-msgstr "Аципа; Восточный"
+msgstr ""
 
 #. name for acq
 msgid "Arabic; Ta'izzi-Adeni"
-msgstr "Арабский; Южнойеменский"
+msgstr ""
 
 #. name for acr
 msgid "Achi"
-msgstr "Ачи"
+msgstr ""
 
 #. name for acs
 msgid "Acroá"
-msgstr "Акроа"
+msgstr ""
 
 #. name for act
 msgid "Achterhoeks"
-msgstr "Акхтерхоекс"
+msgstr ""
 
 #. name for acu
 msgid "Achuar-Shiwiar"
-msgstr "Ачуар-Шивиар"
+msgstr ""
 
 #. name for acv
 msgid "Achumawi"
-msgstr "Ачумави"
+msgstr ""
 
 #. name for acw
 msgid "Arabic; Hijazi"
-msgstr "Арабский; Хиджазский"
+msgstr ""
 
 #. name for acx
 msgid "Arabic; Omani"
-msgstr "Арабский; Оманский"
+msgstr ""
 
 #. name for acy
 msgid "Arabic; Cypriot"
-msgstr "Кипрско-арабский"
+msgstr ""
 
 #. name for acz
 msgid "Acheron"
-msgstr "Ачерон"
+msgstr ""
 
 #. name for ada
 msgid "Adangme"
-msgstr "Адангме"
+msgstr "アダングメ語"
 
 #. name for adb
 msgid "Adabe"
-msgstr "Адангме"
+msgstr "アダングメ語"
 
 #. name for add
 msgid "Dzodinka"
-msgstr "Динка"
+msgstr "ディンカ語"
 
 #. name for ade
 msgid "Adele"
-msgstr "Аделе"
+msgstr ""
 
 #. name for adf
 msgid "Arabic; Dhofari"
-msgstr "Арабский; Дофарский"
+msgstr ""
 
 #. name for adg
 msgid "Andegerebinha"
-msgstr "Атдегереиинха"
+msgstr ""
 
 #. name for adh
 msgid "Adhola"
-msgstr "Адхола"
+msgstr ""
 
 #. name for adi
 msgid "Adi"
-msgstr "Ади"
+msgstr ""
 
 #. name for adj
 msgid "Adioukrou"
-msgstr "адиоукроу"
+msgstr ""
 
 #. name for adl
 msgid "Galo"
-msgstr "Гало"
+msgstr ""
 
 #. name for adn
 msgid "Adang"
-msgstr "Аданг"
+msgstr "アダングメ語"
 
 #. name for ado
 msgid "Abu"
-msgstr "аду"
+msgstr ""
 
 #. name for adp
 msgid "Adap"
-msgstr "адап"
+msgstr ""
 
 #. name for adq
 msgid "Adangbe"
-msgstr "Аденгбе"
+msgstr ""
 
 #. name for adr
 msgid "Adonara"
-msgstr "Аймара"
+msgstr "アイマラ語"
 
 #. name for ads
 msgid "Adamorobe Sign Language"
-msgstr "Язык жестов Адаморобе"
+msgstr ""
 
 #. name for adt
 msgid "Adnyamathanha"
-msgstr "Атьняматана"
+msgstr ""
 
 #. name for adu
 msgid "Aduge"
-msgstr "Адангме"
+msgstr "アダングメ語"
 
 #. name for adw
 msgid "Amundava"
-msgstr "Амундава"
+msgstr ""
 
 #. name for adx
 msgid "Tibetan; Amdo"
-msgstr "Тибетский; Амдоский"
+msgstr ""
 
 #. name for ady
 msgid "Adyghe"
-msgstr "Адыгейский"
+msgstr ""
 
 #. name for adz
 msgid "Adzera"
-msgstr "Адзера"
+msgstr ""
 
 #. name for aea
 msgid "Areba"
-msgstr "Ареба"
+msgstr ""
 
 #. name for aeb
 msgid "Arabic; Tunisian"
-msgstr "Арабский; Тунисский"
+msgstr ""
 
 #. name for aec
 msgid "Arabic; Saidi"
-msgstr "Арабский; Саидский"
+msgstr ""
 
 #. name for aed
 msgid "Argentine Sign Language"
-msgstr "Аргентинский язык жестов"
+msgstr ""
 
 #. name for aee
 msgid "Pashayi; Northeast"
-msgstr "Пашаи; Северо-восточный"
+msgstr ""
 
 #. name for aek
 msgid "Haeke"
-msgstr "Наеке"
+msgstr ""
 
 #. name for ael
 msgid "Ambele"
-msgstr "Амбуле"
+msgstr ""
 
 #. name for aem
 msgid "Arem"
-msgstr "Аремский"
+msgstr ""
 
 #. name for aen
 msgid "Armenian Sign Language"
-msgstr "Армянский язык жестов"
+msgstr ""
 
 #. name for aeq
 msgid "Aer"
-msgstr "Аер"
+msgstr ""
 
 #. name for aer
 msgid "Arrernte; Eastern"
-msgstr "Аранта; Восточный"
+msgstr ""
 
 #. name for aes
 msgid "Alsea"
-msgstr "Алсеа"
+msgstr ""
 
 #. name for aeu
 msgid "Akeu"
-msgstr "Акеу"
+msgstr ""
 
 #. name for aew
 msgid "Ambakich"
-msgstr "Амбакич"
+msgstr ""
 
 #. name for aey
 msgid "Amele"
-msgstr "Амеле"
+msgstr ""
 
 #. name for aez
 msgid "Aeka"
-msgstr "Аека"
+msgstr ""
 
 #. name for afb
 msgid "Arabic; Gulf"
-msgstr "Арабский; Персидского залива"
+msgstr ""
 
 #. name for afd
 msgid "Andai"
-msgstr "Андаш"
+msgstr ""
 
 #. name for afe
 msgid "Putukwam"
-msgstr "Путуквам"
+msgstr ""
 
 #. name for afg
 msgid "Afghan Sign Language"
-msgstr "Афганский язык жестов"
+msgstr ""
 
 #. name for afh
 msgid "Afrihili"
-msgstr "Африхили"
+msgstr "アフリヒリ"
 
 #. name for afi
 msgid "Akrukay"
-msgstr "Акрука"
+msgstr ""
 
 #. name for afk
 msgid "Nanubae"
-msgstr "Нанубае"
+msgstr ""
 
 #. name for afn
 msgid "Defaka"
-msgstr "Дефака"
+msgstr ""
 
 #. name for afo
 msgid "Eloyi"
-msgstr "Елой"
+msgstr ""
 
 #. name for afp
 msgid "Tapei"
-msgstr "Тапеи"
+msgstr ""
 
 #. name for afr
 msgid "Afrikaans"
-msgstr "Африкаанс"
+msgstr "アフリカーンス語"
 
 #. name for afs
 msgid "Creole; Afro-Seminole"
-msgstr "Креоле Афро-Семиноле"
+msgstr ""
 
 #. name for aft
 msgid "Afitti"
-msgstr "Афинити"
+msgstr ""
 
 #. name for afu
 msgid "Awutu"
-msgstr "Авуту"
+msgstr ""
 
 #. name for afz
 msgid "Obokuitai"
-msgstr "Обокуитаи"
+msgstr ""
 
 #. name for aga
 msgid "Aguano"
-msgstr "Акуано"
+msgstr ""
 
 #. name for agb
 msgid "Legbo"
-msgstr "Легбо"
+msgstr ""
 
 #. name for agc
 msgid "Agatu"
-msgstr "Агату"
+msgstr ""
 
 #. name for agd
 msgid "Agarabi"
-msgstr "Агараби"
+msgstr ""
 
 #. name for age
 msgid "Angal"
-msgstr "Ангал"
+msgstr ""
 
 #. name for agf
 msgid "Arguni"
-msgstr "Аргуни"
+msgstr ""
 
 #. name for agg
 msgid "Angor"
-msgstr "Ангол"
+msgstr ""
 
 #. name for agh
 msgid "Ngelima"
-msgstr "Нгелима"
+msgstr ""
 
 #. name for agi
 msgid "Agariya"
-msgstr "Агария"
+msgstr ""
 
 #. name for agj
 msgid "Argobba"
-msgstr "Аргоба"
+msgstr ""
 
 #. name for agk
 msgid "Agta; Isarog"
-msgstr "Агта, исарог"
+msgstr ""
 
 #. name for agl
 msgid "Fembe"
-msgstr "фембе"
+msgstr ""
 
 #. name for agm
 msgid "Angaataha"
-msgstr "Ангатана"
+msgstr ""
 
 #. name for agn
 msgid "Agutaynen"
@@ -1933,7 +1927,7 @@ msgstr ""
 
 #. name for agx
 msgid "Aghul"
-msgstr "Агульский"
+msgstr ""
 
 #. name for agy
 msgid "Alta; Southern"
@@ -1965,7 +1959,7 @@ msgstr ""
 
 #. name for ahk
 msgid "Akha"
-msgstr "Акан"
+msgstr "アカン語"
 
 #. name for ahl
 msgid "Igo"
@@ -1989,7 +1983,7 @@ msgstr ""
 
 #. name for ahr
 msgid "Ahirani"
-msgstr "Ахирани"
+msgstr ""
 
 #. name for ahs
 msgid "Ashe"
@@ -2025,7 +2019,7 @@ msgstr ""
 
 #. name for aig
 msgid "Creole English; Antigua and Barbuda"
-msgstr "Креольский английский; Антигуа и Барбуда"
+msgstr ""
 
 #. name for aih
 msgid "Ai-Cham"
@@ -2033,7 +2027,7 @@ msgstr ""
 
 #. name for aii
 msgid "Neo-Aramaic; Assyrian"
-msgstr "Новоарамейский; Ассирийский"
+msgstr ""
 
 #. name for aij
 msgid "Lishanid Noshan"
@@ -2105,15 +2099,15 @@ msgstr ""
 
 #. name for ajp
 msgid "Arabic; South Levantine"
-msgstr "Арабский; Южно-левантийский"
+msgstr ""
 
 #. name for ajt
 msgid "Arabic; Judeo-Tunisian"
-msgstr "Арабский; Еврейско-тунисский"
+msgstr ""
 
 #. name for aju
 msgid "Arabic; Judeo-Moroccan"
-msgstr "Арабский; Еврейско-марокканский"
+msgstr ""
 
 #. name for ajw
 msgid "Ajawa"
@@ -2125,7 +2119,7 @@ msgstr ""
 
 #. name for aka
 msgid "Akan"
-msgstr "Акан"
+msgstr "アカン語"
 
 #. name for akb
 msgid "Batak Angkola"
@@ -2149,7 +2143,7 @@ msgstr ""
 
 #. name for akg
 msgid "Anakalangu"
-msgstr "Анакалангу"
+msgstr ""
 
 #. name for akh
 msgid "Angal Heneng"
@@ -2165,7 +2159,7 @@ msgstr ""
 
 #. name for akk
 msgid "Akkadian"
-msgstr "Аккадский"
+msgstr "アッカド語"
 
 #. name for akl
 msgid "Aklanon"
@@ -2177,7 +2171,7 @@ msgstr ""
 
 #. name for ako
 msgid "Akurio"
-msgstr "Акурио"
+msgstr ""
 
 #. name for akp
 msgid "Siwu"
@@ -2205,7 +2199,7 @@ msgstr ""
 
 #. name for akv
 msgid "Akhvakh"
-msgstr "Ахвахский"
+msgstr ""
 
 #. name for akw
 msgid "Akwa"
@@ -2221,7 +2215,7 @@ msgstr ""
 
 #. name for akz
 msgid "Alabama"
-msgstr "Язык племени алабама"
+msgstr ""
 
 #. name for ala
 msgid "Alago"
@@ -2229,7 +2223,7 @@ msgstr ""
 
 #. name for alc
 msgid "Qawasqar"
-msgstr "Макассарский"
+msgstr "マカッサル語"
 
 #. name for ald
 msgid "Alladian"
@@ -2237,7 +2231,7 @@ msgstr ""
 
 #. name for ale
 msgid "Aleut"
-msgstr "Алеутский"
+msgstr "アレウト語"
 
 #. name for alf
 msgid "Alege"
@@ -2269,7 +2263,7 @@ msgstr ""
 
 #. name for aln
 msgid "Albanian; Gheg"
-msgstr "Албанский; Гегский"
+msgstr ""
 
 #. name for alo
 msgid "Larike-Wakasihu"
@@ -2277,11 +2271,11 @@ msgstr ""
 
 #. name for alp
 msgid "Alune"
-msgstr "Алуне"
+msgstr ""
 
 #. name for alq
 msgid "Algonquin"
-msgstr "Алгонкинский"
+msgstr ""
 
 #. name for alr
 msgid "Alutor"
@@ -2289,7 +2283,7 @@ msgstr ""
 
 #. name for als
 msgid "Albanian; Tosk"
-msgstr "Албанский; Тоскский"
+msgstr ""
 
 #. name for alt
 msgid "Altai; Southern"
@@ -2341,7 +2335,7 @@ msgstr ""
 
 #. name for amh
 msgid "Amharic"
-msgstr "Амхарский (Амаринья)"
+msgstr "アムハラ語"
 
 #. name for ami
 msgid "Amis"
@@ -2361,7 +2355,7 @@ msgstr ""
 
 #. name for amm
 msgid "Ama (Papua New Guinea)"
-msgstr "Ама (Папуа-Новая Гвинея)"
+msgstr ""
 
 #. name for amn
 msgid "Amanab"
@@ -2401,7 +2395,7 @@ msgstr ""
 
 #. name for amw
 msgid "Neo-Aramaic; Western"
-msgstr "Новоарамейский; Западный"
+msgstr ""
 
 #. name for amx
 msgid "Anmatyerre"
@@ -2409,7 +2403,7 @@ msgstr ""
 
 #. name for amy
 msgid "Ami"
-msgstr "Ами"
+msgstr ""
 
 #. name for amz
 msgid "Atampaya"
@@ -2469,7 +2463,7 @@ msgstr ""
 
 #. name for ann
 msgid "Obolo"
-msgstr "Оболо"
+msgstr ""
 
 #. name for ano
 msgid "Andoque"
@@ -2477,7 +2471,7 @@ msgstr ""
 
 #. name for anp
 msgid "Angika"
-msgstr "Анжика"
+msgstr "アンギカ語"
 
 #. name for anq
 msgid "Jarawa (India)"
@@ -2521,7 +2515,7 @@ msgstr ""
 
 #. name for aoa
 msgid "Angolar"
-msgstr "Анголар"
+msgstr ""
 
 #. name for aob
 msgid "Abom"
@@ -2533,7 +2527,7 @@ msgstr ""
 
 #. name for aod
 msgid "Andarum"
-msgstr "Андарум"
+msgstr ""
 
 #. name for aoe
 msgid "Angal Enen"
@@ -2593,19 +2587,19 @@ msgstr ""
 
 #. name for aoz
 msgid "Uab Meto"
-msgstr "Уаб-мето"
+msgstr ""
 
 #. name for apb
 msgid "Sa'a"
-msgstr "Сасакский"
+msgstr "ササク語"
 
 #. name for apc
 msgid "Arabic; North Levantine"
-msgstr "Арабский; Северно-левантийский"
+msgstr ""
 
 #. name for apd
 msgid "Arabic; Sudanese"
-msgstr "Арабский; Суданский"
+msgstr ""
 
 #. name for ape
 msgid "Bukiyip"
@@ -2629,7 +2623,7 @@ msgstr ""
 
 #. name for apj
 msgid "Apache; Jicarilla"
-msgstr "Апачский; Хикарилья"
+msgstr ""
 
 #. name for apk
 msgid "Apache; Kiowa"
@@ -2637,19 +2631,19 @@ msgstr ""
 
 #. name for apl
 msgid "Apache; Lipan"
-msgstr "Апачский; Липан"
+msgstr ""
 
 #. name for apm
 msgid "Apache; Mescalero-Chiricahua"
-msgstr "Апачский; Мескалеро-чирикауа"
+msgstr ""
 
 #. name for apn
 msgid "Apinayé"
-msgstr "Апинайе"
+msgstr ""
 
 #. name for apo
 msgid "Ambul"
-msgstr "Амбул"
+msgstr ""
 
 #. name for app
 msgid "Apma"
@@ -2657,7 +2651,7 @@ msgstr ""
 
 #. name for apq
 msgid "A-Pucikwar"
-msgstr "А-Пучиквар"
+msgstr ""
 
 #. name for apr
 msgid "Arop-Lokep"
@@ -2669,15 +2663,15 @@ msgstr ""
 
 #. name for apt
 msgid "Apatani"
-msgstr "Апатани"
+msgstr ""
 
 #. name for apu
 msgid "Apurinã"
-msgstr "Апуринан"
+msgstr ""
 
 #. name for apv
 msgid "Alapmunte"
-msgstr "Алапмунте"
+msgstr ""
 
 #. name for apw
 msgid "Apache; Western"
@@ -2697,7 +2691,7 @@ msgstr ""
 
 #. name for aqc
 msgid "Archi"
-msgstr "Арчинский"
+msgstr ""
 
 #. name for aqd
 msgid "Dogon; Ampari"
@@ -2729,19 +2723,19 @@ msgstr ""
 
 #. name for ara
 msgid "Arabic"
-msgstr "Арабский"
+msgstr "アラビア語"
 
 #. name for arb
 msgid "Arabic; Standard"
-msgstr "Арабский; Стандартный"
+msgstr ""
 
 #. name for arc
 msgid "Aramaic; Official (700-300 BCE)"
-msgstr "Арамейский; Официальный"
+msgstr ""
 
 #. name for ard
 msgid "Arabana"
-msgstr "Арапана"
+msgstr ""
 
 #. name for are
 msgid "Arrarnta; Western"
@@ -2749,7 +2743,7 @@ msgstr ""
 
 #. name for arg
 msgid "Aragonese"
-msgstr "Арагонский"
+msgstr "アラゴン語"
 
 #. name for arh
 msgid "Arhuaco"
@@ -2781,11 +2775,11 @@ msgstr ""
 
 #. name for arp
 msgid "Arapaho"
-msgstr "Арапахо"
+msgstr "アラパホー語"
 
 #. name for arq
 msgid "Arabic; Algerian"
-msgstr "Арабский; Алжирский"
+msgstr ""
 
 #. name for arr
 msgid "Karo (Brazil)"
@@ -2793,7 +2787,7 @@ msgstr ""
 
 #. name for ars
 msgid "Arabic; Najdi"
-msgstr "Арабский; Надждийский"
+msgstr ""
 
 #. name for aru
 msgid "Aruá (Amazonas State)"
@@ -2805,7 +2799,7 @@ msgstr ""
 
 #. name for arw
 msgid "Arawak"
-msgstr "Аравакский"
+msgstr "アラワク語"
 
 #. name for arx
 msgid "Aruá (Rodonia State)"
@@ -2813,11 +2807,11 @@ msgstr ""
 
 #. name for ary
 msgid "Arabic; Moroccan"
-msgstr "Арабский; Марокканский"
+msgstr ""
 
 #. name for arz
 msgid "Arabic; Egyptian"
-msgstr "Арабский; Египетский"
+msgstr ""
 
 #. name for asa
 msgid "Asu (Tanzania)"
@@ -2861,7 +2855,7 @@ msgstr ""
 
 #. name for ask
 msgid "Ashkun"
-msgstr "Ашкун"
+msgstr ""
 
 #. name for asl
 msgid "Asilulu"
@@ -2869,7 +2863,7 @@ msgstr ""
 
 #. name for asm
 msgid "Assamese"
-msgstr "Ассамский"
+msgstr "アッサム語"
 
 #. name for asn
 msgid "Asuriní; Xingú"
@@ -2897,7 +2891,7 @@ msgstr ""
 
 #. name for ast
 msgid "Asturian"
-msgstr "Астурийский"
+msgstr ""
 
 #. name for asu
 msgid "Asurini; Tocantins"
@@ -3017,7 +3011,7 @@ msgstr ""
 
 #. name for atz
 msgid "Arta"
-msgstr "Арта"
+msgstr ""
 
 #. name for aua
 msgid "Asumboa"
@@ -3109,11 +3103,11 @@ msgstr ""
 
 #. name for auz
 msgid "Arabic; Uzbeki"
-msgstr "Арабский; Узбекский"
+msgstr ""
 
 #. name for ava
 msgid "Avaric"
-msgstr "Аварский"
+msgstr "アヴァル語"
 
 #. name for avb
 msgid "Avau"
@@ -3125,7 +3119,7 @@ msgstr ""
 
 #. name for ave
 msgid "Avestan"
-msgstr "Авестийский"
+msgstr "アヴェスタ語"
 
 #. name for avi
 msgid "Avikam"
@@ -3137,7 +3131,7 @@ msgstr ""
 
 #. name for avl
 msgid "Arabic; Eastern Egyptian Bedawi"
-msgstr "Арабский; Восточный египетский бедави"
+msgstr ""
 
 #. name for avn
 msgid "Avatime"
@@ -3165,7 +3159,7 @@ msgstr ""
 
 #. name for awa
 msgid "Awadhi"
-msgstr "Авадхи"
+msgstr "アワディ語"
 
 #. name for awb
 msgid "Awa (Papua New Guinea)"
@@ -3177,11 +3171,11 @@ msgstr ""
 
 #. name for awe
 msgid "Awetí"
-msgstr "Авети"
+msgstr ""
 
 #. name for awh
 msgid "Awbono"
-msgstr "Авбоно"
+msgstr ""
 
 #. name for awi
 msgid "Aekyom"
@@ -3273,7 +3267,7 @@ msgstr ""
 
 #. name for aye
 msgid "Ayere"
-msgstr "Серер"
+msgstr "セレール語"
 
 #. name for ayg
 msgid "Ginyanga"
@@ -3293,11 +3287,11 @@ msgstr ""
 
 #. name for ayl
 msgid "Arabic; Libyan"
-msgstr "Арабский; Ливийский"
+msgstr ""
 
 #. name for aym
 msgid "Aymara"
-msgstr "Аймара"
+msgstr "アイマラ語"
 
 #. name for ayn
 msgid "Arabic; Sanaani"
@@ -3309,7 +3303,7 @@ msgstr ""
 
 #. name for ayp
 msgid "Arabic; North Mesopotamian"
-msgstr "Арабский; Северомесопатамский"
+msgstr ""
 
 #. name for ayq
 msgid "Ayi (Papua New Guinea)"
@@ -3345,11 +3339,11 @@ msgstr ""
 
 #. name for azb
 msgid "Azerbaijani; South"
-msgstr "Азербайджанский; Южный"
+msgstr ""
 
 #. name for aze
 msgid "Azerbaijani"
-msgstr "Азербайджанский"
+msgstr "アゼルバイジャン語"
 
 #. name for azg
 msgid "Amuzgo; San Pedro Amuzgos"
@@ -3357,7 +3351,7 @@ msgstr ""
 
 #. name for azj
 msgid "Azerbaijani; North"
-msgstr "Азербайджанский; Северный"
+msgstr ""
 
 #. name for azm
 msgid "Amuzgo; Ipalapa"
@@ -3377,7 +3371,7 @@ msgstr ""
 
 #. name for baa
 msgid "Babatana"
-msgstr "Бабатана"
+msgstr "バンバラ語"
 
 #. name for bab
 msgid "Bainouk-Gunyuño"
@@ -3401,7 +3395,7 @@ msgstr ""
 
 #. name for bah
 msgid "Creole English; Bahamas"
-msgstr "Креольский английский; Багамский"
+msgstr ""
 
 #. name for baj
 msgid "Barakai"
@@ -3409,19 +3403,19 @@ msgstr ""
 
 #. name for bak
 msgid "Bashkir"
-msgstr "Башкирский"
+msgstr "バシキール語"
 
 #. name for bal
 msgid "Baluchi"
-msgstr ""
+msgstr "バルーチー語"
 
 #. name for bam
 msgid "Bambara"
-msgstr "Бамбара"
+msgstr "バンバラ語"
 
 #. name for ban
 msgid "Balinese"
-msgstr "Балийский"
+msgstr "バリ語"
 
 #. name for bao
 msgid "Waimaha"
@@ -3437,7 +3431,7 @@ msgstr ""
 
 #. name for bas
 msgid "Basa (Cameroon)"
-msgstr "Баса (Камерун)"
+msgstr ""
 
 #. name for bau
 msgid "Bada (Nigeria)"
@@ -3513,7 +3507,7 @@ msgstr ""
 
 #. name for bbm
 msgid "Babango"
-msgstr "Санго"
+msgstr "サンゴ語"
 
 #. name for bbn
 msgid "Uneapa"
@@ -3705,7 +3699,7 @@ msgstr ""
 
 #. name for bdj
 msgid "Bai"
-msgstr "Бай"
+msgstr ""
 
 #. name for bdk
 msgid "Budukh"
@@ -3797,7 +3791,7 @@ msgstr ""
 
 #. name for beg
 msgid "Belait"
-msgstr "Белайт"
+msgstr ""
 
 #. name for beh
 msgid "Biali"
@@ -3809,7 +3803,7 @@ msgstr ""
 
 #. name for bej
 msgid "Beja"
-msgstr "Беджа"
+msgstr "ベジャ語"
 
 #. name for bek
 msgid "Bebeli"
@@ -3817,15 +3811,15 @@ msgstr ""
 
 #. name for bel
 msgid "Belarusian"
-msgstr "Белорусский"
+msgstr "白ロシア語"
 
 #. name for bem
 msgid "Bemba (Zambia)"
-msgstr "Бемба (Замбия)"
+msgstr ""
 
 #. name for ben
 msgid "Bengali"
-msgstr "Бенгальский"
+msgstr "ベンガル語"
 
 #. name for beo
 msgid "Beami"
@@ -3965,7 +3959,7 @@ msgstr ""
 
 #. name for bfy
 msgid "Bagheli"
-msgstr "Багхели"
+msgstr ""
 
 #. name for bfz
 msgid "Pahari; Mahasu"
@@ -4061,7 +4055,7 @@ msgstr ""
 
 #. name for bgx
 msgid "Turkish; Balkan Gagauz"
-msgstr "Турецкий; Гагаузский"
+msgstr ""
 
 #. name for bgy
 msgid "Benggoi"
@@ -4077,7 +4071,7 @@ msgstr ""
 
 #. name for bhb
 msgid "Bhili"
-msgstr "Бхили"
+msgstr ""
 
 #. name for bhc
 msgid "Biga"
@@ -4125,7 +4119,7 @@ msgstr ""
 
 #. name for bho
 msgid "Bhojpuri"
-msgstr "Бходжпури"
+msgstr "ボージプリー語"
 
 #. name for bhp
 msgid "Bima"
@@ -4205,7 +4199,7 @@ msgstr ""
 
 #. name for bik
 msgid "Bikol"
-msgstr "Бикольский"
+msgstr "ビコル語"
 
 #. name for bil
 msgid "Bile"
@@ -4217,7 +4211,7 @@ msgstr ""
 
 #. name for bin
 msgid "Bini"
-msgstr "Бини"
+msgstr "ビニ語"
 
 #. name for bio
 msgid "Nai"
@@ -4237,7 +4231,7 @@ msgstr ""
 
 #. name for bis
 msgid "Bislama"
-msgstr "Бислама"
+msgstr "ビスラマ語"
 
 #. name for bit
 msgid "Berinomo"
@@ -4437,7 +4431,7 @@ msgstr ""
 
 #. name for bku
 msgid "Buhid"
-msgstr "Бухид"
+msgstr "ブヒッド文字"
 
 #. name for bkv
 msgid "Bekwarra"
@@ -4461,7 +4455,7 @@ msgstr ""
 
 #. name for bla
 msgid "Siksika"
-msgstr "Сиксика"
+msgstr "ブラックフット語"
 
 #. name for blb
 msgid "Bilua"
@@ -4657,7 +4651,7 @@ msgstr ""
 
 #. name for bmy
 msgid "Bemba (Democratic Republic of Congo)"
-msgstr "Бемба (Демократическая Республика Конго)"
+msgstr ""
 
 #. name for bmz
 msgid "Baramu"
@@ -4733,7 +4727,7 @@ msgstr ""
 
 #. name for bns
 msgid "Bundeli"
-msgstr "Бундели"
+msgstr ""
 
 #. name for bnu
 msgid "Bentong"
@@ -4769,7 +4763,7 @@ msgstr ""
 
 #. name for bod
 msgid "Tibetan"
-msgstr "Тибетский"
+msgstr "チベット語"
 
 #. name for boe
 msgid "Mundabli"
@@ -4829,7 +4823,7 @@ msgstr ""
 
 #. name for bos
 msgid "Bosnian"
-msgstr "Боснийский"
+msgstr "ボスニア語"
 
 #. name for bot
 msgid "Bongo"
@@ -4877,7 +4871,7 @@ msgstr ""
 
 #. name for bph
 msgid "Botlikh"
-msgstr "Ботлихский"
+msgstr ""
 
 #. name for bpi
 msgid "Bagupi"
@@ -4937,7 +4931,7 @@ msgstr ""
 
 #. name for bpw
 msgid "Bo (Papua New Guinea)"
-msgstr "Бо (Папуа-Новая Гвинея)"
+msgstr ""
 
 #. name for bpx
 msgid "Bareli; Palya"
@@ -4945,7 +4939,7 @@ msgstr ""
 
 #. name for bpy
 msgid "Bishnupriya"
-msgstr "Бишнуприя"
+msgstr ""
 
 #. name for bpz
 msgid "Bilba"
@@ -5049,11 +5043,11 @@ msgstr ""
 
 #. name for bqz
 msgid "Bakaka"
-msgstr "Бамбара"
+msgstr "バンバラ語"
 
 #. name for bra
 msgid "Braj"
-msgstr "Браун"
+msgstr "ブラジ語"
 
 #. name for brb
 msgid "Lave"
@@ -5069,7 +5063,7 @@ msgstr ""
 
 #. name for bre
 msgid "Breton"
-msgstr "Бретонский"
+msgstr "ブルトン語"
 
 #. name for brf
 msgid "Bera"
@@ -5145,7 +5139,7 @@ msgstr ""
 
 #. name for brx
 msgid "Bodo (India)"
-msgstr "Бодо (Индия)"
+msgstr ""
 
 #. name for bry
 msgid "Burui"
@@ -5173,7 +5167,7 @@ msgstr ""
 
 #. name for bsf
 msgid "Bauchi"
-msgstr "Баучи"
+msgstr ""
 
 #. name for bsg
 msgid "Bashkardi"
@@ -5181,7 +5175,7 @@ msgstr ""
 
 #. name for bsh
 msgid "Kati"
-msgstr "Кати"
+msgstr ""
 
 #. name for bsi
 msgid "Bassossi"
@@ -5193,7 +5187,7 @@ msgstr ""
 
 #. name for bsk
 msgid "Burushaski"
-msgstr "Бурушаски"
+msgstr ""
 
 #. name for bsl
 msgid "Basa-Gumna"
@@ -5349,7 +5343,7 @@ msgstr ""
 
 #. name for bua
 msgid "Buriat"
-msgstr "Бурятский"
+msgstr "ブリヤート語"
 
 #. name for bub
 msgid "Bua"
@@ -5373,7 +5367,7 @@ msgstr ""
 
 #. name for bug
 msgid "Buginese"
-msgstr "Бугийский"
+msgstr "ブギ語"
 
 #. name for buh
 msgid "Bunu; Younuo"
@@ -5393,7 +5387,7 @@ msgstr ""
 
 #. name for bul
 msgid "Bulgarian"
-msgstr "Болгарский"
+msgstr "ブルガリア語"
 
 #. name for bum
 msgid "Bulu (Cameroon)"
@@ -5713,7 +5707,7 @@ msgstr ""
 
 #. name for bxr
 msgid "Buriat; Russia"
-msgstr "Бурятский; Россия"
+msgstr ""
 
 #. name for bxs
 msgid "Busam"
@@ -5741,7 +5735,7 @@ msgstr ""
 
 #. name for bya
 msgid "Batak"
-msgstr "Батакский"
+msgstr "バタク文字"
 
 #. name for byb
 msgid "Bikya"
@@ -5877,11 +5871,11 @@ msgstr ""
 
 #. name for bzj
 msgid "Kriol English; Belize"
-msgstr "Креольский английский; Белиз"
+msgstr ""
 
 #. name for bzk
 msgid "Creole English; Nicaragua"
-msgstr "Креольский английский; Никарагуа"
+msgstr ""
 
 #. name for bzl
 msgid "Boano (Sulawesi)"
@@ -5957,7 +5951,7 @@ msgstr ""
 
 #. name for cad
 msgid "Caddo"
-msgstr "Каддо"
+msgstr "カドー語"
 
 #. name for cae
 msgid "Lehar"
@@ -6017,7 +6011,7 @@ msgstr ""
 
 #. name for cat
 msgid "Catalan"
-msgstr "Каталанский"
+msgstr "カタロニア語"
 
 #. name for cav
 msgid "Cavineña"
@@ -6097,7 +6091,7 @@ msgstr ""
 
 #. name for cbt
 msgid "Chayahuita"
-msgstr "Чагатайский"
+msgstr "チャガタイ語"
 
 #. name for cbu
 msgid "Candoshi-Shapra"
@@ -6157,7 +6151,7 @@ msgstr ""
 
 #. name for ccp
 msgid "Chakma"
-msgstr "Чакма"
+msgstr "チャクマ文字"
 
 #. name for ccq
 msgid "Chaungtha"
@@ -6229,7 +6223,7 @@ msgstr ""
 
 #. name for ceb
 msgid "Cebuano"
-msgstr "Себуано"
+msgstr "セブアノ語"
 
 #. name for ceg
 msgid "Chamacoco"
@@ -6241,7 +6235,7 @@ msgstr ""
 
 #. name for ces
 msgid "Czech"
-msgstr "Чешский"
+msgstr "チェコ語"
 
 #. name for cet
 msgid "Centúúm"
@@ -6281,11 +6275,11 @@ msgstr ""
 
 #. name for cha
 msgid "Chamorro"
-msgstr "Чаморро"
+msgstr "チャモロ語"
 
 #. name for chb
 msgid "Chibcha"
-msgstr "Чибча"
+msgstr "チブチャ語"
 
 #. name for chc
 msgid "Catawba"
@@ -6297,7 +6291,7 @@ msgstr ""
 
 #. name for che
 msgid "Chechen"
-msgstr "Чеченский"
+msgstr "チェチェン語"
 
 #. name for chf
 msgid "Chontal; Tabasco"
@@ -6305,7 +6299,7 @@ msgstr ""
 
 #. name for chg
 msgid "Chagatai"
-msgstr "Чагатайский"
+msgstr "チャガタイ語"
 
 #. name for chh
 msgid "Chinook"
@@ -6317,7 +6311,7 @@ msgstr ""
 
 #. name for chk
 msgid "Chuukese"
-msgstr "Трукский"
+msgstr "チューク語"
 
 #. name for chl
 msgid "Cahuilla"
@@ -6325,19 +6319,19 @@ msgstr ""
 
 #. name for chm
 msgid "Mari (Russia)"
-msgstr "Марийский (Россия)"
+msgstr ""
 
 #. name for chn
 msgid "Chinook jargon"
-msgstr "Чинук жаргон"
+msgstr "チヌーク混成語"
 
 #. name for cho
 msgid "Choctaw"
-msgstr "Чоктав"
+msgstr "チョクトー語"
 
 #. name for chp
 msgid "Chipewyan"
-msgstr "Чипевианский"
+msgstr "チペワイアン語"
 
 #. name for chq
 msgid "Chinantec; Quiotepec"
@@ -6345,7 +6339,7 @@ msgstr ""
 
 #. name for chr
 msgid "Cherokee"
-msgstr "Чероки"
+msgstr "チェロキー語"
 
 #. name for cht
 msgid "Cholón"
@@ -6357,7 +6351,7 @@ msgstr ""
 
 #. name for chv
 msgid "Chuvash"
-msgstr "Чувашский"
+msgstr "チュヴァシュ語"
 
 #. name for chw
 msgid "Chuwabu"
@@ -6369,7 +6363,7 @@ msgstr ""
 
 #. name for chy
 msgid "Cheyenne"
-msgstr "Чейенн"
+msgstr "シャイアン語"
 
 #. name for chz
 msgid "Chinantec; Ozumacín"
@@ -6421,7 +6415,7 @@ msgstr ""
 
 #. name for ciw
 msgid "Chippewa"
-msgstr "Оджибва"
+msgstr "オジブワ語"
 
 #. name for ciy
 msgid "Chaima"
@@ -6609,7 +6603,7 @@ msgstr ""
 
 #. name for cmn
 msgid "Chinese; Mandarin"
-msgstr "Китайский; Мандарин"
+msgstr ""
 
 #. name for cmo
 msgid "Mnong; Central"
@@ -6685,7 +6679,7 @@ msgstr ""
 
 #. name for coa
 msgid "Malay; Cocos Islands"
-msgstr "Малайский; Кокосовые острова"
+msgstr ""
 
 #. name for cob
 msgid "Chicomuceltec"
@@ -6705,7 +6699,7 @@ msgstr ""
 
 #. name for cof
 msgid "Colorado"
-msgstr "Колорадо"
+msgstr ""
 
 #. name for cog
 msgid "Chong"
@@ -6741,7 +6735,7 @@ msgstr ""
 
 #. name for cop
 msgid "Coptic"
-msgstr "Коптский"
+msgstr "コプト語"
 
 #. name for coq
 msgid "Coquille"
@@ -6749,11 +6743,11 @@ msgstr ""
 
 #. name for cor
 msgid "Cornish"
-msgstr "Корнский"
+msgstr "コーンウォール語"
 
 #. name for cos
 msgid "Corsican"
-msgstr "Корсиканский"
+msgstr "コルシカ語"
 
 #. name for cot
 msgid "Caquinte"
@@ -6829,7 +6823,7 @@ msgstr ""
 
 #. name for cqu
 msgid "Quechua; Chilean"
-msgstr "Кечуа; Чилийский"
+msgstr "キチュワ語"
 
 #. name for cra
 msgid "Chara"
@@ -6849,7 +6843,7 @@ msgstr ""
 
 #. name for cre
 msgid "Cree"
-msgstr "Кри"
+msgstr "クリー語"
 
 #. name for crf
 msgid "Caramanta"
@@ -6933,7 +6927,7 @@ msgstr ""
 
 #. name for csb
 msgid "Kashubian"
-msgstr "Кашубианский"
+msgstr "カシュビアン語"
 
 #. name for csc
 msgid "Catalan Sign Language"
@@ -7185,7 +7179,7 @@ msgstr ""
 
 #. name for cym
 msgid "Welsh"
-msgstr "Уэльский (Валлийский)"
+msgstr "ウェールズ語"
 
 #. name for cyo
 msgid "Cuyonon"
@@ -7249,7 +7243,7 @@ msgstr ""
 
 #. name for dak
 msgid "Dakota"
-msgstr "Дакота"
+msgstr "ダコタ語"
 
 #. name for dal
 msgid "Dahalo"
@@ -7261,7 +7255,7 @@ msgstr ""
 
 #. name for dan
 msgid "Danish"
-msgstr "Датский"
+msgstr "デンマーク語"
 
 #. name for dao
 msgid "Chin; Daai"
@@ -7277,7 +7271,7 @@ msgstr ""
 
 #. name for dar
 msgid "Dargwa"
-msgstr "Даргва"
+msgstr "ダルガン語"
 
 #. name for das
 msgid "Daho-Doo"
@@ -7453,7 +7447,7 @@ msgstr ""
 
 #. name for del
 msgid "Delaware"
-msgstr "Делаварский"
+msgstr "デラウェア語"
 
 #. name for dem
 msgid "Dem"
@@ -7461,7 +7455,7 @@ msgstr ""
 
 #. name for den
 msgid "Slave (Athapascan)"
-msgstr "Атапачские языки"
+msgstr "スレーブ語 (アサパスカン語)"
 
 #. name for dep
 msgid "Delaware; Pidgin"
@@ -7481,7 +7475,7 @@ msgstr ""
 
 #. name for deu
 msgid "German"
-msgstr "Немецкий"
+msgstr "ドイツ語"
 
 #. name for dev
 msgid "Domung"
@@ -7537,7 +7531,7 @@ msgstr ""
 
 #. name for dgr
 msgid "Dogrib"
-msgstr "Догриб"
+msgstr "ドクリブ語"
 
 #. name for dgs
 msgid "Dogoso"
@@ -7653,7 +7647,7 @@ msgstr ""
 
 #. name for din
 msgid "Dinka"
-msgstr "Динка"
+msgstr "ディンカ語"
 
 #. name for dio
 msgid "Dibo"
@@ -8129,7 +8123,7 @@ msgstr ""
 
 #. name for dua
 msgid "Duala"
-msgstr "Дуала"
+msgstr "ドゥアラ語"
 
 #. name for dub
 msgid "Dubli"
@@ -8285,7 +8279,7 @@ msgstr ""
 
 #. name for dyu
 msgid "Dyula"
-msgstr "Диула (Дьюла)"
+msgstr "デュラ語"
 
 #. name for dyy
 msgid "Dyaabugay"
@@ -8313,7 +8307,7 @@ msgstr ""
 
 #. name for dzo
 msgid "Dzongkha"
-msgstr "Дзонг-кэ"
+msgstr "ゾンカ語"
 
 #. name for ebg
 msgid "Ebughu"
@@ -8361,7 +8355,7 @@ msgstr ""
 
 #. name for efi
 msgid "Efik"
-msgstr "Эфик"
+msgstr "エフィク語"
 
 #. name for ega
 msgid "Ega"
@@ -8377,7 +8371,7 @@ msgstr ""
 
 #. name for egy
 msgid "Egyptian (Ancient)"
-msgstr "Древнеегипетский"
+msgstr "エジプト語 (古代)"
 
 #. name for ehu
 msgid "Ehueun"
@@ -8401,7 +8395,7 @@ msgstr ""
 
 #. name for eka
 msgid "Ekajuk"
-msgstr "Экаджук"
+msgstr "エカジュク語"
 
 #. name for eke
 msgid "Ekit"
@@ -8461,7 +8455,7 @@ msgstr ""
 
 #. name for ell
 msgid "Greek; Modern (1453-)"
-msgstr "Новогреческий (с 1453)"
+msgstr "ギリシア語; 現代 (1453-)"
 
 #. name for elm
 msgid "Eleme"
@@ -8481,7 +8475,7 @@ msgstr ""
 
 #. name for elx
 msgid "Elamite"
-msgstr "Эламский"
+msgstr "エラム語"
 
 #. name for ema
 msgid "Emai-Iuleha-Ora"
@@ -8565,7 +8559,7 @@ msgstr ""
 
 #. name for eng
 msgid "English"
-msgstr "Английский"
+msgstr "英語"
 
 #. name for enh
 msgid "Enets; Tundra"
@@ -8573,7 +8567,7 @@ msgstr ""
 
 #. name for enm
 msgid "English; Middle (1100-1500)"
-msgstr "Среднеанглийский (1100-1500)"
+msgstr "英語; 中世 (1100-1500)"
 
 #. name for enn
 msgid "Engenni"
@@ -8613,7 +8607,7 @@ msgstr ""
 
 #. name for epo
 msgid "Esperanto"
-msgstr "Эсперанто"
+msgstr "エスペラント"
 
 #. name for era
 msgid "Eravallan"
@@ -8697,7 +8691,7 @@ msgstr ""
 
 #. name for est
 msgid "Estonian"
-msgstr "Эстонский"
+msgstr "エストニア語"
 
 #. name for esu
 msgid "Yupik; Central"
@@ -8749,7 +8743,7 @@ msgstr ""
 
 #. name for eus
 msgid "Basque"
-msgstr "Баскский"
+msgstr "バスク語"
 
 #. name for eve
 msgid "Even"
@@ -8765,11 +8759,11 @@ msgstr ""
 
 #. name for ewe
 msgid "Ewe"
-msgstr "Эве"
+msgstr "エウェ語"
 
 #. name for ewo
 msgid "Ewondo"
-msgstr "Эвондо"
+msgstr "エウォンド語"
 
 #. name for ext
 msgid "Extremaduran"
@@ -8837,7 +8831,7 @@ msgstr ""
 
 #. name for fao
 msgid "Faroese"
-msgstr "Фарерский"
+msgstr "フェロー語"
 
 #. name for fap
 msgid "Palor"
@@ -8849,11 +8843,11 @@ msgstr ""
 
 #. name for fas
 msgid "Persian"
-msgstr "Персидский"
+msgstr "ペルシア語"
 
 #. name for fat
 msgid "Fanti"
-msgstr "Фанти"
+msgstr "ファンティー語"
 
 #. name for fau
 msgid "Fayu"
@@ -8905,7 +8899,7 @@ msgstr ""
 
 #. name for fij
 msgid "Fijian"
-msgstr "Фиджийский"
+msgstr "フィジー語"
 
 #. name for fil
 msgid "Filipino"
@@ -8913,7 +8907,7 @@ msgstr ""
 
 #. name for fin
 msgid "Finnish"
-msgstr "Финский"
+msgstr "フィン語"
 
 #. name for fip
 msgid "Fipa"
@@ -8993,7 +8987,7 @@ msgstr ""
 
 #. name for fon
 msgid "Fon"
-msgstr "Фон"
+msgstr "フォン語"
 
 #. name for for
 msgid "Fore"
@@ -9013,7 +9007,7 @@ msgstr ""
 
 #. name for fra
 msgid "French"
-msgstr "Французский"
+msgstr "フランス語"
 
 #. name for frc
 msgid "French; Cajun"
@@ -9105,7 +9099,7 @@ msgstr ""
 
 #. name for ful
 msgid "Fulah"
-msgstr "Фулах"
+msgstr "フラ語"
 
 #. name for fum
 msgid "Fum"
@@ -9121,7 +9115,7 @@ msgstr ""
 
 #. name for fur
 msgid "Friulian"
-msgstr "Фриулианский"
+msgstr "フリウリ語"
 
 #. name for fut
 msgid "Futuna-Aniwa"
@@ -9153,7 +9147,7 @@ msgstr ""
 
 #. name for gaa
 msgid "Ga"
-msgstr "Га"
+msgstr "ガ語"
 
 #. name for gab
 msgid "Gabri"
@@ -9245,7 +9239,7 @@ msgstr ""
 
 #. name for gay
 msgid "Gayo"
-msgstr "Гайо"
+msgstr "ガヨ語"
 
 #. name for gaz
 msgid "Oromo; West Central"
@@ -9361,11 +9355,11 @@ msgstr ""
 
 #. name for gcf
 msgid "Creole French; Guadeloupean"
-msgstr "Креольский французский; Гваделупский"
+msgstr ""
 
 #. name for gcl
 msgid "Creole English; Grenadian"
-msgstr "Креольский английский; Гренадский"
+msgstr ""
 
 #. name for gcn
 msgid "Gaina"
@@ -9373,7 +9367,7 @@ msgstr ""
 
 #. name for gcr
 msgid "Creole French; Guianese"
-msgstr "Креольский французский; Гвианский"
+msgstr ""
 
 #. name for gct
 msgid "German; Colonia Tovar"
@@ -9517,7 +9511,7 @@ msgstr ""
 
 #. name for gez
 msgid "Geez"
-msgstr "Геэз"
+msgstr "ゲーズ語"
 
 #. name for gfk
 msgid "Patpatar"
@@ -9645,7 +9639,7 @@ msgstr ""
 
 #. name for gil
 msgid "Gilbertese"
-msgstr "Гильбертский"
+msgstr "キリバス語"
 
 #. name for gim
 msgid "Gimi (Eastern Highlands)"
@@ -9741,7 +9735,7 @@ msgstr ""
 
 #. name for gle
 msgid "Irish"
-msgstr "Ирландский"
+msgstr "アイルランド語"
 
 #. name for glg
 msgid "Galician"
@@ -9777,7 +9771,7 @@ msgstr ""
 
 #. name for glv
 msgid "Manx"
-msgstr "Мэнкский"
+msgstr "マン島語"
 
 #. name for glw
 msgid "Glavda"
@@ -9865,7 +9859,7 @@ msgstr ""
 
 #. name for gnk
 msgid "//Gana"
-msgstr "Ганда"
+msgstr "ガンダ語"
 
 #. name for gnl
 msgid "Gangulu"
@@ -9961,7 +9955,7 @@ msgstr ""
 
 #. name for gon
 msgid "Gondi"
-msgstr "Гонди"
+msgstr "ゴーンディー語"
 
 #. name for goo
 msgid "Gone Dau"
@@ -9977,7 +9971,7 @@ msgstr ""
 
 #. name for gor
 msgid "Gorontalo"
-msgstr "Горонтало"
+msgstr "ゴロンタロ語"
 
 #. name for gos
 msgid "Gronings"
@@ -9985,7 +9979,7 @@ msgstr ""
 
 #. name for got
 msgid "Gothic"
-msgstr "Готский"
+msgstr "ゴート語"
 
 #. name for gou
 msgid "Gavar"
@@ -10017,7 +10011,7 @@ msgstr ""
 
 #. name for gqa
 msgid "Ga'anda"
-msgstr "Ганда"
+msgstr "ガンダ語"
 
 #. name for gqi
 msgid "Guiqiong"
@@ -10037,11 +10031,11 @@ msgstr ""
 
 #. name for grb
 msgid "Grebo"
-msgstr "Гребо"
+msgstr "グレボ語"
 
 #. name for grc
 msgid "Greek; Ancient (to 1453)"
-msgstr "Древнегреческий (по 1453)"
+msgstr "ギリシア語; 古代 (-1453)"
 
 #. name for grd
 msgid "Guruntum-Mbaaru"
@@ -10069,7 +10063,7 @@ msgstr ""
 
 #. name for grn
 msgid "Guarani"
-msgstr "Гуарани"
+msgstr "グアラニー語"
 
 #. name for gro
 msgid "Groma"
@@ -10197,7 +10191,7 @@ msgstr ""
 
 #. name for guj
 msgid "Gujarati"
-msgstr "Гуджарати"
+msgstr "グジャラーティー語"
 
 #. name for guk
 msgid "Gumuz"
@@ -10413,7 +10407,7 @@ msgstr ""
 
 #. name for gyn
 msgid "Creole English; Guyanese"
-msgstr "Креольский английский; Гайянский"
+msgstr ""
 
 #. name for gyr
 msgid "Guarayu"
@@ -10429,7 +10423,7 @@ msgstr ""
 
 #. name for gzi
 msgid "Gazi"
-msgstr "Кхаси"
+msgstr "カシ語"
 
 #. name for gzn
 msgid "Gane"
@@ -10469,7 +10463,7 @@ msgstr ""
 
 #. name for hai
 msgid "Haida"
-msgstr "Хайда"
+msgstr "ハイダ語"
 
 #. name for haj
 msgid "Hajong"
@@ -10517,7 +10511,7 @@ msgstr ""
 
 #. name for hau
 msgid "Hausa"
-msgstr "Хауса"
+msgstr "ハウサ語"
 
 #. name for hav
 msgid "Havu"
@@ -10525,7 +10519,7 @@ msgstr ""
 
 #. name for haw
 msgid "Hawaiian"
-msgstr "Гавайский"
+msgstr "ハワイ語"
 
 #. name for hax
 msgid "Haida; Southern"
@@ -10589,7 +10583,7 @@ msgstr ""
 
 #. name for heb
 msgid "Hebrew"
-msgstr "Иврит"
+msgstr "ヘブライ語"
 
 #. name for hed
 msgid "Herdé"
@@ -10613,7 +10607,7 @@ msgstr ""
 
 #. name for her
 msgid "Herero"
-msgstr "Гереро"
+msgstr "ヘレロ語"
 
 #. name for hgm
 msgid "Hai//om"
@@ -10673,11 +10667,11 @@ msgstr ""
 
 #. name for hil
 msgid "Hiligaynon"
-msgstr "Хилигайнон"
+msgstr "ヒリジャノン語"
 
 #. name for hin
 msgid "Hindi"
-msgstr "Хинди"
+msgstr "ヒンディー語"
 
 #. name for hio
 msgid "Tsoa"
@@ -10689,7 +10683,7 @@ msgstr ""
 
 #. name for hit
 msgid "Hittite"
-msgstr "Хиттит"
+msgstr "ヒッタイト語"
 
 #. name for hiw
 msgid "Hiw"
@@ -10797,11 +10791,11 @@ msgstr ""
 
 #. name for hmn
 msgid "Hmong"
-msgstr "Хмонг"
+msgstr "フモング語"
 
 #. name for hmo
 msgid "Hiri Motu"
-msgstr "Хири Моту"
+msgstr "ヒリモトゥ語"
 
 #. name for hmp
 msgid "Miao; Northern Mashan"
@@ -10869,7 +10863,7 @@ msgstr ""
 
 #. name for hnn
 msgid "Hanunoo"
-msgstr "Хануноо"
+msgstr "ハヌノオ文字"
 
 #. name for hno
 msgid "Hindko; Northern"
@@ -11001,7 +10995,7 @@ msgstr ""
 
 #. name for hrv
 msgid "Croatian"
-msgstr "Хорватский"
+msgstr "クロアチア語"
 
 #. name for hrx
 msgid "Hunsrik"
@@ -11101,7 +11095,7 @@ msgstr ""
 
 #. name for hun
 msgid "Hungarian"
-msgstr "Венгерский"
+msgstr "ハンガリー語"
 
 #. name for huo
 msgid "Hu"
@@ -11109,7 +11103,7 @@ msgstr ""
 
 #. name for hup
 msgid "Hupa"
-msgstr "Хупа"
+msgstr "アタパスカ語"
 
 #. name for huq
 msgid "Tsat"
@@ -11177,7 +11171,7 @@ msgstr ""
 
 #. name for hwc
 msgid "Creole English; Hawai'i"
-msgstr "Креольский английский; Гавайский"
+msgstr ""
 
 #. name for hwo
 msgid "Hwana"
@@ -11189,7 +11183,7 @@ msgstr ""
 
 #. name for hye
 msgid "Armenian"
-msgstr "Армянский"
+msgstr "アルメニア語"
 
 #. name for iai
 msgid "Iaai"
@@ -11209,7 +11203,7 @@ msgstr ""
 
 #. name for iba
 msgid "Iban"
-msgstr "Ибанский"
+msgstr "イバン語"
 
 #. name for ibb
 msgid "Ibibio"
@@ -11245,7 +11239,7 @@ msgstr ""
 
 #. name for ibo
 msgid "Igbo"
-msgstr "Игбо"
+msgstr "イボ語"
 
 #. name for ibr
 msgid "Ibuoro"
@@ -11301,7 +11295,7 @@ msgstr ""
 
 #. name for ido
 msgid "Ido"
-msgstr "Идо"
+msgstr "イド語"
 
 #. name for idr
 msgid "Indri"
@@ -11453,7 +11447,7 @@ msgstr ""
 
 #. name for iku
 msgid "Inuktitut"
-msgstr "Инуктитут"
+msgstr "イヌクチタット語"
 
 #. name for ikv
 msgid "Iku-Gora-Ankwa"
@@ -11481,7 +11475,7 @@ msgstr ""
 
 #. name for ile
 msgid "Interlingue"
-msgstr "Интерлингве"
+msgstr "インターリング"
 
 #. name for ilg
 msgid "Garig-Ilgar"
@@ -11501,7 +11495,7 @@ msgstr ""
 
 #. name for ilo
 msgid "Iloko"
-msgstr "Илоко"
+msgstr "イロカノ語"
 
 #. name for ils
 msgid "International Sign"
@@ -11557,7 +11551,7 @@ msgstr ""
 
 #. name for ina
 msgid "Interlingua (International Auxiliary Language Association)"
-msgstr "Интерлингва (Ассоциация международного вспомогательного языка)"
+msgstr "インターリングア語 (国際補助語協会)"
 
 #. name for inb
 msgid "Inga"
@@ -11565,7 +11559,7 @@ msgstr ""
 
 #. name for ind
 msgid "Indonesian"
-msgstr "Индонезийский"
+msgstr "インドネシア語"
 
 #. name for ing
 msgid "Degexit'an"
@@ -11573,7 +11567,7 @@ msgstr ""
 
 #. name for inh
 msgid "Ingush"
-msgstr "Ингушский"
+msgstr "イングーシ語"
 
 #. name for inj
 msgid "Inga; Jungle"
@@ -11629,7 +11623,7 @@ msgstr ""
 
 #. name for ipk
 msgid "Inupiaq"
-msgstr "Инулиак"
+msgstr "イヌピアク語"
 
 #. name for ipo
 msgid "Ipiko"
@@ -11709,7 +11703,7 @@ msgstr ""
 
 #. name for isl
 msgid "Icelandic"
-msgstr "Исландский"
+msgstr "アイスランド語"
 
 #. name for ism
 msgid "Masimasi"
@@ -11737,7 +11731,7 @@ msgstr ""
 
 #. name for ita
 msgid "Italian"
-msgstr "Итальянский"
+msgstr "イタリア語"
 
 #. name for itb
 msgid "Itneg; Binongan"
@@ -11901,7 +11895,7 @@ msgstr ""
 
 #. name for jam
 msgid "Creole English; Jamaican"
-msgstr "Креольский английский; Ямайский"
+msgstr ""
 
 #. name for jao
 msgid "Yanyuwa"
@@ -11929,7 +11923,7 @@ msgstr ""
 
 #. name for jav
 msgid "Javanese"
-msgstr "Яванский"
+msgstr "ジャワ語"
 
 #. name for jax
 msgid "Malay; Jambi"
@@ -11957,7 +11951,7 @@ msgstr ""
 
 #. name for jbo
 msgid "Lojban"
-msgstr "Лоджбан"
+msgstr "ロジバン語"
 
 #. name for jbr
 msgid "Jofotek-Bromnya"
@@ -12229,11 +12223,11 @@ msgstr ""
 
 #. name for jpn
 msgid "Japanese"
-msgstr "Японский"
+msgstr "日本語"
 
 #. name for jpr
 msgid "Judeo-Persian"
-msgstr "Еврейско-персидский"
+msgstr "ユダヤ・ペルシア語"
 
 #. name for jqr
 msgid "Jaqaru"
@@ -12241,11 +12235,11 @@ msgstr ""
 
 #. name for jra
 msgid "Jarai"
-msgstr ""
+msgstr "ジャライ語"
 
 #. name for jrb
 msgid "Judeo-Arabic"
-msgstr "Еврейско-арабский"
+msgstr "ユダヤ・アラビア語"
 
 #. name for jrr
 msgid "Jiru"
@@ -12349,7 +12343,7 @@ msgstr ""
 
 #. name for jye
 msgid "Arabic; Judeo-Yemeni"
-msgstr "Арабский; Еврейско-йеменский"
+msgstr ""
 
 #. name for jyy
 msgid "Jaya"
@@ -12357,15 +12351,15 @@ msgstr ""
 
 #. name for kaa
 msgid "Kara-Kalpak"
-msgstr "Каракалпакский"
+msgstr "カラ・カルパク語"
 
 #. name for kab
 msgid "Kabyle"
-msgstr "Кабильский"
+msgstr "カビル語"
 
 #. name for kac
 msgid "Kachin"
-msgstr "Качинский"
+msgstr "カチン語"
 
 #. name for kad
 msgid "Kadara"
@@ -12409,7 +12403,7 @@ msgstr ""
 
 #. name for kan
 msgid "Kannada"
-msgstr "Каннада"
+msgstr "カンナダ語"
 
 #. name for kao
 msgid "Xaasongaxango"
@@ -12425,15 +12419,15 @@ msgstr ""
 
 #. name for kas
 msgid "Kashmiri"
-msgstr "Кашмири"
+msgstr "カシミーリー語"
 
 #. name for kat
 msgid "Georgian"
-msgstr "Грузинский"
+msgstr "グルジア語"
 
 #. name for kau
 msgid "Kanuri"
-msgstr "Канури"
+msgstr "カヌリ語"
 
 #. name for kav
 msgid "Katukína"
@@ -12441,7 +12435,7 @@ msgstr ""
 
 #. name for kaw
 msgid "Kawi"
-msgstr "Кави"
+msgstr "カウィ語"
 
 #. name for kax
 msgid "Kao"
@@ -12453,7 +12447,7 @@ msgstr ""
 
 #. name for kaz
 msgid "Kazakh"
-msgstr "Казахский"
+msgstr "カザーフ語"
 
 #. name for kba
 msgid "Kalarko"
@@ -12469,7 +12463,7 @@ msgstr ""
 
 #. name for kbd
 msgid "Kabardian"
-msgstr "Кабардинский"
+msgstr "カバルダ語"
 
 #. name for kbe
 msgid "Kanju"
@@ -13065,7 +13059,7 @@ msgstr ""
 
 #. name for kha
 msgid "Khasi"
-msgstr "Кхаси"
+msgstr "カシ語"
 
 #. name for khb
 msgid "Lü"
@@ -13089,7 +13083,7 @@ msgstr ""
 
 #. name for khg
 msgid "Tibetan; Khams"
-msgstr "Тибетский; Кхамский"
+msgstr ""
 
 #. name for khh
 msgid "Kehu"
@@ -13117,7 +13111,7 @@ msgstr ""
 
 #. name for kho
 msgid "Khotanese"
-msgstr "Хотанский"
+msgstr "ホータン語"
 
 #. name for khp
 msgid "Kapori"
@@ -13205,7 +13199,7 @@ msgstr ""
 
 #. name for kik
 msgid "Kikuyu"
-msgstr "Кикуйю"
+msgstr "キクユ語"
 
 #. name for kil
 msgid "Kariya"
@@ -13217,7 +13211,7 @@ msgstr ""
 
 #. name for kin
 msgid "Kinyarwanda"
-msgstr "Киньяруанда"
+msgstr "キンヤルワンダ語"
 
 #. name for kio
 msgid "Kiowa"
@@ -13233,7 +13227,7 @@ msgstr ""
 
 #. name for kir
 msgid "Kirghiz"
-msgstr "Киргизский"
+msgstr "キルギス語"
 
 #. name for kis
 msgid "Kis"
@@ -13577,7 +13571,7 @@ msgstr ""
 
 #. name for kmb
 msgid "Kimbundu"
-msgstr "Кимбунду"
+msgstr "キンブンドゥ語"
 
 #. name for kmc
 msgid "Dong; Southern"
@@ -13701,7 +13695,7 @@ msgstr ""
 
 #. name for kng
 msgid "Koongo"
-msgstr "Конго"
+msgstr "コンゴ語"
 
 #. name for kni
 msgid "Kanufi"
@@ -13821,11 +13815,11 @@ msgstr ""
 
 #. name for kom
 msgid "Komi"
-msgstr "Коми"
+msgstr "コミ語"
 
 #. name for kon
 msgid "Kongo"
-msgstr "Конго"
+msgstr "コンゴ語"
 
 #. name for koo
 msgid "Konzo"
@@ -13841,11 +13835,11 @@ msgstr ""
 
 #. name for kor
 msgid "Korean"
-msgstr "Корейский"
+msgstr "朝鮮語"
 
 #. name for kos
 msgid "Kosraean"
-msgstr "Косраинский"
+msgstr "コスラエ語"
 
 #. name for kot
 msgid "Lagwan"
@@ -13893,7 +13887,7 @@ msgstr ""
 
 #. name for kpe
 msgid "Kpelle"
-msgstr "Кпелле"
+msgstr "クペレ語"
 
 #. name for kpf
 msgid "Komba"
@@ -14093,7 +14087,7 @@ msgstr ""
 
 #. name for krc
 msgid "Karachay-Balkar"
-msgstr "Карачаево-балкарский"
+msgstr "カラチャイ・バルカル語"
 
 #. name for krd
 msgid "Kairui-Midiki"
@@ -14125,7 +14119,7 @@ msgstr ""
 
 #. name for krl
 msgid "Karelian"
-msgstr "Карельский"
+msgstr "カレリア語"
 
 #. name for krm
 msgid "Krim"
@@ -14153,7 +14147,7 @@ msgstr ""
 
 #. name for kru
 msgid "Kurukh"
-msgstr "Курух"
+msgstr "クルク語"
 
 #. name for krv
 msgid "Kavet"
@@ -14385,7 +14379,7 @@ msgstr ""
 
 #. name for kua
 msgid "Kuanyama"
-msgstr "Киньяма"
+msgstr "クアニャマ語"
 
 #. name for kub
 msgid "Kutep"
@@ -14433,7 +14427,7 @@ msgstr ""
 
 #. name for kum
 msgid "Kumyk"
-msgstr "Кумыкский"
+msgstr "クミック語"
 
 #. name for kun
 msgid "Kunama"
@@ -14453,7 +14447,7 @@ msgstr ""
 
 #. name for kur
 msgid "Kurdish"
-msgstr "Курдский"
+msgstr "クルド語"
 
 #. name for kus
 msgid "Kusaal"
@@ -14461,7 +14455,7 @@ msgstr ""
 
 #. name for kut
 msgid "Kutenai"
-msgstr "Кутенаи"
+msgstr "クテナイ語"
 
 #. name for kuu
 msgid "Kuskokwim; Upper"
@@ -15017,7 +15011,7 @@ msgstr ""
 
 #. name for lad
 msgid "Ladino"
-msgstr "Ладино"
+msgstr "ラジノ語"
 
 #. name for lae
 msgid "Pattani"
@@ -15033,7 +15027,7 @@ msgstr ""
 
 #. name for lah
 msgid "Lahnda"
-msgstr "Лахнда"
+msgstr "ラフンダー語"
 
 #. name for lai
 msgid "Lambya"
@@ -15053,7 +15047,7 @@ msgstr ""
 
 #. name for lam
 msgid "Lamba"
-msgstr "Ламба"
+msgstr "ランバ語"
 
 #. name for lan
 msgid "Laru"
@@ -15061,7 +15055,7 @@ msgstr ""
 
 #. name for lao
 msgid "Lao"
-msgstr "Лаосский"
+msgstr "ラオ語"
 
 #. name for lap
 msgid "Laka (Chad)"
@@ -15081,7 +15075,7 @@ msgstr ""
 
 #. name for lat
 msgid "Latin"
-msgstr "Латинский"
+msgstr "ラテン語"
 
 #. name for lau
 msgid "Laba"
@@ -15089,7 +15083,7 @@ msgstr ""
 
 #. name for lav
 msgid "Latvian"
-msgstr "Латвийский"
+msgstr "ラトヴィア語"
 
 #. name for law
 msgid "Lauje"
@@ -15353,7 +15347,7 @@ msgstr ""
 
 #. name for lep
 msgid "Lepcha"
-msgstr "Лепча"
+msgstr "レプチャ文字"
 
 #. name for leq
 msgid "Lembena"
@@ -15393,7 +15387,7 @@ msgstr ""
 
 #. name for lez
 msgid "Lezghian"
-msgstr "Лезгинский"
+msgstr "レズギ語"
 
 #. name for lfa
 msgid "Lefa"
@@ -15521,7 +15515,7 @@ msgstr ""
 
 #. name for lif
 msgid "Limbu"
-msgstr "Лимбу"
+msgstr "リンブ文字"
 
 #. name for lig
 msgid "Ligbi"
@@ -15553,7 +15547,7 @@ msgstr ""
 
 #. name for lin
 msgid "Lingala"
-msgstr "Лингала"
+msgstr "リンガラ語"
 
 #. name for lio
 msgid "Liki"
@@ -15569,15 +15563,15 @@ msgstr ""
 
 #. name for lir
 msgid "English; Liberian"
-msgstr "Креольский английский; Либерийский"
+msgstr ""
 
 #. name for lis
 msgid "Lisu"
-msgstr "Лису"
+msgstr "リス文字"
 
 #. name for lit
 msgid "Lithuanian"
-msgstr "Литовский"
+msgstr "リトアニア語"
 
 #. name for liu
 msgid "Logorik"
@@ -15949,7 +15943,7 @@ msgstr ""
 
 #. name for lol
 msgid "Mongo"
-msgstr "Монго"
+msgstr "モンゴ語"
 
 #. name for lom
 msgid "Loma (Liberia)"
@@ -15985,7 +15979,7 @@ msgstr ""
 
 #. name for lou
 msgid "Creole French; Louisiana"
-msgstr "Креольский французский; Луизиана"
+msgstr ""
 
 #. name for lov
 msgid "Lopi"
@@ -16005,7 +15999,7 @@ msgstr ""
 
 #. name for loz
 msgid "Lozi"
-msgstr "Лози"
+msgstr "ロジ語"
 
 #. name for lpa
 msgid "Lelepa"
@@ -16173,11 +16167,11 @@ msgstr ""
 
 #. name for lua
 msgid "Luba-Lulua"
-msgstr "Луба-Лулуа"
+msgstr "ルバ・ルルア語"
 
 #. name for lub
 msgid "Luba-Katanga"
-msgstr "Луба-Катанга"
+msgstr "ルバ語"
 
 #. name for luc
 msgid "Aringa"
@@ -16197,11 +16191,11 @@ msgstr ""
 
 #. name for lug
 msgid "Ganda"
-msgstr "Ганда"
+msgstr "ガンダ語"
 
 #. name for lui
 msgid "Luiseno"
-msgstr "Луисеньо"
+msgstr "ルイセニョ語"
 
 #. name for luj
 msgid "Luna"
@@ -16221,11 +16215,11 @@ msgstr ""
 
 #. name for lun
 msgid "Lunda"
-msgstr "Лунда"
+msgstr "ランダ語"
 
 #. name for luo
 msgid "Luo (Kenya and Tanzania)"
-msgstr "Луо (Кения и Танзания)"
+msgstr "ルオ語 (ケニアとタンザニア)"
 
 #. name for lup
 msgid "Lumbu"
@@ -16241,7 +16235,7 @@ msgstr ""
 
 #. name for lus
 msgid "Lushai"
-msgstr "Лушай"
+msgstr "ルシャイ語"
 
 #. name for lut
 msgid "Lushootseed"
@@ -16345,7 +16339,7 @@ msgstr ""
 
 #. name for lzz
 msgid "Laz"
-msgstr "Лазский"
+msgstr ""
 
 #. name for maa
 msgid "Mazatec; San Jerónimo Tecóatl"
@@ -16357,7 +16351,7 @@ msgstr ""
 
 #. name for mad
 msgid "Madurese"
-msgstr "Мадурский"
+msgstr "マドゥラ語"
 
 #. name for mae
 msgid "Bo-Rukul"
@@ -16369,7 +16363,7 @@ msgstr ""
 
 #. name for mag
 msgid "Magahi"
-msgstr "Магахи"
+msgstr "マガヒ語"
 
 #. name for mah
 msgid "Marshallese"
@@ -16377,7 +16371,7 @@ msgstr ""
 
 #. name for mai
 msgid "Maithili"
-msgstr "Майтхили"
+msgstr "マイチリ語"
 
 #. name for maj
 msgid "Mazatec; Jalapa De Díaz"
@@ -16385,11 +16379,11 @@ msgstr ""
 
 #. name for mak
 msgid "Makasar"
-msgstr "Макассарский"
+msgstr "マカッサル語"
 
 #. name for mal
 msgid "Malayalam"
-msgstr "Малаялам"
+msgstr "マラヤーラム語"
 
 #. name for mam
 msgid "Mam"
@@ -16397,7 +16391,7 @@ msgstr ""
 
 #. name for man
 msgid "Mandingo"
-msgstr "Мандинго"
+msgstr "マンディンゴ語"
 
 #. name for maq
 msgid "Mazatec; Chiquihuitlán"
@@ -16405,11 +16399,11 @@ msgstr ""
 
 #. name for mar
 msgid "Marathi"
-msgstr "Маратхи"
+msgstr "マラーティー語"
 
 #. name for mas
 msgid "Masai"
-msgstr "Масаи"
+msgstr "マサイ語"
 
 #. name for mat
 msgid "Matlatzinca; San Francisco"
@@ -16661,7 +16655,7 @@ msgstr ""
 
 #. name for mdf
 msgid "Moksha"
-msgstr "Мокшанский"
+msgstr "モクシャ語"
 
 #. name for mdg
 msgid "Massalat"
@@ -16705,7 +16699,7 @@ msgstr ""
 
 #. name for mdr
 msgid "Mandar"
-msgstr "Мандарский"
+msgstr "マンダル語"
 
 #. name for mds
 msgid "Maria (Papua New Guinea)"
@@ -16945,7 +16939,7 @@ msgstr ""
 
 #. name for mga
 msgid "Irish; Middle (900-1200)"
-msgstr "Среднеирландский (900-1200)"
+msgstr "アイルランド語; 中世 (900-1200)"
 
 #. name for mgb
 msgid "Mararit"
@@ -17161,7 +17155,7 @@ msgstr ""
 
 #. name for mid
 msgid "Mandaic"
-msgstr "Мандейский"
+msgstr "マンダ文字"
 
 #. name for mie
 msgid "Mixtec; Ocotepec"
@@ -17201,7 +17195,7 @@ msgstr ""
 
 #. name for min
 msgid "Minangkabau"
-msgstr "Минангкабау"
+msgstr "ミナンカバウ語"
 
 #. name for mio
 msgid "Mixtec; Pinotepa Nacional"
@@ -17317,7 +17311,7 @@ msgstr ""
 
 #. name for mju
 msgid "Manna-Dora"
-msgstr "Телугу"
+msgstr "テルグ語"
 
 #. name for mjv
 msgid "Mannan"
@@ -17353,7 +17347,7 @@ msgstr ""
 
 #. name for mkd
 msgid "Macedonian"
-msgstr "Македонский"
+msgstr "マケドニア語"
 
 #. name for mke
 msgid "Mawchi"
@@ -17465,7 +17459,7 @@ msgstr ""
 
 #. name for mlg
 msgid "Malagasy"
-msgstr "Малагаси"
+msgstr "マラガシ語"
 
 #. name for mlh
 msgid "Mape"
@@ -17517,7 +17511,7 @@ msgstr ""
 
 #. name for mlt
 msgid "Maltese"
-msgstr "Мальтийский"
+msgstr "マルタ語"
 
 #. name for mlu
 msgid "To'abaita"
@@ -17649,7 +17643,7 @@ msgstr ""
 
 #. name for mnc
 msgid "Manchu"
-msgstr "Манчу"
+msgstr "満州語"
 
 #. name for mnd
 msgid "Mondé"
@@ -17673,7 +17667,7 @@ msgstr ""
 
 #. name for mni
 msgid "Manipuri"
-msgstr "Манипури"
+msgstr "マニプル語"
 
 #. name for mnj
 msgid "Munji"
@@ -17761,7 +17755,7 @@ msgstr ""
 
 #. name for moh
 msgid "Mohawk"
-msgstr "Мохаук"
+msgstr "モーホーク語"
 
 #. name for moi
 msgid "Mboi"
@@ -17781,7 +17775,7 @@ msgstr ""
 
 #. name for mon
 msgid "Mongolian"
-msgstr "Монгольский"
+msgstr "蒙古語"
 
 #. name for moo
 msgid "Monom"
@@ -17801,7 +17795,7 @@ msgstr ""
 
 #. name for mos
 msgid "Mossi"
-msgstr "Моей"
+msgstr "モッシー語"
 
 #. name for mot
 msgid "Barí"
@@ -18065,7 +18059,7 @@ msgstr ""
 
 #. name for mri
 msgid "Maori"
-msgstr "Маори"
+msgstr "マオリ語"
 
 #. name for mrj
 msgid "Mari; Western"
@@ -18377,7 +18371,7 @@ msgstr ""
 
 #. name for mul
 msgid "Multiple languages"
-msgstr "Разных семей языки"
+msgstr "多言語"
 
 #. name for mum
 msgid "Maiwala"
@@ -18401,7 +18395,7 @@ msgstr ""
 
 #. name for mus
 msgid "Creek"
-msgstr "Крик"
+msgstr "クリーク語"
 
 #. name for mut
 msgid "Muria; Western"
@@ -18485,7 +18479,7 @@ msgstr ""
 
 #. name for mvq
 msgid "Moere"
-msgstr ""
+msgstr "セレール語"
 
 #. name for mvr
 msgid "Marau"
@@ -18569,7 +18563,7 @@ msgstr ""
 
 #. name for mwl
 msgid "Mirandese"
-msgstr "Мирандские"
+msgstr "ミランド語"
 
 #. name for mwm
 msgid "Sar"
@@ -18593,7 +18587,7 @@ msgstr ""
 
 #. name for mwr
 msgid "Marwari"
-msgstr "Марвари"
+msgstr "マルワリ語"
 
 #. name for mws
 msgid "Mwimbi-Muthambi"
@@ -18661,7 +18655,7 @@ msgstr ""
 
 #. name for mxi
 msgid "Mozarabic"
-msgstr "Мосарабский"
+msgstr ""
 
 #. name for mxj
 msgid "Deng; Geman"
@@ -18733,7 +18727,7 @@ msgstr ""
 
 #. name for mya
 msgid "Burmese"
-msgstr "Бирманский"
+msgstr "ビルマ語"
 
 #. name for myb
 msgid "Mbay"
@@ -18809,7 +18803,7 @@ msgstr ""
 
 #. name for myv
 msgid "Erzya"
-msgstr "Эрзянский"
+msgstr "エルジャ語"
 
 #. name for myw
 msgid "Muyuw"
@@ -18981,7 +18975,7 @@ msgstr ""
 
 #. name for nap
 msgid "Neapolitan"
-msgstr "Неаполитанский"
+msgstr "ナポリ語"
 
 #. name for naq
 msgid "Nama (Namibia)"
@@ -19001,7 +18995,7 @@ msgstr ""
 
 #. name for nau
 msgid "Nauru"
-msgstr "Науру"
+msgstr "ナウル語"
 
 #. name for nav
 msgid "Navajo"
@@ -19065,7 +19059,7 @@ msgstr ""
 
 #. name for nbl
 msgid "Ndebele; South"
-msgstr "Ндебеле южный"
+msgstr "ヌデベレ語; 南"
 
 #. name for nbm
 msgid "Ngbaka Ma'bo"
@@ -19225,7 +19219,7 @@ msgstr ""
 
 #. name for nde
 msgid "Ndebele; North"
-msgstr "Ндебеле северный"
+msgstr "マタベレ語; 北"
 
 #. name for ndf
 msgid "Nadruvian"
@@ -19265,7 +19259,7 @@ msgstr ""
 
 #. name for ndo
 msgid "Ndonga"
-msgstr "Ндунга"
+msgstr "ンドンガ語"
 
 #. name for ndp
 msgid "Ndo"
@@ -19369,7 +19363,7 @@ msgstr ""
 
 #. name for nep
 msgid "Nepali"
-msgstr "Непальский"
+msgstr "ネパール語"
 
 #. name for neq
 msgid "Mixe; North Central"
@@ -19621,7 +19615,7 @@ msgstr ""
 
 #. name for nia
 msgid "Nias"
-msgstr "Ниас"
+msgstr "ニアス語"
 
 #. name for nib
 msgid "Nakame"
@@ -19693,7 +19687,7 @@ msgstr ""
 
 #. name for niu
 msgid "Niuean"
-msgstr "Ниуэ"
+msgstr "ニウーエイ語"
 
 #. name for niv
 msgid "Gilyak"
@@ -19705,7 +19699,7 @@ msgstr ""
 
 #. name for nix
 msgid "Hema"
-msgstr "Ньоро"
+msgstr "ニョロ語"
 
 #. name for niy
 msgid "Ngiti"
@@ -19885,7 +19879,7 @@ msgstr ""
 
 #. name for nld
 msgid "Dutch"
-msgstr "Нидерландский"
+msgstr "オランダ語"
 
 #. name for nle
 msgid "Nyala; East"
@@ -20105,7 +20099,7 @@ msgstr ""
 
 #. name for nno
 msgid "Norwegian Nynorsk"
-msgstr "Норвежский Нюнорск"
+msgstr "ニーノシュク・ノルウェー語"
 
 #. name for nnp
 msgid "Naga; Wancho"
@@ -20177,7 +20171,7 @@ msgstr ""
 
 #. name for nog
 msgid "Nogai"
-msgstr "Ногайский"
+msgstr "ノガイ語"
 
 #. name for noh
 msgid "Nomu"
@@ -20201,7 +20195,7 @@ msgstr ""
 
 #. name for non
 msgid "Norse; Old"
-msgstr "Старонорвежский"
+msgstr "スカンジナビア語; 古期"
 
 #. name for nop
 msgid "Numanggang"
@@ -20213,7 +20207,7 @@ msgstr ""
 
 #. name for nor
 msgid "Norwegian"
-msgstr "Норвежский"
+msgstr "ノルウェー語"
 
 #. name for nos
 msgid "Nisu; Eastern"
@@ -20297,7 +20291,7 @@ msgstr ""
 
 #. name for nqo
 msgid "N'Ko"
-msgstr "Н'ко"
+msgstr "ンコ文字"
 
 #. name for nra
 msgid "Ngom"
@@ -20745,15 +20739,15 @@ msgstr ""
 
 #. name for nym
 msgid "Nyamwezi"
-msgstr "Ньямвези"
+msgstr "ムエジ語"
 
 #. name for nyn
 msgid "Nyankole"
-msgstr "Ньянколе"
+msgstr "ニャンコール語"
 
 #. name for nyo
 msgid "Nyoro"
-msgstr "Ньоро"
+msgstr "ニョロ語"
 
 #. name for nyp
 msgid "Nyang'i"
@@ -20805,7 +20799,7 @@ msgstr ""
 
 #. name for nzi
 msgid "Nzima"
-msgstr "Нзима"
+msgstr "ンゼマ語"
 
 #. name for nzk
 msgid "Nzakara"
@@ -20981,7 +20975,7 @@ msgstr ""
 
 #. name for oji
 msgid "Ojibwa"
-msgstr "Оджибва"
+msgstr "オジブワ語"
 
 #. name for ojp
 msgid "Japanese; Old"
@@ -21285,11 +21279,11 @@ msgstr ""
 
 #. name for ori
 msgid "Oriya"
-msgstr "Ория"
+msgstr "オリヤー語"
 
 #. name for orm
 msgid "Oromo"
-msgstr "Оромо"
+msgstr "オロモ語"
 
 #. name for orn
 msgid "Orang Kanaq"
@@ -21317,7 +21311,7 @@ msgstr ""
 
 #. name for orv
 msgid "Russian; Old"
-msgstr "Древнерусский"
+msgstr ""
 
 #. name for orw
 msgid "Oro Win"
@@ -21333,7 +21327,7 @@ msgstr ""
 
 #. name for osa
 msgid "Osage"
-msgstr "Оседжи"
+msgstr "オーセージ語"
 
 #. name for osc
 msgid "Oscan"
@@ -21369,11 +21363,11 @@ msgstr ""
 
 #. name for ota
 msgid "Turkish; Ottoman (1500-1928)"
-msgstr "Турецкий; Отомангский (1500-1928)"
+msgstr "トルコ語; オスマン (1500-1928)"
 
 #. name for otb
 msgid "Tibetan; Old"
-msgstr "Тибетский; Древний"
+msgstr ""
 
 #. name for otd
 msgid "Ot Danum"
@@ -21433,7 +21427,7 @@ msgstr ""
 
 #. name for oty
 msgid "Tamil; Old"
-msgstr "Древнетамильский"
+msgstr ""
 
 #. name for otz
 msgid "Otomi; Ixtenco"
@@ -21513,7 +21507,7 @@ msgstr ""
 
 #. name for pag
 msgid "Pangasinan"
-msgstr "Пангасинан"
+msgstr "パンガシナーン語"
 
 #. name for pah
 msgid "Tenharim"
@@ -21529,11 +21523,11 @@ msgstr ""
 
 #. name for pal
 msgid "Pahlavi"
-msgstr "Пехлевийский"
+msgstr "パーラヴィー語"
 
 #. name for pam
 msgid "Pampanga"
-msgstr "Пампанга"
+msgstr "パンパンガ語"
 
 #. name for pan
 msgid "Panjabi"
@@ -21545,7 +21539,7 @@ msgstr ""
 
 #. name for pap
 msgid "Papiamento"
-msgstr "Папьяменто"
+msgstr "パピアメント"
 
 #. name for paq
 msgid "Parya"
@@ -21565,7 +21559,7 @@ msgstr ""
 
 #. name for pau
 msgid "Palauan"
-msgstr "Палау"
+msgstr "パラオ語"
 
 #. name for pav
 msgid "Pakaásnovos"
@@ -21913,7 +21907,7 @@ msgstr ""
 
 #. name for phn
 msgid "Phoenician"
-msgstr "Финикийский"
+msgstr "フェニキア語"
 
 #. name for pho
 msgid "Phunoi"
@@ -22121,7 +22115,7 @@ msgstr ""
 
 #. name for pli
 msgid "Pali"
-msgstr "Пали"
+msgstr "パーリ語"
 
 #. name for plj
 msgid "Polci"
@@ -22389,7 +22383,7 @@ msgstr ""
 
 #. name for pol
 msgid "Polish"
-msgstr "Польский"
+msgstr "ポーランド語"
 
 #. name for pom
 msgid "Pomo; Southeastern"
@@ -22397,7 +22391,7 @@ msgstr ""
 
 #. name for pon
 msgid "Pohnpeian"
-msgstr "Фонпейский"
+msgstr "ポナペ語"
 
 #. name for poo
 msgid "Pomo; Central"
@@ -22413,7 +22407,7 @@ msgstr ""
 
 #. name for por
 msgid "Portuguese"
-msgstr "Португальский"
+msgstr "ポルトガル語"
 
 #. name for pos
 msgid "Popoluca; Sayula"
@@ -22525,7 +22519,7 @@ msgstr ""
 
 #. name for prg
 msgid "Prussian"
-msgstr "Прусский"
+msgstr ""
 
 #. name for prh
 msgid "Porohanon"
@@ -22553,7 +22547,7 @@ msgstr ""
 
 #. name for pro
 msgid "Provençal; Old (to 1500)"
-msgstr "Старопровансальский (по 1500)"
+msgstr "プロヴァンス語; 古期 (-1500)"
 
 #. name for prp
 msgid "Parsi"
@@ -22781,7 +22775,7 @@ msgstr ""
 
 #. name for pus
 msgid "Pushto"
-msgstr "Пушту"
+msgstr "プシュトゥー語"
 
 #. name for put
 msgid "Putoh"
@@ -22893,7 +22887,7 @@ msgstr ""
 
 #. name for que
 msgid "Quechua"
-msgstr "Кечуа"
+msgstr "キチュワ語"
 
 #. name for quf
 msgid "Quechua; Lambayeque"
@@ -23037,7 +23031,7 @@ msgstr ""
 
 #. name for qwm
 msgid "Kuman (Russia)"
-msgstr "Ферганско-кыпчакский (Россия)"
+msgstr ""
 
 #. name for qws
 msgid "Quechua; Sihuas Ancash"
@@ -23141,7 +23135,7 @@ msgstr ""
 
 #. name for raj
 msgid "Rajasthani"
-msgstr "Раджастхани"
+msgstr "ラージャスターニー語"
 
 #. name for rak
 msgid "Tulu-Bohuai"
@@ -23165,7 +23159,7 @@ msgstr ""
 
 #. name for rap
 msgid "Rapanui"
-msgstr "Рапаню"
+msgstr "ラパヌーイ語"
 
 #. name for raq
 msgid "Saam"
@@ -23221,7 +23215,7 @@ msgstr ""
 
 #. name for rcf
 msgid "Creole French; Réunion"
-msgstr "Креольский французский; Реюньон"
+msgstr ""
 
 #. name for rdb
 msgid "Rudbari"
@@ -23249,7 +23243,7 @@ msgstr ""
 
 #. name for rej
 msgid "Rejang"
-msgstr "Реджанг"
+msgstr "レジャン文字"
 
 #. name for rel
 msgid "Rendille"
@@ -23545,11 +23539,11 @@ msgstr ""
 
 #. name for rom
 msgid "Romany"
-msgstr "Цыганский"
+msgstr "ロマニ語"
 
 #. name for ron
 msgid "Romanian"
-msgstr "Румынский"
+msgstr "ルーマニア語"
 
 #. name for roo
 msgid "Rotokas"
@@ -23597,7 +23591,7 @@ msgstr ""
 
 #. name for rsl
 msgid "Russian Sign Language"
-msgstr "Русский язык жестов"
+msgstr ""
 
 #. name for rth
 msgid "Ratahan"
@@ -23645,7 +23639,7 @@ msgstr ""
 
 #. name for run
 msgid "Rundi"
-msgstr "Рунди"
+msgstr "ルンディ語"
 
 #. name for ruo
 msgid "Romanian; Istro"
@@ -23661,7 +23655,7 @@ msgstr ""
 
 #. name for rus
 msgid "Russian"
-msgstr "Русский"
+msgstr "ロシア語"
 
 #. name for rut
 msgid "Rutul"
@@ -23725,7 +23719,7 @@ msgstr ""
 
 #. name for sad
 msgid "Sandawe"
-msgstr "Сандаве"
+msgstr "サンダウェ語"
 
 #. name for sae
 msgid "Sabanê"
@@ -23737,11 +23731,11 @@ msgstr ""
 
 #. name for sag
 msgid "Sango"
-msgstr "Санго"
+msgstr "サンゴ語"
 
 #. name for sah
 msgid "Yakut"
-msgstr "Якутский"
+msgstr "ヤクート語"
 
 #. name for saj
 msgid "Sahu"
@@ -23757,7 +23751,7 @@ msgstr ""
 
 #. name for san
 msgid "Sanskrit"
-msgstr "Санскрит"
+msgstr "梵語"
 
 #. name for sao
 msgid "Sause"
@@ -23777,11 +23771,11 @@ msgstr ""
 
 #. name for sas
 msgid "Sasak"
-msgstr "Сасакский"
+msgstr "ササク語"
 
 #. name for sat
 msgid "Santali"
-msgstr "Сантали"
+msgstr "サンターリー語"
 
 #. name for sau
 msgid "Saleman"
@@ -23801,11 +23795,11 @@ msgstr ""
 
 #. name for say
 msgid "Saya"
-msgstr "Сасакский"
+msgstr "ササク語"
 
 #. name for saz
 msgid "Saurashtra"
-msgstr "Саураштра"
+msgstr "サウラーシュトラ文字"
 
 #. name for sba
 msgid "Ngambay"
@@ -23949,11 +23943,11 @@ msgstr ""
 
 #. name for scn
 msgid "Sicilian"
-msgstr "Сицилийский"
+msgstr "シチリア語"
 
 #. name for sco
 msgid "Scots"
-msgstr "Шотландский"
+msgstr "スコットランド語"
 
 #. name for scp
 msgid "Helambu Sherpa"
@@ -24109,7 +24103,7 @@ msgstr ""
 
 #. name for sel
 msgid "Selkup"
-msgstr "Селкапский"
+msgstr "セリクプ語"
 
 #. name for sen
 msgid "Sénoufo; Nanerigé"
@@ -24177,7 +24171,7 @@ msgstr ""
 
 #. name for sga
 msgid "Irish; Old (to 900)"
-msgstr "Староирландский (по 900)"
+msgstr "アイルランド語; 古 (-900)"
 
 #. name for sgb
 msgid "Ayta; Mag-antsi"
@@ -24305,7 +24299,7 @@ msgstr ""
 
 #. name for shn
 msgid "Shan"
-msgstr "Шанский"
+msgstr "シャン語"
 
 #. name for sho
 msgid "Shanga"
@@ -24365,7 +24359,7 @@ msgstr ""
 
 #. name for sid
 msgid "Sidamo"
-msgstr "Сидама"
+msgstr "シダモ語"
 
 #. name for sie
 msgid "Simaa"
@@ -24405,7 +24399,7 @@ msgstr ""
 
 #. name for sin
 msgid "Sinhala"
-msgstr "Сингальский"
+msgstr "シンハラ文字"
 
 #. name for sip
 msgid "Sikkimese"
@@ -24645,7 +24639,7 @@ msgstr ""
 
 #. name for slk
 msgid "Slovak"
-msgstr "Словацкий"
+msgstr "スロヴァキア語"
 
 #. name for sll
 msgid "Salt-Yui"
@@ -24685,7 +24679,7 @@ msgstr ""
 
 #. name for slv
 msgid "Slovenian"
-msgstr "Словенский"
+msgstr "スロヴェニア語"
 
 #. name for slw
 msgid "Sialum"
@@ -24737,7 +24731,7 @@ msgstr ""
 
 #. name for smj
 msgid "Lule Sami"
-msgstr "Люле-саамский"
+msgstr "ルレ・サーミ語"
 
 #. name for smk
 msgid "Bolinao"
@@ -24757,11 +24751,11 @@ msgstr ""
 
 #. name for smo
 msgid "Samoan"
-msgstr "Самоанский"
+msgstr "サモア語"
 
 #. name for smp
 msgid "Samaritan"
-msgstr "Самаритянский"
+msgstr "サマリア文字"
 
 #. name for smq
 msgid "Samo"
@@ -24805,7 +24799,7 @@ msgstr ""
 
 #. name for sna
 msgid "Shona"
-msgstr "Шона"
+msgstr "ショナ語"
 
 #. name for snb
 msgid "Sebuyau"
@@ -24817,7 +24811,7 @@ msgstr ""
 
 #. name for snd
 msgid "Sindhi"
-msgstr "Синдхи"
+msgstr "シンディー語"
 
 #. name for sne
 msgid "Bidayuh; Bau"
@@ -24845,7 +24839,7 @@ msgstr ""
 
 #. name for snk
 msgid "Soninke"
-msgstr "Сонинк"
+msgstr "ソニンケ語"
 
 #. name for snl
 msgid "Sangil"
@@ -24925,7 +24919,7 @@ msgstr ""
 
 #. name for sog
 msgid "Sogdian"
-msgstr "Согдийский"
+msgstr "ソグド語"
 
 #. name for soh
 msgid "Aka"
@@ -24949,7 +24943,7 @@ msgstr ""
 
 #. name for som
 msgid "Somali"
-msgstr "Сомали"
+msgstr "ソマリ語"
 
 #. name for soo
 msgid "Songo"
@@ -24973,7 +24967,7 @@ msgstr ""
 
 #. name for sot
 msgid "Sotho; Southern"
-msgstr "Сото Южный"
+msgstr "ソト語; 南"
 
 #. name for sou
 msgid "Thai; Southern"
@@ -25001,7 +24995,7 @@ msgstr ""
 
 #. name for spa
 msgid "Spanish"
-msgstr "Испанский"
+msgstr "スペイン語"
 
 #. name for spb
 msgid "Sepa (Indonesia)"
@@ -25085,7 +25079,7 @@ msgstr ""
 
 #. name for sqi
 msgid "Albanian"
-msgstr "Албанский"
+msgstr "アルバニア語"
 
 #. name for sqm
 msgid "Suma"
@@ -25133,7 +25127,7 @@ msgstr ""
 
 #. name for srd
 msgid "Sardinian"
-msgstr "Сардинский"
+msgstr "サルデーニャ語"
 
 #. name for sre
 msgid "Sara"
@@ -25177,7 +25171,7 @@ msgstr ""
 
 #. name for srp
 msgid "Serbian"
-msgstr "Сербский"
+msgstr "セルビア語"
 
 #. name for srq
 msgid "Sirionó"
@@ -25185,7 +25179,7 @@ msgstr ""
 
 #. name for srr
 msgid "Serer"
-msgstr "Серер"
+msgstr "セレール語"
 
 #. name for srs
 msgid "Sarsi"
@@ -25281,7 +25275,7 @@ msgstr ""
 
 #. name for ssq
 msgid "So'a"
-msgstr "Шона"
+msgstr "ショナ語"
 
 #. name for ssr
 msgid "Swiss-French Sign Language"
@@ -25305,7 +25299,7 @@ msgstr ""
 
 #. name for ssw
 msgid "Swati"
-msgstr "Свати"
+msgstr "シスワティ語"
 
 #. name for ssx
 msgid "Samberigi"
@@ -25437,11 +25431,11 @@ msgstr ""
 
 #. name for suk
 msgid "Sukuma"
-msgstr "Сукума"
+msgstr "スクマ語"
 
 #. name for sun
 msgid "Sundanese"
-msgstr "Сунданский"
+msgstr "スンダ語"
 
 #. name for suq
 msgid "Suri"
@@ -25453,7 +25447,7 @@ msgstr ""
 
 #. name for sus
 msgid "Susu"
-msgstr "Сусу"
+msgstr "スス語"
 
 #. name for sut
 msgid "Subtiaba"
@@ -25469,7 +25463,7 @@ msgstr ""
 
 #. name for sux
 msgid "Sumerian"
-msgstr "Шумерский"
+msgstr "シュメール語"
 
 #. name for suy
 msgid "Suyá"
@@ -25525,7 +25519,7 @@ msgstr ""
 
 #. name for swe
 msgid "Swedish"
-msgstr "Шведский"
+msgstr "スウェーデン語"
 
 #. name for swf
 msgid "Sere"
@@ -25697,7 +25691,7 @@ msgstr ""
 
 #. name for syr
 msgid "Syriac"
-msgstr "Сирийский"
+msgstr "シリア語"
 
 #. name for sys
 msgid "Sinyar"
@@ -25785,7 +25779,7 @@ msgstr ""
 
 #. name for tah
 msgid "Tahitian"
-msgstr "Таитянский"
+msgstr "タヒチ語"
 
 #. name for taj
 msgid "Tamang; Eastern"
@@ -25801,7 +25795,7 @@ msgstr ""
 
 #. name for tam
 msgid "Tamil"
-msgstr "Тамильский"
+msgstr "タミル語"
 
 #. name for tan
 msgid "Tangale"
@@ -25817,7 +25811,7 @@ msgstr ""
 
 #. name for taq
 msgid "Tamasheq"
-msgstr "Тамашек"
+msgstr "タマシェク語"
 
 #. name for tar
 msgid "Tarahumara; Central"
@@ -25829,7 +25823,7 @@ msgstr ""
 
 #. name for tat
 msgid "Tatar"
-msgstr "Татарский"
+msgstr "タタール語"
 
 #. name for tau
 msgid "Tanana; Upper"
@@ -25941,7 +25935,7 @@ msgstr ""
 
 #. name for tbw
 msgid "Tagbanwa"
-msgstr "Тагбанва"
+msgstr "タグバヌア文字"
 
 #. name for tbx
 msgid "Kapin"
@@ -25985,7 +25979,7 @@ msgstr ""
 
 #. name for tch
 msgid "Creole English; Turks And Caicos"
-msgstr "Креольский английский; Тёркс и Кайкос"
+msgstr ""
 
 #. name for tci
 msgid "Wára"
@@ -26177,11 +26171,11 @@ msgstr ""
 
 #. name for tel
 msgid "Telugu"
-msgstr "Телугу"
+msgstr "テルグ語"
 
 #. name for tem
 msgid "Timne"
-msgstr "Темне"
+msgstr "テムネ語"
 
 #. name for ten
 msgid "Tama (Colombia)"
@@ -26201,7 +26195,7 @@ msgstr ""
 
 #. name for ter
 msgid "Tereno"
-msgstr "Терено"
+msgstr "テレーノ語"
 
 #. name for tes
 msgid "Tengger"
@@ -26209,7 +26203,7 @@ msgstr ""
 
 #. name for tet
 msgid "Tetum"
-msgstr "Тетумский"
+msgstr "テトゥン語"
 
 #. name for teu
 msgid "Soo"
@@ -26281,7 +26275,7 @@ msgstr ""
 
 #. name for tgh
 msgid "Creole English; Tobagonian"
-msgstr "Креольский английский; Тобагский"
+msgstr ""
 
 #. name for tgi
 msgid "Lawunuia"
@@ -26289,11 +26283,11 @@ msgstr ""
 
 #. name for tgk
 msgid "Tajik"
-msgstr "Таджикский"
+msgstr "タジク語"
 
 #. name for tgl
 msgid "Tagalog"
-msgstr "Тагалог"
+msgstr "タガログ語"
 
 #. name for tgn
 msgid "Tandaganon"
@@ -26345,7 +26339,7 @@ msgstr ""
 
 #. name for tha
 msgid "Thai"
-msgstr "Таи"
+msgstr "タイ語"
 
 #. name for thc
 msgid "Tai Hang Tong"
@@ -26449,7 +26443,7 @@ msgstr ""
 
 #. name for tig
 msgid "Tigre"
-msgstr "Тигре"
+msgstr "ティグレ語"
 
 #. name for tih
 msgid "Murut; Timugon"
@@ -26493,7 +26487,7 @@ msgstr ""
 
 #. name for tir
 msgid "Tigrinya"
-msgstr "Тигринья"
+msgstr "ティグリニア語"
 
 #. name for tis
 msgid "Itneg; Masadiit"
@@ -26509,7 +26503,7 @@ msgstr ""
 
 #. name for tiv
 msgid "Tiv"
-msgstr "Тив"
+msgstr "ティブ語"
 
 #. name for tiw
 msgid "Tiwi"
@@ -26585,7 +26579,7 @@ msgstr ""
 
 #. name for tkl
 msgid "Tokelau"
-msgstr "Токелау"
+msgstr "トケラウ語"
 
 #. name for tkm
 msgid "Takelma"
@@ -26661,7 +26655,7 @@ msgstr ""
 
 #. name for tli
 msgid "Tlingit"
-msgstr "Тлингит"
+msgstr "トリンギット語"
 
 #. name for tlj
 msgid "Talinga-Bwisi"
@@ -26725,7 +26719,7 @@ msgstr ""
 
 #. name for tly
 msgid "Talysh"
-msgstr "Талышский"
+msgstr ""
 
 #. name for tma
 msgid "Tama (Chad)"
@@ -26757,7 +26751,7 @@ msgstr ""
 
 #. name for tmh
 msgid "Tamashek"
-msgstr "Тамашек"
+msgstr "タマシェク語"
 
 #. name for tmi
 msgid "Tutuba"
@@ -26945,7 +26939,7 @@ msgstr ""
 
 #. name for tog
 msgid "Tonga (Nyasa)"
-msgstr "Тонга (Ньяса)"
+msgstr "トンガ語 (ニアサ)"
 
 #. name for toh
 msgid "Gitonga"
@@ -26969,7 +26963,7 @@ msgstr ""
 
 #. name for ton
 msgid "Tonga (Tonga Islands)"
-msgstr "Тонга (острова Тонга)"
+msgstr "トンガ語 (トンガ諸島)"
 
 #. name for too
 msgid "Totonac; Xicotepec De Juárez"
@@ -27037,7 +27031,7 @@ msgstr ""
 
 #. name for tpi
 msgid "Tok Pisin"
-msgstr "Ток Писин"
+msgstr "トック・ピジン"
 
 #. name for tpj
 msgid "Tapieté"
@@ -27169,7 +27163,7 @@ msgstr ""
 
 #. name for trf
 msgid "Creole English; Trinidadian"
-msgstr "Креольский английский; Тринидадский"
+msgstr ""
 
 #. name for trg
 msgid "Lishán Didán"
@@ -27281,7 +27275,7 @@ msgstr ""
 
 #. name for tsi
 msgid "Tsimshian"
-msgstr "Цимшиан"
+msgstr "チムシュ語"
 
 #. name for tsj
 msgid "Tshangla"
@@ -27301,11 +27295,11 @@ msgstr ""
 
 #. name for tsn
 msgid "Tswana"
-msgstr "Тсвана"
+msgstr "ツワナ語"
 
 #. name for tso
 msgid "Tsonga"
-msgstr "Тсонга"
+msgstr "ツォンガ語"
 
 #. name for tsp
 msgid "Toussian; Northern"
@@ -27433,7 +27427,7 @@ msgstr ""
 
 #. name for ttu
 msgid "Torau"
-msgstr "Токелау"
+msgstr "トケラウ語"
 
 #. name for ttv
 msgid "Titan"
@@ -27493,7 +27487,7 @@ msgstr ""
 
 #. name for tuk
 msgid "Turkmen"
-msgstr "Туркменский"
+msgstr "トゥルクメン語"
 
 #. name for tul
 msgid "Tula"
@@ -27501,7 +27495,7 @@ msgstr ""
 
 #. name for tum
 msgid "Tumbuka"
-msgstr "Тумбука"
+msgstr "タンブカ語"
 
 #. name for tun
 msgid "Tunica"
@@ -27517,7 +27511,7 @@ msgstr ""
 
 #. name for tur
 msgid "Turkish"
-msgstr "Турецкий"
+msgstr "トルコ語"
 
 #. name for tus
 msgid "Tuscarora"
@@ -27561,7 +27555,7 @@ msgstr ""
 
 #. name for tvl
 msgid "Tuvalu"
-msgstr "Тувалу"
+msgstr "ツバル語"
 
 #. name for tvm
 msgid "Tela-Masbuar"
@@ -27625,7 +27619,7 @@ msgstr ""
 
 #. name for twi
 msgid "Twi"
-msgstr "Тви"
+msgstr "トウィ語"
 
 #. name for twl
 msgid "Tawara"
@@ -27793,7 +27787,7 @@ msgstr ""
 
 #. name for tyv
 msgid "Tuvinian"
-msgstr "Тувинский"
+msgstr "ツバニア語"
 
 #. name for tyx
 msgid "Teke-Tyee"
@@ -27893,7 +27887,7 @@ msgstr ""
 
 #. name for udm
 msgid "Udmurt"
-msgstr "Удмуртский"
+msgstr "ウドムルト語"
 
 #. name for udu
 msgid "Uduk"
@@ -27909,7 +27903,7 @@ msgstr ""
 
 #. name for uga
 msgid "Ugaritic"
-msgstr "Угаритский"
+msgstr "ウガリット語"
 
 #. name for ugb
 msgid "Kuku-Ugbanh"
@@ -27941,7 +27935,7 @@ msgstr ""
 
 #. name for uig
 msgid "Uighur"
-msgstr "Уйгурский"
+msgstr "ウイグル語"
 
 #. name for uis
 msgid "Uisai"
@@ -27981,7 +27975,7 @@ msgstr ""
 
 #. name for ukr
 msgid "Ukrainian"
-msgstr "Украинский"
+msgstr "ウクライナ語"
 
 #. name for uks
 msgid "Urubú-Kaapor Sign Language"
@@ -28045,7 +28039,7 @@ msgstr ""
 
 #. name for umb
 msgid "Umbundu"
-msgstr "Умбунду"
+msgstr "アンブンドゥ語"
 
 #. name for umc
 msgid "Marrucinian"
@@ -28097,7 +28091,7 @@ msgstr ""
 
 #. name for und
 msgid "Undetermined"
-msgstr "Неидентифицированный"
+msgstr "言語名不明"
 
 #. name for une
 msgid "Uneme"
@@ -28157,7 +28151,7 @@ msgstr ""
 
 #. name for urd
 msgid "Urdu"
-msgstr "Урду"
+msgstr "ウルドゥー語"
 
 #. name for ure
 msgid "Uru"
@@ -28317,7 +28311,7 @@ msgstr ""
 
 #. name for uzb
 msgid "Uzbek"
-msgstr "Узбекский"
+msgstr "ウズベク語"
 
 #. name for uzn
 msgid "Uzbek; Northern"
@@ -28349,7 +28343,7 @@ msgstr ""
 
 #. name for vai
 msgid "Vai"
-msgstr "Ваи"
+msgstr "ヴァイ語"
 
 #. name for vaj
 msgid "Vasekela Bushman"
@@ -28421,7 +28415,7 @@ msgstr ""
 
 #. name for ven
 msgid "Venda"
-msgstr "Венда"
+msgstr "ベンダ語"
 
 #. name for veo
 msgid "Ventureño"
@@ -28445,7 +28439,7 @@ msgstr ""
 
 #. name for vic
 msgid "Creole English; Virgin Islands"
-msgstr "Креольский английский; Виргинские острова"
+msgstr ""
 
 #. name for vid
 msgid "Vidunda"
@@ -28453,7 +28447,7 @@ msgstr ""
 
 #. name for vie
 msgid "Vietnamese"
-msgstr "Вьетнамский"
+msgstr "ベトナム語"
 
 #. name for vif
 msgid "Vili"
@@ -28637,7 +28631,7 @@ msgstr ""
 
 #. name for vol
 msgid "Volapük"
-msgstr "Волапюк"
+msgstr "ボラピューク語"
 
 #. name for vor
 msgid "Voro"
@@ -28645,7 +28639,7 @@ msgstr ""
 
 #. name for vot
 msgid "Votic"
-msgstr "Вотик"
+msgstr "ヴォート語"
 
 #. name for vra
 msgid "Vera'a"
@@ -28765,7 +28759,7 @@ msgstr ""
 
 #. name for was
 msgid "Washo"
-msgstr "Вашо"
+msgstr "ワショ語"
 
 #. name for wat
 msgid "Kaninuwa"
@@ -29117,7 +29111,7 @@ msgstr ""
 
 #. name for wln
 msgid "Walloon"
-msgstr "Валлун"
+msgstr "ワロン語"
 
 #. name for wlo
 msgid "Wolio"
@@ -29289,7 +29283,7 @@ msgstr ""
 
 #. name for wol
 msgid "Wolof"
-msgstr "Волоф"
+msgstr "ウォロフ語"
 
 #. name for wom
 msgid "Wom (Nigeria)"
@@ -29533,7 +29527,7 @@ msgstr ""
 
 #. name for wyy
 msgid "Fijian; Western"
-msgstr "Западнофиджийский"
+msgstr ""
 
 #. name for xaa
 msgid "Arabic; Andalusian"
@@ -29693,11 +29687,11 @@ msgstr ""
 
 #. name for xcr
 msgid "Carian"
-msgstr "Карийский"
+msgstr "カリア文字"
 
 #. name for xct
 msgid "Tibetan; Classical"
-msgstr "Тибетский; Классический"
+msgstr ""
 
 #. name for xcu
 msgid "Curonian"
@@ -29805,7 +29799,7 @@ msgstr ""
 
 #. name for xho
 msgid "Xhosa"
-msgstr "Коса"
+msgstr "ホサ語"
 
 #. name for xhr
 msgid "Hernican"
@@ -29969,11 +29963,11 @@ msgstr ""
 
 #. name for xlc
 msgid "Lycian"
-msgstr "Ликийский"
+msgstr "リキア文字"
 
 #. name for xld
 msgid "Lydian"
-msgstr "Лидийский"
+msgstr "リディア文字"
 
 #. name for xle
 msgid "Lemnian"
@@ -30053,7 +30047,7 @@ msgstr ""
 
 #. name for xml
 msgid "Malaysian Sign Language"
-msgstr "Малайзийский язык жестов"
+msgstr ""
 
 #. name for xmm
 msgid "Malay; Manado"
@@ -30573,7 +30567,7 @@ msgstr ""
 
 #. name for xzp
 msgid "Zapotec; Ancient"
-msgstr "Сапотекский; Древний"
+msgstr ""
 
 #. name for yaa
 msgid "Yaminahua"
@@ -30597,7 +30591,7 @@ msgstr ""
 
 #. name for yaf
 msgid "Yaka (Democratic Republic of Congo)"
-msgstr "Яка (Демократическая республика Конго)"
+msgstr ""
 
 #. name for yag
 msgid "Yámana"
@@ -30633,11 +30627,11 @@ msgstr ""
 
 #. name for yao
 msgid "Yao"
-msgstr "Яо"
+msgstr "ヤオ語"
 
 #. name for yap
 msgid "Yapese"
-msgstr "Яапийский"
+msgstr "ヤップ語"
 
 #. name for yaq
 msgid "Yaqui"
@@ -30769,7 +30763,7 @@ msgstr ""
 
 #. name for yds
 msgid "Yiddish Sign Language"
-msgstr "Язык жестов Идиш"
+msgstr ""
 
 #. name for yea
 msgid "Ravula"
@@ -30861,7 +30855,7 @@ msgstr ""
 
 #. name for yid
 msgid "Yiddish"
-msgstr "Идиш"
+msgstr "イディッシュ語"
 
 #. name for yif
 msgid "Ache"
@@ -31137,7 +31131,7 @@ msgstr ""
 
 #. name for ynn
 msgid "Yana"
-msgstr "Ганда"
+msgstr "ガンダ語"
 
 #. name for yno
 msgid "Yong"
@@ -31181,7 +31175,7 @@ msgstr ""
 
 #. name for yor
 msgid "Yoruba"
-msgstr "Йоруба"
+msgstr "ヨルバ語"
 
 #. name for yos
 msgid "Yos"
@@ -31465,27 +31459,27 @@ msgstr ""
 
 #. name for zaa
 msgid "Zapotec; Sierra de Juárez"
-msgstr "Сапотекский; Сьерра-де-хуаресский"
+msgstr ""
 
 #. name for zab
 msgid "Zapotec; San Juan Guelavía"
-msgstr "Сапотекский; Сан-хуан-гелавиаский"
+msgstr "ザポテック語"
 
 #. name for zac
 msgid "Zapotec; Ocotlán"
-msgstr "Сапотекский; Окотланский"
+msgstr ""
 
 #. name for zad
 msgid "Zapotec; Cajonos"
-msgstr "Сапотекский; Кахоносский"
+msgstr ""
 
 #. name for zae
 msgid "Zapotec; Yareni"
-msgstr "Сапотекский; Яренийский"
+msgstr ""
 
 #. name for zaf
 msgid "Zapotec; Ayoquesco"
-msgstr "Сапотекский; Айокескский"
+msgstr ""
 
 #. name for zag
 msgid "Zaghawa"
@@ -31497,7 +31491,7 @@ msgstr ""
 
 #. name for zai
 msgid "Zapotec; Isthmus"
-msgstr "Сапотекский; Истмусский"
+msgstr ""
 
 #. name for zaj
 msgid "Zaramo"
@@ -31513,31 +31507,31 @@ msgstr ""
 
 #. name for zam
 msgid "Zapotec; Miahuatlán"
-msgstr "Сапотекский; Мьяуатланский"
+msgstr ""
 
 #. name for zao
 msgid "Zapotec; Ozolotepec"
-msgstr "Сапотекский; Осолотепекский"
+msgstr ""
 
 #. name for zap
 msgid "Zapotec"
-msgstr "Сапотекский"
+msgstr "ザポテック語"
 
 #. name for zaq
 msgid "Zapotec; Aloápam"
-msgstr "Сапотекский; Алоапамский"
+msgstr ""
 
 #. name for zar
 msgid "Zapotec; Rincón"
-msgstr "Сапотекский; Ринконский"
+msgstr ""
 
 #. name for zas
 msgid "Zapotec; Santo Domingo Albarradas"
-msgstr "Сапотекский; Сан-педро-альбаррадасский"
+msgstr ""
 
 #. name for zat
 msgid "Zapotec; Tabaa"
-msgstr "Сапотекский; Табаанский"
+msgstr ""
 
 #. name for zau
 msgid "Zangskari"
@@ -31545,15 +31539,15 @@ msgstr ""
 
 #. name for zav
 msgid "Zapotec; Yatzachi"
-msgstr "Сапотекский; Яцачийский"
+msgstr ""
 
 #. name for zaw
 msgid "Zapotec; Mitla"
-msgstr "Сапотекский; Митланский"
+msgstr ""
 
 #. name for zax
 msgid "Zapotec; Xadani"
-msgstr "Сапотекский; Хаданийский"
+msgstr ""
 
 #. name for zay
 msgid "Zayse-Zergulla"
@@ -31585,11 +31579,11 @@ msgstr ""
 
 #. name for zca
 msgid "Zapotec; Coatecas Altas"
-msgstr "Сапотекский; Коатекас-альтасский"
+msgstr ""
 
 #. name for zch
 msgid "Zhuang; Central Hongshuihe"
-msgstr "Чжуанский; центральный Хуншуйхэйский"
+msgstr ""
 
 #. name for zdj
 msgid "Comorian; Ngazidja"
@@ -31605,11 +31599,11 @@ msgstr ""
 
 #. name for zeh
 msgid "Zhuang; Eastern Hongshuihe"
-msgstr "Чжуанский; восточный Хуншуйхэйский"
+msgstr ""
 
 #. name for zen
 msgid "Zenaga"
-msgstr "Зенагский"
+msgstr "ゼナガ語"
 
 #. name for zga
 msgid "Kinga"
@@ -31617,15 +31611,15 @@ msgstr ""
 
 #. name for zgb
 msgid "Zhuang; Guibei"
-msgstr "Чжуанский; Гуйбэйский"
+msgstr ""
 
 #. name for zgm
 msgid "Zhuang; Minz"
-msgstr "Чжуанский; Миньский"
+msgstr ""
 
 #. name for zgn
 msgid "Zhuang; Guibian"
-msgstr "Чжуанский; Гуйбяньский"
+msgstr ""
 
 #. name for zgr
 msgid "Magori"
@@ -31633,7 +31627,7 @@ msgstr ""
 
 #. name for zha
 msgid "Zhuang"
-msgstr "Чжуанский"
+msgstr ""
 
 #. name for zhb
 msgid "Zhaba"
@@ -31641,7 +31635,7 @@ msgstr ""
 
 #. name for zhd
 msgid "Zhuang; Dai"
-msgstr "Чжуанский; Дайский"
+msgstr ""
 
 #. name for zhi
 msgid "Zhire"
@@ -31649,11 +31643,11 @@ msgstr ""
 
 #. name for zhn
 msgid "Zhuang; Nong"
-msgstr "Чжуанский; Нунский"
+msgstr ""
 
 #. name for zho
 msgid "Chinese"
-msgstr "Китайский"
+msgstr "中国語"
 
 #. name for zhw
 msgid "Zhoa"
@@ -31665,7 +31659,7 @@ msgstr ""
 
 #. name for zib
 msgid "Zimbabwe Sign Language"
-msgstr "Язык жестов Зимбабве"
+msgstr ""
 
 #. name for zik
 msgid "Zimakani"
@@ -31681,11 +31675,11 @@ msgstr ""
 
 #. name for zin
 msgid "Zinza"
-msgstr "Зинза"
+msgstr ""
 
 #. name for zir
 msgid "Ziriya"
-msgstr "Зирия"
+msgstr ""
 
 #. name for ziw
 msgid "Zigula"
@@ -31713,11 +31707,11 @@ msgstr ""
 
 #. name for zkk
 msgid "Karankawa"
-msgstr "Каранкава"
+msgstr ""
 
 #. name for zko
 msgid "Kott"
-msgstr "Коттский"
+msgstr ""
 
 #. name for zkp
 msgid "Kaingáng; São Paulo"
@@ -31741,23 +31735,23 @@ msgstr ""
 
 #. name for zkz
 msgid "Khazar"
-msgstr "Хазарский"
+msgstr ""
 
 #. name for zlj
 msgid "Zhuang; Liujiang"
-msgstr "Чжуанский; Люцзянский"
+msgstr ""
 
 #. name for zlm
 msgid "Malay (individual language)"
-msgstr "Малайский (индивидуальный язык)"
+msgstr ""
 
 #. name for zln
 msgid "Zhuang; Lianshan"
-msgstr "Чжуанский; Ляньшаньский"
+msgstr ""
 
 #. name for zlq
 msgid "Zhuang; Liuqian"
-msgstr "Чжуанский; Люцяньский"
+msgstr ""
 
 #. name for zma
 msgid "Manda (Australia)"
@@ -31841,7 +31835,7 @@ msgstr ""
 
 #. name for zmu
 msgid "Muruwari"
-msgstr "Мурувари"
+msgstr ""
 
 #. name for zmv
 msgid "Mbariman-Gudhinma"
@@ -31849,7 +31843,7 @@ msgstr ""
 
 #. name for zmw
 msgid "Mbo (Democratic Republic of Congo)"
-msgstr "Мбо (Демократическая республика Конго)"
+msgstr ""
 
 #. name for zmx
 msgid "Bomitaba"
@@ -31869,7 +31863,7 @@ msgstr ""
 
 #. name for zne
 msgid "Zande (individual language)"
-msgstr "Занде (индивидуальный язык)"
+msgstr ""
 
 #. name for zng
 msgid "Mang"
@@ -31885,11 +31879,11 @@ msgstr ""
 
 #. name for zoc
 msgid "Zoque; Copainalá"
-msgstr "Соке; Копайналанский"
+msgstr ""
 
 #. name for zoh
 msgid "Zoque; Chimalapa"
-msgstr "Соке; Чималапанский"
+msgstr ""
 
 #. name for zom
 msgid "Zou"
@@ -31897,131 +31891,131 @@ msgstr ""
 
 #. name for zoo
 msgid "Zapotec; Asunción Mixtepec"
-msgstr "Сапотекский язык; Асунсьон-мистепекский"
+msgstr ""
 
 #. name for zoq
 msgid "Zoque; Tabasco"
-msgstr "Соке; Табаскский"
+msgstr ""
 
 #. name for zor
 msgid "Zoque; Rayón"
-msgstr "Соке; Районский"
+msgstr ""
 
 #. name for zos
 msgid "Zoque; Francisco León"
-msgstr "Соке; Франсиско-леонский"
+msgstr ""
 
 #. name for zpa
 msgid "Zapotec; Lachiguiri"
-msgstr "Сапотекский язык; Лачигирийский"
+msgstr ""
 
 #. name for zpb
 msgid "Zapotec; Yautepec"
-msgstr "Сапотекский язык; Яутепекский"
+msgstr ""
 
 #. name for zpc
 msgid "Zapotec; Choapan"
-msgstr "Сапотекский язык; Чоапанский"
+msgstr ""
 
 #. name for zpd
 msgid "Zapotec; Southeastern Ixtlán"
-msgstr "Сапотекский язык; Юго-восточный истланский"
+msgstr ""
 
 #. name for zpe
 msgid "Zapotec; Petapa"
-msgstr "Сапотекский язык; Петапанский"
+msgstr ""
 
 #. name for zpf
 msgid "Zapotec; San Pedro Quiatoni"
-msgstr "Сапотекский язык; Сан-педро-киатонийский"
+msgstr ""
 
 #. name for zpg
 msgid "Zapotec; Guevea De Humboldt"
-msgstr "Сапотекский язык; Гевеа-де-гумбольдтский"
+msgstr ""
 
 #. name for zph
 msgid "Zapotec; Totomachapan"
-msgstr "Сапотекский язык; Тотомачапанский"
+msgstr ""
 
 #. name for zpi
 msgid "Zapotec; Santa María Quiegolani"
-msgstr "Сапотекский язык; Санта-мария-кьеголанийский"
+msgstr ""
 
 #. name for zpj
 msgid "Zapotec; Quiavicuzas"
-msgstr "Сапотекский язык; Киавикусасский"
+msgstr ""
 
 #. name for zpk
 msgid "Zapotec; Tlacolulita"
-msgstr "Сапотекский язык; Тлаколулитанский"
+msgstr ""
 
 #. name for zpl
 msgid "Zapotec; Lachixío"
-msgstr "Сапотекский язык; Лачихийский"
+msgstr ""
 
 #. name for zpm
 msgid "Zapotec; Mixtepec"
-msgstr "Сапотекский язык; Мистепекский"
+msgstr ""
 
 #. name for zpn
 msgid "Zapotec; Santa Inés Yatzechi"
-msgstr "Сапотекский язык; Санта-инес-яцечийский"
+msgstr ""
 
 #. name for zpo
 msgid "Zapotec; Amatlán"
-msgstr "Сапотекский язык; Аматланский"
+msgstr ""
 
 #. name for zpp
 msgid "Zapotec; El Alto"
-msgstr "Сапотекский язык; Эль-альтский"
+msgstr ""
 
 #. name for zpq
 msgid "Zapotec; Zoogocho"
-msgstr "Сапотекский язык; Соогочский"
+msgstr ""
 
 #. name for zpr
 msgid "Zapotec; Santiago Xanica"
-msgstr "Сапотекский язык; Сантьяго-ханиканский"
+msgstr ""
 
 #. name for zps
 msgid "Zapotec; Coatlán"
-msgstr "Сапотекский язык; Коатланский"
+msgstr ""
 
 #. name for zpt
 msgid "Zapotec; San Vicente Coatlán"
-msgstr "Сапотекский; Сан-висенте-коатланский"
+msgstr ""
 
 #. name for zpu
 msgid "Zapotec; Yalálag"
-msgstr "Сапотекский; Ялалагский"
+msgstr ""
 
 #. name for zpv
 msgid "Zapotec; Chichicapan"
-msgstr "Сапотекский; Чичикапанский"
+msgstr ""
 
 #. name for zpw
 msgid "Zapotec; Zaniza"
-msgstr "Сапотекский; Санисанский"
+msgstr ""
 
 #. name for zpx
 msgid "Zapotec; San Baltazar Loxicha"
-msgstr "Сапотекский; Сан-балтасар-лохичанский"
+msgstr ""
 
 #. name for zpy
 msgid "Zapotec; Mazaltepec"
-msgstr "Сапотекский; Масальтепекский"
+msgstr ""
 
 #. name for zpz
 msgid "Zapotec; Texmelucan"
-msgstr "Сапотекский; Тексмелуканский"
+msgstr ""
 
 #. name for zqe
 msgid "Zhuang; Qiubei"
-msgstr "Чжуанский; Цюбэйский"
+msgstr ""
 
 #. name for zra
 msgid "Kara (Korea)"
-msgstr "Кара (Корея)"
+msgstr ""
 
 #. name for zrg
 msgid "Mirgan"
@@ -32053,15 +32047,15 @@ msgstr ""
 
 #. name for zsl
 msgid "Zambian Sign Language"
-msgstr "Замбийский язык жестов"
+msgstr ""
 
 #. name for zsm
 msgid "Malay; Standard"
-msgstr "Малайский; Стандартный"
+msgstr ""
 
 #. name for zsr
 msgid "Zapotec; Southern Rincon"
-msgstr "Сапотекский; Южноринконский"
+msgstr ""
 
 #. name for zsu
 msgid "Sukurum"
@@ -32069,51 +32063,51 @@ msgstr ""
 
 #. name for zte
 msgid "Zapotec; Elotepec"
-msgstr "Сапотекский; Элотепекский"
+msgstr ""
 
 #. name for ztg
 msgid "Zapotec; Xanaguía"
-msgstr "Сапотекский; Ханагиянский"
+msgstr ""
 
 #. name for ztl
 msgid "Zapotec; Lapaguía-Guivini"
-msgstr "Сапотекский; Лапагия-гивинийский"
+msgstr ""
 
 #. name for ztm
 msgid "Zapotec; San Agustín Mixtepec"
-msgstr "Сапотекский; Сан-агустин-мистепекский"
+msgstr ""
 
 #. name for ztn
 msgid "Zapotec; Santa Catarina Albarradas"
-msgstr "Сапотекский; Санта-катарина-альбаррадасский"
+msgstr ""
 
 #. name for ztp
 msgid "Zapotec; Loxicha"
-msgstr "Сапотекский; Лохичанский"
+msgstr ""
 
 #. name for ztq
 msgid "Zapotec; Quioquitani-Quierí"
-msgstr "Сапотекский; Киокитани-кьерийский"
+msgstr ""
 
 #. name for zts
 msgid "Zapotec; Tilquiapan"
-msgstr "Сапотекский; Тилькиапанский"
+msgstr ""
 
 #. name for ztt
 msgid "Zapotec; Tejalapan"
-msgstr "Сапотекский; Техалапанский"
+msgstr ""
 
 #. name for ztu
 msgid "Zapotec; Güilá"
-msgstr "Сапотекский; Гюиланский"
+msgstr ""
 
 #. name for ztx
 msgid "Zapotec; Zaachila"
-msgstr "Сапотекский; Саачиланский"
+msgstr ""
 
 #. name for zty
 msgid "Zapotec; Yatee"
-msgstr "Сапотекский; Ятеенский"
+msgstr ""
 
 #. name for zua
 msgid "Zeem"
@@ -32125,15 +32119,15 @@ msgstr ""
 
 #. name for zul
 msgid "Zulu"
-msgstr "Зулусский"
+msgstr "ズールー語"
 
 #. name for zum
 msgid "Kumzari"
-msgstr "Кумзари"
+msgstr ""
 
 #. name for zun
 msgid "Zuni"
-msgstr "Зуньи"
+msgstr "ズニ語"
 
 #. name for zuy
 msgid "Zumaya"
@@ -32141,37 +32135,37 @@ msgstr ""
 
 #. name for zwa
 msgid "Zay"
-msgstr "Зай"
+msgstr ""
 
 #. name for zxx
 msgid "No linguistic content"
-msgstr "Нет языкового содержимого"
+msgstr ""
 
 #. name for zyb
 msgid "Zhuang; Yongbei"
-msgstr "Чжуанский; Юнбэйский"
+msgstr ""
 
 #. name for zyg
 msgid "Zhuang; Yang"
-msgstr "Чжуанский; Янский"
+msgstr ""
 
 #. name for zyj
 msgid "Zhuang; Youjiang"
-msgstr "Чжуанский; Юцзянский"
+msgstr ""
 
 #. name for zyn
 msgid "Zhuang; Yongnan"
-msgstr "Чжуанский; Юннаньский"
+msgstr ""
 
 #. name for zyp
 msgid "Zyphe"
-msgstr "Зифе"
+msgstr ""
 
 #. name for zza
 msgid "Zaza"
-msgstr "Зазаки"
+msgstr ""
 
 #. name for zzj
 msgid "Zhuang; Zuojiang"
-msgstr "Чжуанский; Цзоцзянский"
+msgstr ""
 
