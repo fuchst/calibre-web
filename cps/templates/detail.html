@@ -18,14 +18,14 @@
             {% if entry.data|length %}
             <div class="btn-group" role="group">
               <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-download"></span> {{_('Download')}}
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              {% for format in entry.data %}
-                <li><a href="{{ url_for('get_download_link_ext', book_id=entry.id, book_format=format.format|lower, anyname=entry.id|string+'.'+format.format|lower) }}">{{format.format}} ({{ format.uncompressed_size|filesizeformat }})</a></li>
-              {% endfor %}
-              </ul>
+				<span class="glyphicon glyphicon-download"></span> {{_('Download')}}
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+			  {% for format in entry.data %}
+				<li><a href="{{ url_for('get_download_link_ext', book_id=entry.id, book_format=format.format|lower, anyname=entry.id|string+'.'+format.format|lower) }}">{{format.format}} ({{ format.uncompressed_size|filesizeformat }})</a></li>
+			  {% endfor %}
+			  </ul>
             </div>
             {% endif %}
           {% endif %}
@@ -49,7 +49,7 @@
               {% endif %}
         </div>
       </div>
-      <h2>{{entry.title}}</h2>
+      <h2>{{entry.title|shortentitle(40)}}</h2>
       <p class="author">
           {% for author in entry.authors %}
             <a href="{{url_for('author', book_id=author.id ) }}">{{author.name.replace('|',',')}}</a>
@@ -163,8 +163,10 @@
 
 
       {% if entry.comments|length > 0 and entry.comments[0].text|length > 0%}
-        <h3>{{_('Description:')}}</h3>
-        {{entry.comments[0].text|safe}}
+        <div class="comments">
+            <h3>{{_('Description:')}}</h3>
+            {{entry.comments[0].text|safe}}
+        </div>
       {% endif %}
 
 
