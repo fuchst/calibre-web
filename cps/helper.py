@@ -336,7 +336,9 @@ def get_book_cover(cover_path, resize_root):
             return send_from_directory(os.path.join(os.path.dirname(__file__), "static"),"generic_cover.jpg")
     else:
         imgpath = os.path.join(ub.config.config_calibre_dir, cover_path, 'cover.jpg')
-        resizedfile = hashlib.sha1(imgpath).encode('utf-8').hexdigest()) + '.jpg'
+        resizedfile = hashlib.sha1(imgpath.encode('utf-8')).hexdigest() + '.jpg'
+		if not os.path.isdir(resize_root):
+			os.mkdir(resize_root)
         if not os.path.isfile(os.path.join(resize_root, resizedfile)):
             with Image(filename=imgpath) as img:
                 img.transform(resize='x500')
