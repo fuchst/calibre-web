@@ -341,7 +341,7 @@ def get_book_cover(cover_path, resize_root):
             with Image(filename=imgpath) as img:
                 img.transform(resize='x500')
                 img.compression_quality = 75
-                img.format= 'jpeg'
+                img.format = 'jpeg'
                 img.save(filename=os.path.join(resize_root, resizedfile))
         return send_from_directory(resize_root, resizedfile)
 

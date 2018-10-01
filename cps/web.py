@@ -1098,7 +1098,7 @@ def get_update_status():
     }
     parents = []
 
-    repository_url = 'https://api.github.com/repos/tfuchs/calibre-web'
+    repository_url = 'https://api.github.com/repos/fuchst/calibre-web'
     tz = datetime.timedelta(seconds=time.timezone if (time.localtime().tm_isdst == 0) else time.altzone)
 
     if request.method == "GET":
