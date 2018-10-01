@@ -341,7 +341,8 @@ def get_book_cover(cover_path, resize_root):
             os.mkdir(resize_root)
         if not os.path.isfile(os.path.join(resize_root, resizedfile)):
             with Image(filename=imgpath) as img:
-                img.transform(resize='x500')
+                #img.transform(resize='x500')
+                img.sample(300, 450)
                 img.compression_quality = 75
                 img.format = 'jpeg'
                 img.save(filename=os.path.join(resize_root, resizedfile))
