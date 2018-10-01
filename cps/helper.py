@@ -16,7 +16,6 @@ import time
 
 from flask import send_from_directory, make_response, redirect, abort
 from flask_babel import gettext as _
-import flask_resize
 import threading
 import shutil
 import requests
@@ -29,6 +28,8 @@ import web
 import server
 import random
 import subprocess
+from wand.image import Image
+import hashlib
 
 try:
     import unidecode
@@ -40,7 +41,6 @@ except ImportError:
 updater_thread = None
 global_WorkerThread = worker.WorkerThread()
 global_WorkerThread.start()
-
 
 def update_download(book_id, user_id):
     check = ub.session.query(ub.Downloads).filter(ub.Downloads.user_id == user_id).filter(ub.Downloads.book_id ==
@@ -320,7 +320,7 @@ def delete_book(book, calibrepath, book_format):
     else:
         return delete_book_file(book, calibrepath, book_format)
 
-def get_book_cover(cover_path):
+def get_book_cover(cover_path, resize_root):
     if ub.config.config_use_google_drive:
         try:
             path=gd.get_cover_via_gdrive(cover_path)
@@ -335,11 +335,15 @@ def get_book_cover(cover_path):
             # traceback.print_exc()
             return send_from_directory(os.path.join(os.path.dirname(__file__), "static"),"generic_cover.jpg")
     else:
-		imgpath = os.path.join(config.config_calibre_dir, cover_path, 'cover.jpg')
-        resized_url = resize(imgpath, 'x500', format='jpg', quality=75)
-        resized_img = resized_url.split("/").pop()
-        resized_dir = os.path.join(app.config['RESIZE_ROOT'], 'resized-images')
-        return send_from_directory(resized_dir, resized_img)
+        imgpath = os.path.join(config.config_calibre_dir, cover_path, 'cover.jpg')
+        resizedfile = hashlib.sha1(imgpath + str(os.path.getmtime(imgpath)).encode('utf-8')).hexdigest() + '.jpg'
+        if not os.path.isfile(os.path.join(resize_root, resizedfile)):
+            with Image(filename=imgpath) as img:
+                img.transform(resize='x500')
+                img.compression_quality = 75
+                img.format= 'jpeg'
+                img.save(filename=os.path.join(resize_root, resizedfile))
+        return send_from_directory(resize_root, resizedfile)
 
 # saves book cover to gdrive or locally
 def save_cover(url, book_path):

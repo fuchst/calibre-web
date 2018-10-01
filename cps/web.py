@@ -167,11 +167,10 @@ mimetypes.add_type('application/x-cbt', '.cbt')
 mimetypes.add_type('image/vnd.djvu', '.djvu')
 
 app = (Flask(__name__))
-app.config['RESIZE_URL'] = ' '
-app.config['RESIZE_ROOT'] = '/srv/calibre-web'
-resize = flask_resize.Resize(app)
 app.wsgi_app = ReverseProxied(app.wsgi_app)
 cache_buster.init_cache_busting(app)
+
+resize_root = '/srv/calibre-web/resized-images'
 
 formatter = logging.Formatter(
     "[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
@@ -2047,7 +2046,7 @@ def advanced_search():
 @app.route("/cover/<path:cover_path>")
 @login_required_if_no_ano
 def get_cover(cover_path):
-    return helper.get_book_cover(cover_path)
+    return helper.get_book_cover(cover_path, resize_root)
 
 
 @app.route("/show/<book_id>/<book_format>")
@@ -2076,7 +2075,7 @@ def serve_book(book_id, book_format):
 @requires_basic_auth_if_no_ano
 def feed_get_cover(book_id):
     book = db.session.query(db.Books).filter(db.Books.id == book_id).first()
-    return helper.get_book_cover(book.path)
+    return helper.get_book_cover(book.path, resize_root)
 
 
 def render_read_books(page, are_read, as_xml=False):
